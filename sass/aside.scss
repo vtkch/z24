@@ -1,0 +1,29 @@
+.aside-block {
+    background: #f3f3f3;
+    min-width: 290px;
+    &-header {
+        border-left: 5px solid transparent;
+        padding-bottom: 14px;
+        font-size: 1.125rem;
+        font-weight: bold;
+        padding-top: 14px;
+    }
+    &-list {
+        box-shadow: -24px 0 0 #f3f3f3 inset, -23px -1px 0 #d8d8d8 inset;
+        & li {
+            border-left: 5px solid transparent;
+            &.active, &:hover {
+                border-left-color: #36ad39;
+                background: #eaeaea;
+            }
+            a {
+                padding: 14px 0 14px 24px;
+                display: block;
+                color: #454545;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

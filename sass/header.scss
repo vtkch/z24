@@ -1,5 +1,47 @@
 .fixed-header {
-  position: fixed;
-  height: 92px;
-
+    border-bottom: 1px solid #eaeaea;
+    background: #fff;
+    position: sticky;
+    padding: 20px 0;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    &-catalog {
+        flex-basis: 300px;
+    }
+    
+    &-user-interactions {
+        flex-basis: 160px;
+    }
+    
+    &-login-panel {
+        flex-basis: 500px;
+    }
+    
+    &-nav a {
+        text-decoration: none;
+        color: #000;
+    }
+    
+    &-divider:before {
+        border-left: 1px solid rgba(141, 141, 141, .26);
+        margin-right: 20px;
+        display: block;
+        height: 50px;
+        content: '';
+    }
+    
+    &-ml-20 {
+        margin-left: 20px;
+    }
+    
+    &-language-button {
+        font-weight: bold;
+        background: none;
+        font-size: 20px;
+        cursor: pointer;
+        outline: none;
+        border: none;
+    }
 }
+

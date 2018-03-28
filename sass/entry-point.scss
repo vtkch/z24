@@ -1,0 +1,14 @@
+@import 'fonts';
+@import 'variables';
+@import '../node_modules/bootstrap/scss/bootstrap';
+@import 'header';
+@import 'aside';
+@import 'footer';
+
+.brand {
+    width: 257px;
+}
+
+main {
+    min-height: 80vh;
+}

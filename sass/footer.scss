@@ -1,0 +1,25 @@
+.main-footer {
+    box-shadow: inset 7.4px 8.2px 11px 0 rgba(0, 0, 0, .16);
+    background: #f2f4f1;
+    padding: 50px 0;
+    
+    &-gap {
+        grid-row-gap: 12px;
+    }
+    &-social-gaps {
+        grid-template-columns: 32px 32px;
+        grid-column-gap: 1rem;
+    }
+    
+    // TODO remove when we have sprites
+    img {
+        height: 32px;
+    }
+    a {
+        color: #1964a3;
+    }
+    figcaption {
+        text-indent: 10px;
+        color: #2baf4a;
+    }
+}

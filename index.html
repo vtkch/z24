@@ -1,21 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
     <title>Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="builded/main.css">
 </head>
 <body>
-    <header class="fixed-header">
-        <a href="img/brand.png"><img src="img/brand.png" alt=""></a>
-    </header>
+<header class="fixed-header">
+    <section class="container d-flex">
+        <a href="/"><img class="brand" src="img/brand.png" alt=""></a>
+        <ul class="d-flex fixed-header-nav big-text fixed-header-divider align-items-center fixed-header-catalog justify-content-center">
+            <li><a href="">Закупки</a></li>
+            <li class="fixed-header-ml-20"><a href="">Каталог компаний</a></li>
+        </ul>
+        <ul class="d-flex fixed-header-divider align-items-center fixed-header-user-interactions justify-content-center">
+            <li>call</li>
+            <li class="fixed-header-ml-20">chat</li>
+        </ul>
+        <ul class="d-flex fixed-header-divider align-items-center little-text fixed-header-login-panel">
+            <li>ХМЕЛЬНИЦЬКИЙ НАВЧАЛЬНО-ВИХОВНИЙ
+                КОМПЛЕКС №31 «ДОШКІЛЬНИЙ НАВЧАЛЬНИЙ
+                ЗАКЛАД – ЗАГАЛЬНООСВІТНІЙ НАВЧАЛЬНИЙ ЗАКЛАД І СТУПЕНЯ»
+            </li>
+        </ul>
+        <div class="fixed-header-divider d-flex">
+            <button class="fixed-header-language-button">RU</button>
+        </div>
+    </section>
+</header>
 
-    <main>
-
+<section class="container">
+    <main class="row">
+        <aside class="col-lg-2 col-md-4 d-sm-none d-md-block aside-block px-0 pt-4">
+            <h4 class="aside-block-header pl-4">Моя компания</h4>
+            <ul class="aside-block-list pb-4">
+                <li class="active"><a href="">Информация о компании</a></li>
+                <li><a href="">Мои сотрудники</a></li>
+                <li><a href="">Персональные настройки</a></li>
+            </ul>
+            <h4 class="aside-block-header pl-4">Закупки</h4>
+            <ul class="aside-block-list pb-4">
+                <li class="active"><a href="">Мои тендеры/заявки</a></li>
+                <li><a href="">Создать новый тендер/заявку</a></li>
+                <li><a href="">Мои документы</a></li>
+                <li><a href="">Отчет</a></li>
+                <li><a href="">Календарь торгов</a></li>
+                <li><a href="">Уведомления</a></li>
+                <li><a href="">Моя подписка</a></li>
+            </ul>
+        </aside>
+        <div class="main-block col-lg-9 col-md-8 col-xs-12 pt-4">
+            <h2>Информация о компании</h2>
+            <form novalidate>
+                <fieldset>
+                    <legend>Юридическое название:</legend>
+                    <label class="main-block-textarea-control">
+                        <span>UA:</span>
+                        <textarea placeholder="На Русском"></textarea>
+                        <a href="">Изменить</a>
+                    </label>
+                    <label class="main-block-textarea-control">
+                        <span>EN:</span>
+                        <textarea placeholder="In English"></textarea>
+                        <a href="">Изменить</a>
+                    </label>
+                </fieldset>
+            </form>
+        </div>
     </main>
+</section>
 
-    <footer>
-
-    </footer>
+<footer class="main-footer">
+    <section class="container">
+        <div class="row">
+            <div class="col-xl-3 col-lg-4 col-md-6 col-xs-12">
+                <div class="d-grid main-footer-gap">
+                    <figure class="d-flex">
+                        <img src="img/footer/logo-pmarket.png" alt="Facebook">
+                        <figcaption class="h2 mb-0">ПриватМаркет</figcaption>
+                    </figure>
+                    <p>© ПриватБанк</p>
+                    <ul class="d-grid main-footer-social-gaps">
+                        <li><img src="img/footer/facebook.png" alt="Facebook"></li>
+                        <li><img src="img/footer/youtube.png" alt="youtube"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xl-2 col-lg-4 col-md-6 col-xs-12 d-grid">
+                <h5 class="h5 mb-0">Телефон горячей линии</h5>
+                <p class="h3 mb-0">4050</p>
+                <p class="tiny-text">Бесплатно с мобильных</p>
+            </div>
+            <div class="col-xl-2 col-lg-4 col-md-6 col-xs-12 d-grid">
+                <h5 class="h5 mb-0">Договор публичной оферты</h5>
+                <a href="">Условия и правила пользования</a>
+            </div>
+            <div class="col-xl-2 col-lg-4 col-md-6 col-xs-12 d-grid">
+                <h5 class="h5 mb-0">ЧАВО</h5>
+                <a href="">Для бизнеса</a>
+                <a href="">Для государственных заказчиков</a>
+            </div>
+            <div class="col-xl-2 col-lg-4 col-md-6 col-xs-12 d-grid">
+                <h5 class="h5 mb-0">Вопросы? Предложения?</h5>
+                <footer class="d-grid">
+                    <span>Пишите нам:</span>
+                    <a href="">info@privatmarket.ua</a>
+                    <a href="">Помощь в чате</a>
+                    <a href="">Карта сайта</a>
+                </footer>
+            </div>
+        </div>
+    </section>
+</footer>
 </body>
 </html>

@@ -1,5 +1,48 @@
-@import 'reset';
-@import 'variables';
-@import 'header';
-
+.main-block {
+    padding-left: 38px;
+    > h2 {
+        padding-bottom: 10px;
+        padding-top: 14px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 0;
+    }
+    legend {
+        padding-bottom: 5px;
+        padding-top: 30px;
+        font-weight: bold;
+    }
+    &-textarea-control {
+        margin-bottom: 8px;
+        position: relative;
+        display: flex;
+        span {
+            position: absolute;
+            font-weight: bold;
+            left: 15px;
+            top: 15px;
+        }
+        :disabled {
+            background: #f8f6f6;
+        }
+        :focus {
+            outline: none;
+        }
+        textarea {
+            padding: 15px 15px 15px 50px;
+            border: 1px solid #d5d5d5;
+            overflow: hidden;
+            resize: none;
+            width: 520px;
+        }
+        a {
+            border-bottom: 1px dashed currentColor;
+            transform: translate(8px, 15px);
+            text-decoration: dashed;
+            align-self: baseline;
+            color: #1d75c1;
+        }
+        
+    }
+}
 
