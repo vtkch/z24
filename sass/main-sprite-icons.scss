@@ -1,0 +1,14 @@
+.icon {
+    &-phone {
+        background: url(../img/main-sprite.svg) -24px -90px;
+        transform: scale(.7) translateY(-3px);
+        height: 32px;
+        width: 32px;
+    }
+    &-chat {
+        background: url(../img/main-sprite.svg) -24px -43px;
+        transform: scale(.7) translateY(-3px);
+        height: 32px;
+        width: 32px;
+    }
+}
