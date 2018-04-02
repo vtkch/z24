@@ -1,3 +1,6 @@
+$caret-width: 6px;
+@import '../node_modules/bootstrap/scss/mixins/caret';
+
 .sticky-header {
     border-bottom: 1px solid #eaeaea;
     background: #fff;
@@ -22,6 +25,9 @@
         &:focus {
             outline: none;
         }
+    }
+    .caret {
+        @include caret-down;
     }
     &-login-panel {
         flex-basis: 500px;
