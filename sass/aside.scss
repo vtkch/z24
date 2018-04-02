@@ -1,4 +1,6 @@
 .aside-block {
+    flex-direction: column;
+    display: flex;
     background: #f3f3f3;
     min-width: 290px;
     &-header {
@@ -18,12 +20,23 @@
             }
             a {
                 padding: 14px 0 14px 24px;
-                display: block;
+                display: inline-block;
                 color: #454545;
                 &:hover {
                     text-decoration: none;
                 }
             }
+        }
+    }
+    &-add-company {
+        border: 2px solid currentColor;
+        margin: 38px 24px 0 20px;
+        background: transparent;
+        cursor: pointer;
+        padding: 15px;
+        color: #36ad39;
+        &:focus {
+            outline: none;
         }
     }
 }

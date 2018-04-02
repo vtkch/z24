@@ -1,0 +1,20 @@
+.contact-form {
+    margin-bottom: 120px;
+    &-label {
+        user-select: none;
+        color: #7f7f7f;
+    }
+    &-input {
+        box-shadow: inset 1px 1.7px 2px 0 rgba(9, 12, 18, 0.09);
+        border: 1px solid #d5d5d5;
+        padding: 12px 10px;
+    }
+    &-add-phone {
+        background: transparent;
+        cursor: pointer;
+        margin-top: 5px;
+        color: #1d75c1;
+        outline: none;
+        border: none;
+    }
+}

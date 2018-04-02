@@ -3,12 +3,29 @@
 @import '../node_modules/bootstrap/scss/bootstrap';
 @import 'header';
 @import 'aside';
+@import "contact-form";
+@import "add-company-form";
+@import "main";
 @import 'footer';
+
 
 .brand {
     width: 257px;
 }
 
+body {
+    scroll-behavior: smooth;
+}
+
 main {
     min-height: 80vh;
+}
+
+:target:before {
+    // fixing bug related sticky header+anchor overflow
+    visibility: hidden;
+    margin-top: -120px;
+    height: 120px;
+    display: block;
+    content: '';
 }

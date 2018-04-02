@@ -34,10 +34,10 @@
 
 <section class="container">
     <main class="row">
-        <aside class="col-lg-2 col-md-4 d-sm-none d-md-block aside-block px-0 pt-4">
+        <aside class="col-lg-2 col-md-4 aside-block px-0 pt-4">
             <h4 class="aside-block-header pl-4">Моя компания</h4>
             <ul class="aside-block-list pb-4">
-                <li class="active"><a href="">Информация о компании</a></li>
+                <li class="active"><a href="#validation-page">Информация о компании</a></li>
                 <li><a href="">Мои сотрудники</a></li>
                 <li><a href="">Персональные настройки</a></li>
             </ul>
@@ -51,24 +51,120 @@
                 <li><a href="">Уведомления</a></li>
                 <li><a href="">Моя подписка</a></li>
             </ul>
+            <a href="#add-company-page" class="aside-block-add-company">+ Добавить компанию</a>
         </aside>
         <div class="main-block col-lg-9 col-md-8 col-xs-12 pt-4">
-            <h2>Информация о компании</h2>
-            <form novalidate>
-                <fieldset>
-                    <legend>Юридическое название:</legend>
-                    <label class="main-block-textarea-control">
-                        <span>UA:</span>
-                        <textarea placeholder="На Русском"></textarea>
-                        <a href="">Изменить</a>
+            <section id="validation-page">
+                <h2>Информация о компании</h2>
+                <form class="col-lg-7 col-xl-7 col-md-8" novalidate>
+                    <fieldset>
+                        <legend class="main-block-legend">Юридическое название:</legend>
+                        <label class="main-block-textarea-control">
+                            <span>UA:</span>
+                            <textarea rows="3" placeholder="На Русском"></textarea>
+                            <a href="">Изменить</a>
+                        </label>
+                        <label class="main-block-textarea-control">
+                            <span>EN:</span>
+                            <textarea rows="3" placeholder="In English"></textarea>
+                            <a href="">Изменить</a>
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <legend class="main-block-legend">Сокращённое название:</legend>
+                        <label class="main-block-textarea-control">
+                            <span>UA:</span>
+                            <textarea rows="3" placeholder="На Русском"></textarea>
+                            <a href="">Изменить</a>
+                        </label>
+                        <label class="main-block-textarea-control">
+                            <span>EN:</span>
+                            <textarea rows="3" placeholder="In English"></textarea>
+                            <a href="">Изменить</a>
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <legend class="main-block-legend">Код ЕГРПОУ/ИНН:</legend>
+                        <label class="main-block-input-control">
+                            <input disabled>
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <legend class="main-block-legend">Общая информация о компании:</legend>
+                        <p class="main-block-fieldset-p little-text">текст о Вашей компании, который видят посетители Вашей страницы. Будет отображаться в профиле
+                            компании под ее названием</p>
+                        <label class="main-block-textarea-control">
+                            <textarea rows="3"  disabled class="pl-3" placeholder="На Русском"></textarea>
+                            <a href="">Изменить</a>
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <legend class="main-block-legend">Рынки (виды деятельности)</legend>
+                        <p class="main-block-fieldset-p little-text">укажите рынки, на которых Ваша компания предоставляет товары или услуги.</p>
+                        <label class="main-block-textarea-control">
+                            <textarea rows="3" disabled class="pl-3" >Бензин -> Неэтилированный бензин; Бензин ->
+    Этилированный бензин; Бензин -> Бензин с этанолом</textarea>
+                            <a href="">Изменить</a>
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <legend class="main-block-legend">Юридический адрес:</legend>
+                        <label class="main-block-textarea-control">
+                            <textarea rows="3" disabled class="pl-3" >Украина,область Днепропетровская, город Днепр, улица Набережная
+    Победы, дом 32</textarea>
+                            <a href="">Изменить</a>
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <legend class="main-block-legend">Фактический адрес:</legend>
+                        <label class="main-block-textarea-control">
+                            <textarea rows="3" disabled class="pl-3" >Украина,область Днепропетровская, город Днепр, улица Набережная
+    Победы, дом 32</textarea>
+                            <a href="">Изменить</a>
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <legend class="main-block-legend">Обновить информацию о компании данными из ЕГР:</legend>
+                        <button class="main-block-submit">Обновить</button>
+                    </fieldset>
+                </form>
+                <hr class="ml-3 mb-3 mt-4">
+                <form novalidate class="col-lg-7 col-xl-7 col-md-8 contact-form">
+                    <fieldset>
+                        <legend class="h3">Контакты компании:</legend>
+                        <p class="main-block-fieldset-p little-text">эта информация отображается на странице Вашей компании и будет видна
+                            всем посетителям</p>
+                        <div>
+                            <label for="phone" class="contact-form-label little-text d-block my-2">Телефон:</label>
+                            <input class="contact-form-input" id="phone" placeholder="+38(___) ___-__-__">
+                            <button class="contact-form-add-phone d-block tiny-text pl-0">Добавить ещё номер</button>
+                        </div>
+
+                        <label class="contact-form-label little-text d-block my-2" for="email">E-mail</label>
+                        <input class="contact-form-input" type="email" id="email">
+
+                        <label for="website" class="contact-form-label little-text d-block my-2">Веб сайт</label>
+                        <input class="contact-form-input" id="website">
+                    </fieldset>
+                </form>
+            </section>
+            <section id="add-company-page">
+                <h2>Додавання компанії</h2>
+                <form class="add-company-form col-lg-7 col-xl-7 col-md-8 col-xs-12 pt-4">
+
+                    <label class="d-flex justify-content-between align-items-center mb-2">Країна реєстрації
+                        <select class="add-company-form-select col-lg-7">
+                            <option value="Украина">Україна (UA-EDR)</option>
+                        </select>
                     </label>
-                    <label class="main-block-textarea-control">
-                        <span>EN:</span>
-                        <textarea placeholder="In English"></textarea>
-                        <a href="">Изменить</a>
+                    <label class="d-flex justify-content-between align-items-center">ЕГРПОУ компанії:
+                        <span class="col-lg-7 d-flex p-0">
+                            <input class="add-company-form-input col-lg-9">
+                            <button class="add-company-form-find col-lg-3">Знайти</button>
+                        </span>
                     </label>
-                </fieldset>
-            </form>
+                </form>
+            </section>
         </div>
     </main>
 </section>
