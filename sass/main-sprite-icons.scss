@@ -1,4 +1,11 @@
 .icon {
+    &-brand {
+        background: url(../img/main-sprite.svg) 0 -18px;
+        display: inline-block;
+        height: 15px;
+        width: 270px;
+    }
+    
     &-phone {
         background: url(../img/main-sprite.svg) -24px -90px;
         transform: scale(.7) translateY(-3px);
@@ -10,5 +17,19 @@
         transform: scale(.7) translateY(-3px);
         height: 32px;
         width: 32px;
+    }
+    
+    &-facebook {
+        background: url(../img/main-sprite.svg) -10px -1005px;
+        transform: scale(.7) translateX(-14px) translateY(-10px);
+        height: 62px;
+        width: 64px;
+    }
+    
+    &-youtube {
+        background: url(../img/main-sprite.svg) -10px -1078px;
+        transform: scale(.7) translateX(-14px) translateY(-10px);
+        height: 66px;
+        width: 66px;
     }
 }

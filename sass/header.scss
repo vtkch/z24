@@ -12,9 +12,17 @@ $caret-width: 6px;
     &-catalog {
         flex-basis: 300px;
     }
-    
     &-user-interactions {
         flex-basis: 160px;
+    }
+    &-brand-link {
+        overflow: hidden;
+        height: 50px;
+        width: 290px;
+    }
+    &-brand-logo {
+        //transform: scaleX(3.5) scaleY(3.4) translateY(395px) translateX(27px);
+        transform: scale(3.5, 3.4) translate(27px, 395px);
     }
     .green-button {
         border: 2px solid currentColor;
@@ -27,9 +35,14 @@ $caret-width: 6px;
         }
     }
     .caret {
+        color: var(--primary-color);
         @include caret-down;
+        &:focus {
+            outline: none;
+        }
     }
     &-login-panel {
+        padding-right: 36px;
         flex-basis: 500px;
         &-user {
             flex-grow: 1;
