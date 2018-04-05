@@ -10,6 +10,11 @@
         font-weight: bold;
         margin-bottom: 0;
     }
+    
+    aside {
+        padding-top: 14px;
+    }
+    
     &-fieldset-p {
         margin-bottom: 13px;
         color: #7f7f7f;
@@ -20,6 +25,27 @@
         padding-top: 30px;
         font-weight: bold;
     }
+    &-assign-btn {
+        background: url(../img/desk-chair2.png) no-repeat 10px 6px;
+        border: 1px solid #d0d0d0;
+        margin-bottom: 10px;
+        white-space: nowrap;
+        cursor: pointer;
+        color: #454545;
+    }
+    &-is-company-main {
+        background: url(../img/desk-chair.png) #ffd200 no-repeat 10px 6px;
+    }
+    &-assign-label {
+        justify-content: space-evenly;
+        background-color: #ececec;
+        cursor: pointer;
+        height: 160px;
+        &:before {
+            content: url(../img/briefcase.png);
+        }
+    }
+
     :disabled {
         background: #f8f6f6;
     }
@@ -46,7 +72,7 @@
         }
         
         textarea {
-            box-shadow: inset 1px 1.7px 2px 0 rgba(9, 12, 18, 0.09);
+            box-shadow: inset 1px 1.7px 2px 0 rgba(9, 12, 18, .09);
             padding: 15px 15px 15px 50px;
             border: 1px solid #d5d5d5;
             line-height: normal;

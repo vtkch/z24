@@ -4,12 +4,10 @@
     <title>Title</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="builded/main.css">
 </head>
 <body>
-<header class="sticky-header">
+<header class="sticky-header bg-white">
     <section class="container d-flex px-0">
         <div class="row m-0 flex-nowrap">
             <a class="sticky-header-brand-link col-md-3 col-xs-12" href="/">
@@ -27,11 +25,11 @@
                 <li class="sticky-header-login-panel-user">ХМЕЛЬНИЦЬКИЙ НАВЧАЛЬНО-ВИХОВНИЙ
                     КОМПЛЕКС №31 «ДОШКІЛЬНИЙ НАВЧАЛЬНИЙ
                     ЗАКЛАД – ЗАГАЛЬНООСВІТНІЙ НАВЧАЛЬНИЙ ЗАКЛАД І СТУПЕНЯ»
-                    <!--<button class="green-button big-text mr-4 float-right">Login</button>-->
+                    <!--<button class="green-button bg-transparent big-text mr-4 float-right">Login</button>-->
                 </li>
             </ul>
             <div class="sticky-header-divider d-flex">
-                <button class="sticky-header-language-button d-flex align-items-center">RU <span class="caret"></span></button>
+                <button class="sticky-header-language-button d-flex align-items-center font-weight-bold border-0">RU <span class="caret"></span></button>
             </div>
         </div>
     </section>
@@ -40,19 +38,19 @@
 <section class="container">
     <main class="row">
         <aside class="col-md-3 col-xs-12 aside-block px-0 pt-4">
-            <h4 class="aside-block-header pl-4">Моя компания</h4>
-            <ul class="aside-block-list pb-4">
+            <h4 class="aside-block-header pl-4 big-text font-weight-bold">Моя компания</h4>
+            <ul class="aside-block-list pb-4 d-flex flex-column">
                 <li class="active"><a href="#validation-page">Информация о компании</a></li>
                 <li><a href="">Мои сотрудники</a></li>
                 <li><a href="">Персональные настройки</a></li>
             </ul>
-            <h4 class="aside-block-header pl-4">Закупки</h4>
+            <h4 class="aside-block-header pl-4 big-text font-weight-bold">Закупки</h4>
             <ul class="aside-block-list pb-4">
                 <li class="active"><a href="">Мои тендеры/заявки</a></li>
                 <li><a href="">Создать новый тендер/заявку</a></li>
-                <li><a href="">Мои документы</a></li>
+                <li><a href="">Мои документы<span class="badge badge-danger ml-2">925</span></a></li>
                 <li><a href="">Отчет</a></li>
-                <li><a href="">Календарь торгов</a></li>
+                <li><a href="">Календарь торгов<span class="badge badge-danger ml-2">925</span></a></li>
                 <li><a href="">Уведомления</a></li>
                 <li><a href="">Моя подписка</a></li>
             </ul>
@@ -60,79 +58,94 @@
         </aside>
         <div class="main-block col-lg-9 col-md-8 col-xs-12 pt-4">
             <section id="validation-page">
-                <h2>Информация о компании</h2>
-                <form class="col-lg-7 col-xl-7 col-md-8" novalidate>
-                    <fieldset>
-                        <legend class="main-block-legend">Юридическое название:</legend>
-                        <label class="main-block-textarea-control">
-                            <span>UA:</span>
-                            <textarea rows="3" placeholder="На Русском"></textarea>
-                            <a href="">Изменить</a>
-                        </label>
-                        <label class="main-block-textarea-control">
-                            <span>EN:</span>
-                            <textarea rows="3" placeholder="In English"></textarea>
-                            <a href="">Изменить</a>
-                        </label>
-                    </fieldset>
-                    <fieldset>
-                        <legend class="main-block-legend">Сокращённое название:</legend>
-                        <label class="main-block-textarea-control">
-                            <span>UA:</span>
-                            <textarea rows="3" placeholder="На Русском"></textarea>
-                            <a href="">Изменить</a>
-                        </label>
-                        <label class="main-block-textarea-control">
-                            <span>EN:</span>
-                            <textarea rows="3" placeholder="In English"></textarea>
-                            <a href="">Изменить</a>
-                        </label>
-                    </fieldset>
-                    <fieldset>
-                        <legend class="main-block-legend">Код ЕГРПОУ/ИНН:</legend>
-                        <label class="main-block-input-control">
-                            <input disabled>
-                        </label>
-                    </fieldset>
-                    <fieldset>
-                        <legend class="main-block-legend">Общая информация о компании:</legend>
-                        <p class="main-block-fieldset-p little-text">текст о Вашей компании, который видят посетители Вашей страницы. Будет отображаться в профиле
-                            компании под ее названием</p>
-                        <label class="main-block-textarea-control">
-                            <textarea rows="3"  disabled class="pl-3" placeholder="На Русском"></textarea>
-                            <a href="">Изменить</a>
-                        </label>
-                    </fieldset>
-                    <fieldset>
-                        <legend class="main-block-legend">Рынки (виды деятельности)</legend>
-                        <p class="main-block-fieldset-p little-text">укажите рынки, на которых Ваша компания предоставляет товары или услуги.</p>
-                        <label class="main-block-textarea-control">
+                <div class="row">
+                    <div class="col-8">
+                        <h2 >Информация о компании</h2>
+                        <form novalidate>
+                            <fieldset>
+                                <legend class="main-block-legend">Юридическое название:</legend>
+                                <label class="main-block-textarea-control">
+                                    <span>UA:</span>
+                                    <textarea rows="3" placeholder="На Русском"></textarea>
+                                    <a href="">Изменить</a>
+                                </label>
+                                <label class="main-block-textarea-control">
+                                    <span>EN:</span>
+                                    <textarea rows="3" placeholder="In English"></textarea>
+                                    <a href="">Изменить</a>
+                                </label>
+                            </fieldset>
+                            <fieldset>
+                                <legend class="main-block-legend">Сокращённое название:</legend>
+                                <label class="main-block-textarea-control">
+                                    <span>UA:</span>
+                                    <textarea rows="3" placeholder="На Русском"></textarea>
+                                    <a href="">Изменить</a>
+                                </label>
+                                <label class="main-block-textarea-control">
+                                    <span>EN:</span>
+                                    <textarea rows="3" placeholder="In English"></textarea>
+                                    <a href="">Изменить</a>
+                                </label>
+                            </fieldset>
+                            <fieldset>
+                                <legend class="main-block-legend">Код ЕГРПОУ/ИНН:</legend>
+                                <label class="main-block-input-control">
+                                    <input disabled>
+                                </label>
+                            </fieldset>
+                            <fieldset>
+                                <legend class="main-block-legend">Общая информация о компании:</legend>
+                                <p class="main-block-fieldset-p little-text">текст о Вашей компании, который видят посетители Вашей страницы. Будет отображаться в профиле
+                                    компании под ее названием</p>
+                                <label class="main-block-textarea-control">
+                                    <textarea rows="3"  disabled class="pl-3" placeholder="На Русском"></textarea>
+                                    <a href="">Изменить</a>
+                                </label>
+                            </fieldset>
+                            <fieldset>
+                                <legend class="main-block-legend">Рынки (виды деятельности)</legend>
+                                <p class="main-block-fieldset-p little-text">укажите рынки, на которых Ваша компания предоставляет товары или услуги.</p>
+                                <label class="main-block-textarea-control">
                             <textarea rows="3" disabled class="pl-3" >Бензин -> Неэтилированный бензин; Бензин ->
     Этилированный бензин; Бензин -> Бензин с этанолом</textarea>
-                            <a href="">Изменить</a>
-                        </label>
-                    </fieldset>
-                    <fieldset>
-                        <legend class="main-block-legend">Юридический адрес:</legend>
-                        <label class="main-block-textarea-control">
+                                    <a href="">Изменить</a>
+                                </label>
+                            </fieldset>
+                            <fieldset>
+                                <legend class="main-block-legend">Юридический адрес:</legend>
+                                <label class="main-block-textarea-control">
                             <textarea rows="3" disabled class="pl-3" >Украина,область Днепропетровская, город Днепр, улица Набережная
     Победы, дом 32</textarea>
-                            <a href="">Изменить</a>
-                        </label>
-                    </fieldset>
-                    <fieldset>
-                        <legend class="main-block-legend">Фактический адрес:</legend>
-                        <label class="main-block-textarea-control">
+                                    <a href="">Изменить</a>
+                                </label>
+                            </fieldset>
+                            <fieldset>
+                                <legend class="main-block-legend">Фактический адрес:</legend>
+                                <label class="main-block-textarea-control">
                             <textarea rows="3" disabled class="pl-3" >Украина,область Днепропетровская, город Днепр, улица Набережная
     Победы, дом 32</textarea>
-                            <a href="">Изменить</a>
-                        </label>
-                    </fieldset>
-                    <fieldset>
-                        <legend class="main-block-legend">Обновить информацию о компании данными из ЕГР:</legend>
-                        <button class="main-block-submit">Обновить</button>
-                    </fieldset>
-                </form>
+                                    <a href="">Изменить</a>
+                                </label>
+                            </fieldset>
+                            <fieldset>
+                                <legend class="main-block-legend">Обновить информацию о компании данными из ЕГР:</legend>
+                                <button class="main-block-submit">Обновить</button>
+                            </fieldset>
+                        </form>
+                    </div>
+                    <aside class="col-3 offset-1">
+                        <div class="d-flex flex-column">
+                            <!-- you should add is-company-main to assign button-->
+                            <button class="main-block-assign-btn little-text p-2">Назначить Главной</button>
+                            <input type="file" class="d-none" accept="image/*" id="logo">
+                            <label for="logo" class="main-block-assign-label tiny-text mb-2 d-flex flex-column align-items-center w-100">+ Добавить логотип</label>
+                            <p class="tiny-text text-center">Минимум 200х100 пикселей, JPEG, PNG, GIF</p>
+                            <h5 class="little-text font-weight-bold text-center">Ссылка на профиль</h5>
+                            <a class="text-center" href="">zakupivli24.pb.ua/123456</a>
+                        </div>
+                    </aside>
+                </div>
                 <hr class="ml-3 mb-3 mt-4">
                 <form novalidate class="col-lg-7 col-xl-7 col-md-8 contact-form">
                     <fieldset>

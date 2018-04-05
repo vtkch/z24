@@ -3,10 +3,8 @@ $caret-width: 6px;
 
 .sticky-header {
     border-bottom: 1px solid #eaeaea;
-    background: #fff;
     position: sticky;
     padding: 20px 0;
-    width: 100%;
     z-index: 1;
     top: 0;
     &-catalog {
@@ -26,7 +24,6 @@ $caret-width: 6px;
     }
     .green-button {
         border: 2px solid currentColor;
-        background: transparent;
         padding: 13px 32px;
         cursor: pointer;
         color: #36ad39;
@@ -63,12 +60,12 @@ $caret-width: 6px;
     }
     
     &-language-button {
-        font-weight: bold;
         background: none;
         font-size: 20px;
         cursor: pointer;
-        outline: none;
-        border: none;
+        &:focus {
+            outline: none;
+        }
     }
 }
 
