@@ -5,18 +5,21 @@ $grid-breakpoints: (
         lg: 960px,
         xl: 1280px
 ) !default;
-$border-color: #fff;
-$mark-bg: #fff;
-$mark-padding: 0;
-$badge-border-radius: 4px;
-$headings-margin-bottom: 0;
+
 $container-max-widths: (
         sm: 540px,
         md: 720px,
         lg: 960px,
         xl: 1280px
 ) !default;
+
+$headings-margin-bottom: 0;
+$badge-border-radius: 4px;
 $grid-gutter-width: 0;
+$border-color: #fff;
+$caret-width: 6px;
+$mark-padding: 0;
+$mark-bg: #fff;
 :root {
     font-family: Tahoma;
     font-size: 16px;
