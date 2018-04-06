@@ -2,18 +2,15 @@
 @import 'variables';
 @import '../node_modules/bootstrap/scss/bootstrap';
 @import 'reset';
-@import 'helpers';
 @import 'main-sprite-icons';
 @import 'header';
 @import 'aside';
 @import "contact-form";
 @import "add-company-form";
+@import "room";
 @import "main";
 @import 'footer';
-
-.brand {
-    width: 257px;
-}
+@import 'helpers';
 
 body {
     scroll-behavior: smooth;
@@ -26,8 +23,8 @@ main {
 :target:before {
     // fixing bug related sticky header+anchor overflow
     visibility: hidden;
-    margin-top: -120px;
-    height: 120px;
+    margin-top: -140px;
+    height: 140px;
     display: block;
     content: '';
 }

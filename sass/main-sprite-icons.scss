@@ -1,35 +1,81 @@
 .icon {
-    &-brand {
-        background: url(../img/main-sprite.svg) 0 -18px;
-        display: inline-block;
-        height: 15px;
-        width: 270px;
-    }
-    
     &-phone {
-        background: url(../img/main-sprite.svg) -24px -90px;
-        transform: scale(.7) translateY(-3px);
-        height: 32px;
-        width: 32px;
-    }
-    &-chat {
-        background: url(../img/main-sprite.svg) -24px -43px;
-        transform: scale(.7) translateY(-3px);
+        background-image: url(../img/main-sprite.svg);
+        background-position: 0px -40px;
+        background-size: 38px;
+        cursor: pointer;
         height: 32px;
         width: 32px;
     }
     
+    &-chat {
+        background-image: url(../img/main-sprite.svg);
+        background-position: 0px -6px;
+        background-size: 38px;
+        cursor: pointer;
+        height: 32px;
+        width: 32px;
+    }
+    &-footer-phone {
+        background-image: url(../img/main-sprite.svg);
+        background-position: 0px -90px;
+        background-size: 38px;
+        cursor: pointer;
+        height: 40px;
+        width: 40px;
+    }
     &-facebook {
-        background: url(../img/main-sprite.svg) -10px -1005px;
-        transform: scale(.7) translateX(-14px) translateY(-10px);
-        height: 62px;
-        width: 64px;
+        background-image: url(../img/main-sprite.svg);
+        background-position:  -5px 253px;
+        background-size: 46px;
+        cursor: pointer;
     }
     
     &-youtube {
-        background: url(../img/main-sprite.svg) -10px -1078px;
-        transform: scale(.7) translateX(-14px) translateY(-10px);
-        height: 66px;
-        width: 66px;
+        background-image: url(../img/main-sprite.svg);
+        background-position: -5px 219px;
+        background-size: 46px;
+        cursor: pointer;
+    }
+    
+    &-chair {
+        background-image: url(../img/main-sprite.svg);
+        cursor: pointer;
+    }
+    
+    &-free-chair {
+        background-image: url(../img/main-sprite.svg);
+        cursor: pointer;
+    }
+
+    
+    
+    &-coins {
+        background-image: url(../img/main-sprite.svg);
+        background-position: -3px -98px;
+        background-size: 50px;
+        cursor: pointer;
+        height: 50px;
+        width: 50px;
+    }
+    
+    &-people {
+        background-image: url(../img/main-sprite.svg);
+        background-position: 0 -135px;
+        box-shadow: inset 0 9px #fff;
+        background-size: 50px;
+        cursor: pointer;
+        height: 50px;
+        width: 50px;
+    }
+    
+    &-hummer {
+        background-image: url(../img/main-sprite.svg);
+        background-position: -4px -174px;
+        box-shadow: inset 0 9px #fff;
+        background-size: 50px;
+        cursor: pointer;
+        height: 50px;
+        width: 50px;
     }
 }

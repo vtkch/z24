@@ -1,4 +1,6 @@
 .aside-block {
+    --footer-height: 212px;
+    min-height: calc(100vh - var(--footer-height));
     background: #f3f3f3;
     &-header {
         border-left: 5px solid transparent;
@@ -15,7 +17,7 @@
             }
             a {
                 padding: 14px 0 14px 24px;
-                display: inline-block;
+                display: block;
                 color: #454545;
                 &:hover {
                     text-decoration: none;
@@ -26,9 +28,7 @@
     &-add-company {
         border: 2px solid currentColor;
         margin: 38px 24px 0 20px;
-        background: transparent;
         cursor: pointer;
-        padding: 15px;
         color: #36ad39;
         &:focus {
             outline: none;
