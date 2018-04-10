@@ -4,8 +4,6 @@
     background: #f3f3f3;
     &-header {
         border-left: 5px solid transparent;
-        padding-bottom: 14px;
-        padding-top: 14px;
     }
     &-list {
         box-shadow: -24px 0 0 #f3f3f3 inset, -23px -1px 0 #d8d8d8 inset;
@@ -27,15 +25,15 @@
     }
     &-add-company {
         border: 2px solid currentColor;
+        color: var(--primary-color);
         margin: 38px 24px 0 20px;
         cursor: pointer;
-        color: #36ad39;
         &:focus {
             outline: none;
         }
         &:hover {
+            color: var(--primary-color);
             text-decoration: none;
-            color: #36ad39;
         }
     }
 }

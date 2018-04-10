@@ -4,7 +4,6 @@
 
     &-green-block {
         background: var(--primary-color);
-        color: #fff;
     }
     &-link-button {
         padding: 22px 40px 16px;
@@ -60,9 +59,6 @@
     &-top-categories {
         background-color: #f1f4f1;
         &-list {
-            grid-template-columns: repeat(3, minmax(200px, 1fr));
-            grid-template-rows: repeat(auto-fit, 150px);
-            grid-gap: 58px 108px;
             & > li:not(:last-child) {
                 box-shadow: 0 7px 24px 0 rgba(0, 0, 0, .13);
                 min-height: 150px;
