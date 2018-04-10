@@ -18,5 +18,8 @@
     }
     &-widget-block {
         box-shadow: inset 2px 7px 13px 1px rgba(67, 67, 67, .19);
+        &-details:after {
+            content: ' »';
+        }
     }
 }

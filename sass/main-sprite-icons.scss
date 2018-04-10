@@ -47,8 +47,6 @@
         background-image: url(../img/main-sprite.svg);
         cursor: pointer;
     }
-
-    
     
     &-coins {
         background-image: url(../img/main-sprite.svg);
@@ -81,8 +79,31 @@
     
     &-easy-register {
         background-image: url(../img/main-sprite.svg);
+        background-position: -10px -505px;
+        transform: scale(1.25);
+        background-size: 120px;
         cursor: pointer;
-        height: 100px;
-        width: 100px;
+        height: 79px;
+        width: 82px;
+    }
+    
+    &-part-of {
+        background-image: url(../img/main-sprite.svg);
+        background-position: -12px -589px;
+        background-size: 120px;
+        transform: scale(1.25);
+        cursor: pointer;
+        height: 96px;
+        width: 96px;
+    }
+    
+    &-free-consulting {
+        background-image: url(../img/main-sprite.svg);
+        background-position: -13px -816px;
+        transform: scale(1.25);
+        background-size: 120px;
+        cursor: pointer;
+        height: 92px;
+        width: 86px;
     }
 }

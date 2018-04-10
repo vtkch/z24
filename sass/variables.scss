@@ -12,7 +12,8 @@ $container-max-widths: (
         lg: 960px,
         xl: 1280px
 ) !default;
-
+$hr-border-width: 2px;
+$hr-border-color: var(--primary-color);
 $headings-margin-bottom: 0;
 $badge-border-radius: 4px;
 $grid-gutter-width: 0;
