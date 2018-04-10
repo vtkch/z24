@@ -1,8 +1,7 @@
 @import '../node_modules/bootstrap/scss/mixins/caret';
 
-.sticky-header {
+.sticky-top {
     border-bottom: 1px solid #eaeaea;
-    padding: 20px 0;
     &-green-button {
         border: 2px solid currentColor;
     }

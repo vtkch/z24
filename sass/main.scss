@@ -7,7 +7,6 @@
     }
     &-link-button {
         padding: 22px 40px 16px;
-        cursor: pointer;
     }
     &-info-block {
         & > .col-12:not(:last-child) {
@@ -62,7 +61,6 @@
             & > li:not(:last-child) {
                 box-shadow: 0 7px 24px 0 rgba(0, 0, 0, .13);
                 min-height: 150px;
-                cursor: pointer;
                 &:hover {
                     box-shadow: 0 7px 32px 0 rgba(0, 0, 0, .33);
                 }
@@ -74,10 +72,5 @@
     &-top-procurement {
         background: url(../img/main-page/bg-grid-green.png) no-repeat;
         background-size: cover;
-        &-search-button {
-            &:focus {
-                outline: none;
-            }
-        }
     }
 }

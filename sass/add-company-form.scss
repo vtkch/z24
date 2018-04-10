@@ -1,18 +1,12 @@
 .add-company-form {
-    &-select {
-        padding: 10px;
-    }
     
     &-input {
         border: 1px solid rgb(169, 169, 169);
-        border-right: none;
-        padding: 10px;
         outline: none;
     }
     
     &-find {
         border: solid 1px currentColor;
-        background: none;
         color: #20af3d;
     }
 }

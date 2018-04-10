@@ -5,15 +5,19 @@
     &-gap {
         grid-row-gap: 12px;
     }
+
     &-social-gaps {
-        grid-template-columns: 32px 32px;
-        grid-template-rows: 32px;
-        grid-column-gap: 1rem;
+        grid: {
+            template-columns: 32px 32px;
+            template-rows: 32px;
+            column-gap: 1rem;
+        }
     }
 
     a {
         color: #1964a3;
     }
+
     figcaption {
         text-indent: 10px;
         color: #2baf4a;
