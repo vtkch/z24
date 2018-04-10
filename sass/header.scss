@@ -5,7 +5,8 @@
     &-green-button {
         border: 2px solid currentColor;
     }
-    .sticky-header-caret {
+
+    &-caret {
         @include caret-down;
     }
 
