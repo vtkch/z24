@@ -1,9 +1,5 @@
 .add-company-form {
     &-select {
-     /*   -webkit-appearance: none;
-        -moz-appearance: none;
-        -ms-appearance: none;*/
-        cursor: pointer;
         padding: 10px;
     }
     
@@ -17,7 +13,6 @@
     &-find {
         border: solid 1px currentColor;
         background: none;
-        cursor: pointer;
         color: #20af3d;
     }
 }

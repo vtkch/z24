@@ -25,9 +25,7 @@
     }
     &-add-company {
         border: 2px solid currentColor;
-        color: var(--primary-color);
         margin: 38px 24px 0 20px;
-        cursor: pointer;
         &:focus {
             outline: none;
         }

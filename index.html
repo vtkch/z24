@@ -9,28 +9,27 @@
 <body>
     <header class="sticky-header sticky-top bg-white">
         <section class="container d-flex">
-            <div class="row m-0 flex-nowrap">
-                <a class="sticky-header-brand-link col-md-3 col-xs-12 pl-0" href="/">
+            <div class="row m-0 flex-nowrap w-100">
+                <a class="d-flex align-items-center col-md-3 col-xs-12 mr-4" href="/">
                     <img class="w-100" alt="brand" src="img/logo_z24.svg">
                 </a>
-                <ul class="d-flex col-md-3 sticky-header-nav big-text sticky-header-divider align-items-center sticky-header-catalog justify-content-around">
+                <ul class="nav w-100 d-grid sticky-header-nav flex-nowrap big-text align-items-center justify-content-around fs-20">
+                    <li class="sticky-header-divider"></li>
                     <li><a href="">Закупки</a></li>
-                    <li class="sticky-header-ml-20"><a href="">Каталог компаний</a></li>
-                </ul>
-                <ul class="d-flex sticky-header-divider align-items-baseline sticky-header-user-interactions justify-content-center">
-                    <li class="d-flex big-text primary-color"><span class="icon-phone"></span>4050</li>
-                    <li class="d-flex big-text ml-3 primary-color mr-3"><span class="icon-chat"></span>Чат</li>
-                </ul>
-                <ul class="d-flex sticky-header-divider align-items-center fs-14 sticky-header-login-panel">
-                    <li class="sticky-header-login-panel-user">ХМЕЛЬНИЦЬКИЙ НАВЧАЛЬНО-ВИХОВНИЙ
+                    <li><a href="">Каталог компаний</a></li>
+                    <li class="sticky-header-divider"></li>
+                    <li class="d-flex  align-items-center primary-color"><span class="icon-phone ptr"></span>4050</li>
+                    <li class="d-flex  align-items-center ml-3 primary-color mr-3"><span class="icon-chat ptr"></span>Чат</li>
+                    <li class="sticky-header-divider"></li>
+                    <li class="sticky-header-fixed-height fs-14">ХМЕЛЬНИЦЬКИЙ НАВЧАЛЬНО-ВИХОВНИЙ
                         КОМПЛЕКС №31 «ДОШКІЛЬНИЙ НАВЧАЛЬНИЙ
                         ЗАКЛАД – ЗАГАЛЬНООСВІТНІЙ НАВЧАЛЬНИЙ ЗАКЛАД І СТУПЕНЯ»
-                        <!--<button class="green-button primary-color bg-transparent big-text mr-4 float-right">Login</button>-->
+                        <!--<button class="sticky-header-green-button ptr primary-color bg-transparent fs-20 py-2 px-5 float-right">Login</button>-->
+                    </li>
+                    <li class="sticky-header-divider d-flex px-4">
+                        <button class="bg-transparent d-flex btn align-items-center p-0 font-weight-bold border-0">RU <span class="sticky-header-caret primary-color"></span></button>
                     </li>
                 </ul>
-                <div class="sticky-header-divider d-flex">
-                    <button class="sticky-header-language-button d-flex align-items-center font-weight-bold border-0">RU <span class="caret"></span></button>
-                </div>
             </div>
         </section>
     </header>
@@ -69,17 +68,17 @@
             <section class="container">
                 <ul class="row my-3 main-page-info-block">
                     <li class="col-12 col-md-4 d-flex align-items-center p-3">
-                        <div class="icon-coins"></div>
+                        <div class="icon-coins ptr"></div>
                         <h5 class="pr-3 font-weight-bold h3">43.65</h5>
                         <p>млрд грн. Сумма открытых тендеров</p>
                     </li>
                     <li class="col-12 col-md-4 d-flex align-items-center p-3">
-                        <div class="icon-hummer"></div>
+                        <div class="icon-hummer ptr"></div>
                         <h5 class="pr-3 font-weight-bold h3">43.65</h5>
                         <p>Количество активных тендеров</p>
                     </li>
                     <li class="col-12 col-md-4 d-flex align-items-center p-3">
-                        <div class="icon-people"></div>
+                        <div class="icon-people ptr"></div>
                         <h5 class="pr-3 font-weight-bold h3">43.65</h5>
                         <p>Активных участников за месяц</p>
                     </li>
@@ -89,21 +88,21 @@
                 <h2 class="fs-36 pt-5 mt-5 col-12 font-weight-bold text-center">Для клиентов ПриватБанка</h2>
                 <div class="container d-flex justify-content-around align-items-end flex-wrap">
                     <figure class="d-flex flex-column main-page-widget-block-register align-items-center my-5 pt-5 col-md-6 col-lg-4 order-0">
-                        <img src="" class="icon-easy-register d-block" alt="">
+                        <img src="" class="icon-easy-register ptr d-block" alt="">
                         <figcaption class="text-center">
                             <p class="h3 pt-4 pb-1">Простая регистрация</p>
                             <p class="h4 primary-color pt-3 main-page-widget-block-details">Подробнее</p>
                         </figcaption>
                     </figure>
                     <figure class="d-flex flex-column main-page-widget-block-part-of align-items-center my-5 pt-5 col-md-6 col-lg-4 order-0">
-                        <img src="" class="icon-part-of d-block" alt="">
+                        <img src="" class="icon-part-of ptr d-block" alt="">
                         <figcaption class="text-center">
                             <p class="h3 pt-4 pb-1">Участие без оплаты</p>
                             <p class="h4 primary-color pt-3 main-page-widget-block-details">Подробнее</p>
                         </figcaption>
                     </figure>
                     <figure class="d-flex flex-column main-page-widget-block-free-consulting align-items-center my-5 pt-5 col-md-6 col-lg-4 order-0">
-                        <img src="" class="icon-free-consulting d-block" alt="">
+                        <img src="" class="icon-free-consulting ptr d-block" alt="">
                         <figcaption class="text-center">
                             <p class="h3 pt-4 pb-1">Безкоштовна юридична консультація</p>
                             <p class="h4 primary-color pt-3 main-page-widget-block-details">Подробнее</p>
@@ -111,14 +110,14 @@
                     </figure>
 
                     <figure class="d-flex flex-column main-page-widget-block-security align-items-center my-5 pt-5 col-md-6 col-lg-4 order-2">
-                        <img src="" class="icon-high-security d-block" alt="">
+                        <img src="" class="icon-high-security ptr d-block" alt="">
                         <figcaption class="text-center">
                             <p class="h3 pt-4 pb-1">Повышенная надёжность</p>
                             <p class="h4 primary-color pt-3 main-page-widget-block-details">Подробнее</p>
                         </figcaption>
                     </figure>
                     <figure class="d-flex flex-column main-page-widget-block-support align-items-center my-5 pt-5 col-md-6 col-lg-4 order-2">
-                        <img src="" class="icon-support d-block" alt="">
+                        <img src="" class="icon-support ptr d-block" alt="">
                         <figcaption class="text-center">
                             <p class="h3 pt-4 pb-1">Поддержка 24/7/365</p>
                             <p class="h4 primary-color pt-3 main-page-widget-block-details">Подробнее</p>
@@ -179,7 +178,7 @@
                         <li><a href="">Уведомления</a></li>
                         <li><a href="">Моя подписка</a></li>
                     </ul>
-                    <a href="#add-company-page" class="aside-block-add-company bg-transparent p-3 text-center text-nowrap mb-5 d-block">+ Добавить компанию</a>
+                    <a href="#add-company-page" class="aside-block-add-company primary-color ptr bg-transparent p-3 text-center text-nowrap mb-5 d-block">+ Добавить компанию</a>
                 </aside>
                 <div class="room col-lg-9 col-md-8 col-xs-12 pt-4">
                     <section id="validation-page">
@@ -280,7 +279,7 @@
                                 <div>
                                     <label for="phone" class="contact-form-label fs-14 d-block my-2">Телефон:</label>
                                     <input class="contact-form-input" id="phone" placeholder="+38(___) ___-__-__">
-                                    <button class="contact-form-add-phone bg-transparent mt-1 border-0 d-block fs-13 pl-0">Добавить ещё номер</button>
+                                    <button class="contact-form-add-phone ptr bg-transparent mt-1 border-0 d-block fs-13 pl-0">Добавить ещё номер</button>
                                 </div>
 
                                 <label class="contact-form-label fs-14 d-block my-2" for="email">E-mail</label>
@@ -296,14 +295,14 @@
                         <form class="add-company-form col-lg-7 col-xl-7 col-md-8 col-xs-12 pt-4">
 
                             <label class="d-flex justify-content-between align-items-center mb-2">Країна реєстрації
-                                <select class="add-company-form-select col-lg-7">
+                                <select class="add-company-form-select ptr col-lg-7">
                                     <option value="Украина">Україна (UA-EDR)</option>
                                 </select>
                             </label>
                             <label class="d-flex justify-content-between align-items-center">ЕГРПОУ компанії:
                                 <span class="col-lg-7 d-flex p-0">
                                 <input class="add-company-form-input col-lg-9">
-                                <button class="add-company-form-find col-lg-3">Знайти</button>
+                                <button class="add-company-form-find ptr col-lg-3">Знайти</button>
                             </span>
                             </label>
                         </form>
@@ -312,7 +311,6 @@
             </div>
         </section>-->
     </main>
-
     <footer class="main-footer py-5">
         <section class="container">
             <div class="row">
@@ -324,14 +322,14 @@
                         </figure>
                         <p>© ПриватБанк</p>
                         <ul class="d-grid main-footer-social-gaps">
-                            <li class="icon-facebook"></li>
-                            <li class="icon-youtube"></li>
+                            <li class="icon-facebook ptr"></li>
+                            <li class="icon-youtube ptr"></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-xl-2 col-lg-4 col-md-6 col-xs-12 d-grid">
                     <h5 class="h5 mb-0">Телефон горячей линии</h5>
-                    <p class="h3 mb-0 d-flex"><span class="icon-footer-phone"></span>4050</p>
+                    <p class="h3 mb-0 d-flex"><span class="icon-footer-phone ptr"></span>4050</p>
                     <p class="fs-13">Бесплатно с мобильных</p>
                 </div>
                 <div class="col-xl-2 col-lg-4 col-md-6 col-xs-12 d-grid">
