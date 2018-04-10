@@ -8,7 +8,6 @@
     }
     &-link-button {
         padding: 22px 40px 16px;
-        background: #ffd200;
         cursor: pointer;
     }
     &-info-block {
@@ -20,6 +19,69 @@
         box-shadow: inset 2px 7px 13px 1px rgba(67, 67, 67, .19);
         &-details:after {
             content: ' »';
+        }
+        figure {
+            min-height: 265px;
+        }
+        @mixin arrow {
+            border-left: 1px solid var(--primary-color);
+            border-top: 1px solid var(--primary-color);
+            position: absolute;
+            background: #fff;
+            display: block;
+            height: 32px;
+            width: 32px;
+            content: '';
+            z-index: 1;
+        }
+        &-free-consulting,
+        &-register,
+        &-part-of {
+            &:hover:after {
+                @include arrow;
+                bottom: calc(-16px + -48px);
+                transform: rotate(45deg);
+            }
+        }
+        &-security,
+        &-support {
+            &:hover:before {
+                @include arrow;
+                bottom: calc(100% + 32px);
+                transform: rotate(-135deg);
+            }
+        }
+    }
+    &-conditions {
+        border-bottom: 2px solid var(--primary-color);
+        border-top: 2px solid var(--primary-color);
+    }
+    
+    &-top-categories {
+        background-color: #f1f4f1;
+        &-list {
+            grid-template-columns: repeat(3, minmax(200px, 1fr));
+            grid-template-rows: repeat(auto-fit, 150px);
+            grid-gap: 58px 108px;
+            & > li:not(:last-child) {
+                box-shadow: 0 7px 24px 0 rgba(0, 0, 0, .13);
+                min-height: 150px;
+                cursor: pointer;
+                &:hover {
+                    box-shadow: 0 7px 32px 0 rgba(0, 0, 0, .33);
+                }
+            }
+            
+        }
+    }
+    
+    &-top-procurement {
+        background: url(../img/main-page/bg-grid-green.png) no-repeat;
+        background-size: cover;
+        &-search-button {
+            &:focus {
+                outline: none;
+            }
         }
     }
 }

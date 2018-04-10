@@ -34,7 +34,7 @@
         color: #454545;
     }
     &-is-company-main {
-        background: url(../img/desk-chair.png) #ffd200 no-repeat 10px 6px;
+        background: url(../img/desk-chair.png) var(--yellow-button-bg) no-repeat 10px 6px;
     }
     &-assign-label {
         justify-content: space-evenly;
@@ -89,10 +89,8 @@
     }
     &-submit {
         padding: 10px 24px;
-        background: #ffd200;
         cursor: pointer;
         color: #5c5c5c;
-        border: none;
     }
 }
 

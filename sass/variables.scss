@@ -16,13 +16,18 @@ $hr-border-width: 2px;
 $hr-border-color: var(--primary-color);
 $headings-margin-bottom: 0;
 $badge-border-radius: 4px;
+$enable-rounded: false;
+$btn-line-height: 1;
 $grid-gutter-width: 0;
 $border-color: #fff;
 $caret-width: 6px;
 $mark-padding: 0;
 $mark-bg: #fff;
+$btn-focus-box-shadow: none;
+$input-focus-box-shadow: none;
 :root {
+    --yellow-button-bg: #ffd200;
+    --primary-color: #36ad39;
     font-family: Tahoma;
     font-size: 16px;
-    --primary-color: #36ad39;
 }
