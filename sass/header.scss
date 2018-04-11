@@ -1,4 +1,5 @@
 @import '../node_modules/bootstrap/scss/mixins/caret';
+@import '../node_modules/bootstrap/scss/variables';
 
 .sticky-top {
     border-bottom: 1px solid #eaeaea;
@@ -18,6 +19,10 @@
     }
     &-nav {
         grid-template-columns: 1px auto auto 1px auto auto 1px auto 1px auto;
+        
+        @media (max-width: map-get($grid-breakpoints, 'sm')) {
+            grid-template-columns: repeat(6, auto);
+        }
         grid-gap: 20px;
         a {
             text-decoration: none;

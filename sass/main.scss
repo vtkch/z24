@@ -3,7 +3,7 @@
     min-height: 370px;
 
     &-green-block {
-        background: var(--primary-color);
+        background: var(--green);
     }
     &-link-button {
         padding: 22px 40px 16px;
@@ -22,8 +22,8 @@
             min-height: 265px;
         }
         @mixin arrow {
-            border-left: 1px solid var(--primary-color);
-            border-top: 1px solid var(--primary-color);
+            border-left: 1px solid var(--green);
+            border-top: 1px solid var(--green);
             position: absolute;
             background: #fff;
             display: block;
@@ -51,8 +51,8 @@
         }
     }
     &-conditions {
-        border-bottom: 2px solid var(--primary-color);
-        border-top: 2px solid var(--primary-color);
+        border-bottom: 2px solid var(--green);
+        border-top: 2px solid var(--green);
     }
     
     &-top-categories {

@@ -1,3 +1,4 @@
+/*
 $grid-breakpoints: (
         xs: 0,
         sm: 320px,
@@ -5,15 +6,17 @@ $grid-breakpoints: (
         lg: 960px,
         xl: 1280px
 ) !default;
+*/
 
-$container-max-widths: (
+
+
+/*$container-max-widths: (
         sm: 540px,
         md: 720px,
         lg: 960px,
         xl: 1280px
-) !default;
-$hr-border-width: 2px;
-$hr-border-color: var(--primary-color);
+) !default;*/
+
 $headings-margin-bottom: 0;
 $badge-border-radius: 4px;
 $enable-rounded: false;
@@ -23,11 +26,12 @@ $border-color: #fff;
 $caret-width: 6px;
 $mark-padding: 0;
 $mark-bg: #fff;
+$green: #36ad39;
+$hr-border-width: 2px;
+$hr-border-color: $green;
 $btn-focus-box-shadow: none;
 $input-focus-box-shadow: none;
 :root {
     --yellow-button-bg: #ffd200;
-    --primary-color: #36ad39;
     font-family: Tahoma;
-    font-size: 16px;
 }
