@@ -32,6 +32,12 @@
             content: '';
             z-index: 1;
         }
+        
+        @for $i from 1 through 5 {
+            figure:nth-child(#{$i}) ~ .main-page-conditions > p:nth-child(#{$i}) {
+                display: block;
+            }
+        }
         &-free-consulting,
         &-register,
         &-part-of {
@@ -53,20 +59,54 @@
     &-conditions {
         border-bottom: 2px solid var(--green);
         border-top: 2px solid var(--green);
+        > p {
+            display: none;
+        }
     }
     
     &-top-categories {
         background-color: #f1f4f1;
         &-list {
             & > li:not(:last-child) {
+                background: url(../img/main-page/split-category.svg) #fff no-repeat;
                 box-shadow: 0 7px 24px 0 rgba(0, 0, 0, .13);
                 min-height: 150px;
                 &:hover {
                     box-shadow: 0 7px 32px 0 rgba(0, 0, 0, .33);
+                    background-color: var(--green);
+                    color: #fff;
                 }
             }
-            
         }
+        
+        &-work {/*
+            background: url(../img/main-page/split-category.svg) no-repeat;*/
+        }
+        &-goods {
+        
+        }
+        &-oil {
+        
+        }
+        &-chemistry {
+        
+        }
+        &-items {
+        
+        }
+        &-tech {
+        
+        }
+        &-furniture {
+        
+        }
+        &-services {
+        
+        }
+        &-agricultural {
+        
+        }
+        
     }
     
     &-top-procurement {
