@@ -33,11 +33,6 @@
             z-index: 1;
         }
         
-        @for $i from 1 through 5 {
-            figure:nth-child(#{$i}) ~ .main-page-conditions > p:nth-child(#{$i}) {
-                display: block;
-            }
-        }
         &-free-consulting,
         &-register,
         &-part-of {
@@ -59,13 +54,22 @@
     &-conditions {
         border-bottom: 2px solid var(--green);
         border-top: 2px solid var(--green);
-        > p {
+
+        > p:not(:first-child),
+        figure:hover ~ & > p {
             display: none;
+        }
+
+        @for $i from 1 through 5 {
+            figure:nth-child(#{$i}):hover ~ & > p:nth-child(#{$i}) {
+                display: block;
+            }
         }
     }
     
     &-top-categories {
         background-color: #f1f4f1;
+
         &-list {
             & > li:not(:last-child) {
                 background: url(../img/main-page/split-category.svg) #fff no-repeat;

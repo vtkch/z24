@@ -20,7 +20,7 @@
     &-nav {
         grid-template-columns: 1px auto min-content 1px auto auto 1px auto 1px auto;
         grid-gap: 20px;
-        @media (max-width: map-get($grid-breakpoints, 'lg')) {
+        @media (max-width: map-get($grid-breakpoints, 'md')) {
             grid-template-columns: auto min-content repeat(4, auto);
             grid-gap: 10px;
         }
