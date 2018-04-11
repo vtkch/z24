@@ -5,6 +5,7 @@
     &-green-block {
         background: var(--green);
     }
+
     &-link-button {
         padding: 22px 40px 16px;
     }
@@ -18,6 +19,7 @@
         &-details:after {
             content: ' »';
         }
+
         figure {
             min-height: 265px;
         }
@@ -60,9 +62,14 @@
             display: none;
         }
 
+        p {
+            min-height: 7rem;
+        }
+
         @for $i from 1 through 5 {
             figure:nth-child(#{$i}):hover ~ & > p:nth-child(#{$i}) {
-                display: block;
+                align-items: center;
+                display: flex;
             }
         }
     }
