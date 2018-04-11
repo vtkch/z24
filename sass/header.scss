@@ -18,12 +18,13 @@
         max-height: 3rem;
     }
     &-nav {
-        grid-template-columns: 1px auto auto 1px auto auto 1px auto 1px auto;
-        
-        @media (max-width: map-get($grid-breakpoints, 'sm')) {
-            grid-template-columns: repeat(6, auto);
-        }
+        grid-template-columns: 1px auto min-content 1px auto auto 1px auto 1px auto;
         grid-gap: 20px;
+        @media (max-width: map-get($grid-breakpoints, 'lg')) {
+            grid-template-columns: auto min-content repeat(4, auto);
+            grid-gap: 10px;
+        }
+        
         a {
             text-decoration: none;
             color: #000;
