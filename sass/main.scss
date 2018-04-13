@@ -27,7 +27,6 @@
             content: '';
             z-index: 1;
         }
-        
         &-free-consulting,
         &-register,
         &-part-of {
@@ -37,6 +36,16 @@
                 transform: rotate(45deg);
             }
         }
+        
+        &-free-consulting {
+            &:hover:after {
+                @media (max-width: map-get($grid-breakpoints, 'lg')) {
+                    bottom: calc(100% + 32px);
+                    transform: rotate(-135deg);
+                }
+            }
+        }
+        
         &-security,
         &-support {
             &:hover:before {
