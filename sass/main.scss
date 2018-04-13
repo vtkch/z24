@@ -2,10 +2,6 @@
     background: url(../img/main-page/bg-grid.png) no-repeat;
     min-height: 370px;
 
-    &-green-block {
-        background: var(--green);
-    }
-
     &-link-button {
         padding: 22px 40px 16px;
     }
@@ -16,9 +12,6 @@
     }
     &-widget-block {
         box-shadow: inset 2px 7px 13px 1px rgba(67, 67, 67, .19);
-        &-details:after {
-            content: ' »';
-        }
 
         figure {
             min-height: 265px;
