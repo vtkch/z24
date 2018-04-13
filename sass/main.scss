@@ -57,11 +57,11 @@
 
         p {
             min-height: 7rem;
+            display: flex;
         }
 
         @for $i from 1 through 5 {
             figure:nth-child(#{$i}):hover ~ & > p:nth-child(#{$i}) {
-                align-items: center;
                 display: flex;
             }
         }
