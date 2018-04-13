@@ -125,5 +125,8 @@
     &-top-procurement {
         background: url(../img/main-page/bg-grid-green.png) no-repeat;
         background-size: cover;
+        &-filters {
+            background-color: #F1F4F1;
+        }
     }
 }
