@@ -1,7 +1,9 @@
 .main-page {
     background: url(../img/main-page/bg-grid.png) no-repeat;/*
     min-height: 370px;*/
-
+    &-drunk-guys {
+        object-fit: contain;
+    }
     &-link-button {
         padding: 22px 40px 16px;
     }
