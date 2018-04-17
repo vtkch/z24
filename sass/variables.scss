@@ -30,8 +30,14 @@ $btn-focus-box-shadow: none;
 $input-focus-box-shadow: none;
 $input-disabled-bg: #f8f6f6;
 $yellow: #ffd200;
+$lightgray: #F1F4F1;
+$theme-colors: (
+    "lightgray": $lightgray,
+    "yellow": $yellow,
+    "green": $green
+) !default;
 
-$light: lightgray;
+$light: #eaeaea;
 
 :root {
     font-family: Tahoma;

@@ -1,6 +1,6 @@
 .main-page {
-    background: url(../img/main-page/bg-grid.png) no-repeat;
-    min-height: 370px;
+    background: url(../img/main-page/bg-grid.png) no-repeat;/*
+    min-height: 370px;*/
 
     &-link-button {
         padding: 22px 40px 16px;
@@ -56,8 +56,7 @@
         }
     }
     &-conditions {
-        border-bottom: 2px solid var(--green);
-        border-top: 2px solid var(--green);
+        border-width: 2px;
 
         > p:not(:first-child),
         figure:hover ~ & > p {
@@ -77,8 +76,6 @@
     }
     
     &-top-categories {
-        background-color: #f1f4f1;
-
         &-list {
             & > li:not(:last-child) {
                 background: url(../img/main-page/split-category.svg) #fff no-repeat;
@@ -125,9 +122,6 @@
     &-top-procurement {
         background: url(../img/main-page/bg-grid-green.png) no-repeat;
         background-size: cover;
-        &-filters {
-            background-color: #F1F4F1;
-        }
     }
     &-results {
         &-grid {
