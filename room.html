@@ -31,7 +31,8 @@
                 </li>
                 <li class="sticky-top-divider d-none d-lg-block"></li>
                 <li>
-                    <button class="bg-transparent btn fs-20 d-flex btn align-items-center p-0 font-weight-bold border-0">RU <span class="sticky-top-caret text-green"></span></button>
+                    <button class="bg-transparent btn fs-20 d-flex btn align-items-center p-0 font-weight-bold border-0">
+                        RU <span class="sticky-top-caret text-green"></span></button>
                 </li>
             </ul>
         </div>
@@ -39,156 +40,167 @@
 </header>
 <main>
     <section class="container">
-           <div class="row">
-               <aside class="col-md-4 col-lg-3 col-xs-12 aside-block pt-4">
-                   <h4 class="aside-block-header py-3 pl-4 fs-20 font-weight-bold">Моя компания</h4>
-                   <ul class="aside-block-list pb-4 d-flex flex-column">
-                       <li class="active"><a href="#validation-page">Информация о компании</a></li>
-                       <li><a href="">Мои сотрудники</a></li>
-                       <li><a href="">Персональные настройки</a></li>
-                   </ul>
-                   <h4 class="aside-block-header py-3 pl-4 fs-20 font-weight-bold">Закупки</h4>
-                   <ul class="aside-block-list pb-4">
-                       <li class="active"><a href="">Мои тендеры/заявки</a></li>
-                       <li><a href="">Создать новый тендер/заявку</a></li>
-                       <li><a href="">Мои документы<span class="badge badge-danger ml-2">925</span></a></li>
-                       <li><a href="">Отчет</a></li>
-                       <li><a href="">Календарь торгов<span class="badge badge-danger ml-2">925</span></a></li>
-                       <li><a href="">Уведомления</a></li>
-                       <li><a href="">Моя подписка</a></li>
-                   </ul>
-                   <a href="#add-company-page" class="aside-block-add-company border-green border text-green ptr bg-transparent p-3 text-center text-nowrap mb-5 d-block">+ Добавить компанию</a>
-               </aside>
-               <div class="room col-lg-9 col-md-8 col-xs-12 pt-4">
-                   <section id="validation-page">
-                       <div class="row">
-                           <div class="col-8">
-                               <h2 class="font-weight-bold fs-24">Информация о компании</h2>
-                               <form novalidate>
-                                   <fieldset>
-                                       <legend class="room-legend font-weight-bold">Юридическое название:</legend>
-                                       <label class="room-textarea-control position-relative mb-2 d-flex">
-                                           <span class="position-absolute font-weight-bold">UA:</span>
-                                           <textarea rows="3" placeholder="На Русском"></textarea>
-                                           <a href="">Изменить</a>
-                                       </label>
-                                       <label class="room-textarea-control position-relative mb-2 d-flex">
-                                           <span class="position-absolute font-weight-bold">EN:</span>
-                                           <textarea rows="3" placeholder="In English"></textarea>
-                                           <a href="">Изменить</a>
-                                       </label>
-                                   </fieldset>
-                                   <fieldset>
-                                       <legend class="room-legend font-weight-bold">Сокращённое название:</legend>
-                                       <label class="room-textarea-control position-relative mb-2 d-flex">
-                                           <span class="position-absolute font-weight-bold">UA:</span>
-                                           <textarea rows="3" placeholder="На Русском"></textarea>
-                                           <a href="">Изменить</a>
-                                       </label>
-                                       <label class="room-textarea-control position-relative mb-2 d-flex">
-                                           <span class="position-absolute font-weight-bold">EN:</span>
-                                           <textarea rows="3" placeholder="In English"></textarea>
-                                           <a href="">Изменить</a>
-                                       </label>
-                                   </fieldset>
-                                   <fieldset>
-                                       <legend class="room-legend font-weight-bold">Код ЕГРПОУ/ИНН:</legend>
-                                       <label class="room-input-control">
-                                           <input disabled>
-                                       </label>
-                                   </fieldset>
-                                   <fieldset>
-                                       <legend class="room-legend font-weight-bold">Общая информация о компании:</legend>
-                                       <p class="room-fieldset-p fs-14">текст о Вашей компании, который видят посетители Вашей страницы. Будет отображаться в профиле
-                                           компании под ее названием</p>
-                                       <label class="room-textarea-control position-relative mb-2 d-flex">
-                                           <textarea rows="3"  disabled class="pl-3" placeholder="На Русском"></textarea>
-                                           <a href="">Изменить</a>
-                                       </label>
-                                   </fieldset>
-                                   <fieldset>
-                                       <legend class="room-legend font-weight-bold">Рынки (виды деятельности)</legend>
-                                       <p class="room-fieldset-p fs-14">укажите рынки, на которых Ваша компания предоставляет товары или услуги.</p>
-                                       <label class="room-textarea-control position-relative mb-2 d-flex">
-                               <textarea rows="3" disabled class="pl-3" >Бензин -> Неэтилированный бензин; Бензин ->
+        <div class="row">
+            <aside class="col-md-4 col-lg-3 col-xs-12 aside-block pt-4">
+                <h4 class="aside-block-header py-3 pl-4 fs-20 font-weight-bold">Моя компания</h4>
+                <ul class="aside-block-list pb-4 d-flex flex-column">
+                    <li class="active"><a href="#validation-page">Информация о компании</a></li>
+                    <li><a href="">Мои сотрудники</a></li>
+                    <li><a href="">Персональные настройки</a></li>
+                </ul>
+                <h4 class="aside-block-header py-3 pl-4 fs-20 font-weight-bold">Закупки</h4>
+                <ul class="aside-block-list pb-4">
+                    <li class="active"><a href="">Мои тендеры/заявки</a></li>
+                    <li><a href="">Создать новый тендер/заявку</a></li>
+                    <li><a href="">Мои документы<span class="badge badge-danger ml-2">925</span></a></li>
+                    <li><a href="">Отчет</a></li>
+                    <li><a href="">Календарь торгов<span class="badge badge-danger ml-2">925</span></a></li>
+                    <li><a href="">Уведомления</a></li>
+                    <li><a href="">Моя подписка</a></li>
+                </ul>
+                <a href="#add-company-page"
+                   class="aside-block-add-company border-green border text-green ptr bg-transparent p-3 text-center text-nowrap mb-5 d-block">+
+                    Добавить компанию</a>
+            </aside>
+            <div class="room col-lg-9 col-md-8 col-xs-12 pt-4">
+                <section id="validation-page">
+                    <div class="row">
+                        <div class="col-8">
+                            <h2 class="font-weight-bold fs-24">Информация о компании</h2>
+                            <form novalidate>
+                                <fieldset>
+                                    <legend class="room-legend font-weight-bold">Юридическое название:</legend>
+                                    <label class="room-textarea-control position-relative mb-2 d-flex">
+                                        <span class="position-absolute font-weight-bold">UA:</span>
+                                        <textarea rows="3" placeholder="На Русском"></textarea>
+                                        <a href="">Изменить</a>
+                                    </label>
+                                    <label class="room-textarea-control position-relative mb-2 d-flex">
+                                        <span class="position-absolute font-weight-bold">EN:</span>
+                                        <textarea rows="3" placeholder="In English"></textarea>
+                                        <a href="">Изменить</a>
+                                    </label>
+                                </fieldset>
+                                <fieldset>
+                                    <legend class="room-legend font-weight-bold">Сокращённое название:</legend>
+                                    <label class="room-textarea-control position-relative mb-2 d-flex">
+                                        <span class="position-absolute font-weight-bold">UA:</span>
+                                        <textarea rows="3" placeholder="На Русском"></textarea>
+                                        <a href="">Изменить</a>
+                                    </label>
+                                    <label class="room-textarea-control position-relative mb-2 d-flex">
+                                        <span class="position-absolute font-weight-bold">EN:</span>
+                                        <textarea rows="3" placeholder="In English"></textarea>
+                                        <a href="">Изменить</a>
+                                    </label>
+                                </fieldset>
+                                <fieldset>
+                                    <legend class="room-legend font-weight-bold">Код ЕГРПОУ/ИНН:</legend>
+                                    <label class="room-input-control">
+                                        <input disabled>
+                                    </label>
+                                </fieldset>
+                                <fieldset>
+                                    <legend class="room-legend font-weight-bold">Общая информация о компании:</legend>
+                                    <p class="room-fieldset-p fs-14">текст о Вашей компании, который видят посетители
+                                        Вашей страницы. Будет отображаться в профиле
+                                        компании под ее названием</p>
+                                    <label class="room-textarea-control position-relative mb-2 d-flex">
+                                        <textarea rows="3" disabled class="pl-3" placeholder="На Русском"></textarea>
+                                        <a href="">Изменить</a>
+                                    </label>
+                                </fieldset>
+                                <fieldset>
+                                    <legend class="room-legend font-weight-bold">Рынки (виды деятельности)</legend>
+                                    <p class="room-fieldset-p fs-14">укажите рынки, на которых Ваша компания
+                                        предоставляет товары или услуги.</p>
+                                    <label class="room-textarea-control position-relative mb-2 d-flex">
+                               <textarea rows="3" disabled class="pl-3">Бензин -> Неэтилированный бензин; Бензин ->
        Этилированный бензин; Бензин -> Бензин с этанолом</textarea>
-                                           <a href="">Изменить</a>
-                                       </label>
-                                   </fieldset>
-                                   <fieldset>
-                                       <legend class="room-legend font-weight-bold">Юридический адрес:</legend>
-                                       <label class="room-textarea-control position-relative mb-2 d-flex">
-                               <textarea rows="3" disabled class="pl-3" >Украина,область Днепропетровская, город Днепр, улица Набережная
+                                        <a href="">Изменить</a>
+                                    </label>
+                                </fieldset>
+                                <fieldset>
+                                    <legend class="room-legend font-weight-bold">Юридический адрес:</legend>
+                                    <label class="room-textarea-control position-relative mb-2 d-flex">
+                               <textarea rows="3" disabled class="pl-3">Украина,область Днепропетровская, город Днепр, улица Набережная
        Победы, дом 32</textarea>
-                                           <a href="">Изменить</a>
-                                       </label>
-                                   </fieldset>
-                                   <fieldset>
-                                       <legend class="room-legend font-weight-bold">Фактический адрес:</legend>
-                                       <label class="room-textarea-control position-relative mb-2 d-flex">
-                               <textarea rows="3" disabled class="pl-3" >Украина,область Днепропетровская, город Днепр, улица Набережная
+                                        <a href="">Изменить</a>
+                                    </label>
+                                </fieldset>
+                                <fieldset>
+                                    <legend class="room-legend font-weight-bold">Фактический адрес:</legend>
+                                    <label class="room-textarea-control position-relative mb-2 d-flex">
+                               <textarea rows="3" disabled class="pl-3">Украина,область Днепропетровская, город Днепр, улица Набережная
        Победы, дом 32</textarea>
-                                           <a href="">Изменить</a>
-                                       </label>
-                                   </fieldset>
-                                   <fieldset>
-                                       <legend class="room-legend font-weight-bold">Обновить информацию о компании данными из ЕГР:</legend>
-                                       <button class="room-submit px-4 py-2 ptr bg-yellow border-0">Обновить</button>
-                                   </fieldset>
-                               </form>
-                           </div>
-                           <aside class="col-3 offset-1">
-                               <div class="d-flex flex-column">
-                                   <!-- you should add is-company-main to assign button-->
-                                   <button class="room-assign-btn text-nowrap ptr fs-14 p-2">Назначить Главной</button>
-                                   <input type="file" class="d-none" accept="image/*" id="logo">
-                                   <label for="logo" class="room-assign-label ptr fs-13 mb-2 d-flex flex-column align-items-center w-100">+ Добавить логотип</label>
-                                   <p class="fs-13 text-center">Минимум 200х100 пикселей, JPEG, PNG, GIF</p>
-                                   <h5 class="fs-14 font-weight-bold text-center">Ссылка на профиль</h5>
-                                   <a class="text-center" href="">zakupivli24.pb.ua/123456</a>
-                               </div>
-                           </aside>
-                       </div>
-                       <hr class="ml-3 mb-3 mt-4">
-                       <form novalidate class="col-lg-7 col-xl-7 col-md-8 contact-form">
-                           <fieldset>
-                               <legend class="h3">Контакты компании:</legend>
-                               <p class="room-fieldset-p fs-14">эта информация отображается на странице Вашей компании и будет видна
-                                   всем посетителям</p>
-                               <div>
-                                   <label for="phone" class="contact-form-label fs-14 d-block my-2">Телефон:</label>
-                                   <input class="contact-form-input" id="phone" placeholder="+38(___) ___-__-__">
-                                   <button class="contact-form-add-phone ptr bg-transparent mt-1 border-0 d-block fs-13 pl-0">Добавить ещё номер</button>
-                               </div>
+                                        <a href="">Изменить</a>
+                                    </label>
+                                </fieldset>
+                                <fieldset>
+                                    <legend class="room-legend font-weight-bold">Обновить информацию о компании данными
+                                        из ЕГР:
+                                    </legend>
+                                    <button class="room-submit px-4 py-2 ptr bg-yellow border-0">Обновить</button>
+                                </fieldset>
+                            </form>
+                        </div>
+                        <aside class="col-3 offset-1">
+                            <div class="d-flex flex-column">
+                                <!-- you should add is-company-main to assign button-->
+                                <button class="room-assign-btn text-nowrap ptr fs-14 p-2">Назначить Главной</button>
+                                <input type="file" class="d-none" accept="image/*" id="logo">
+                                <label for="logo"
+                                       class="room-assign-label ptr fs-13 mb-2 d-flex flex-column align-items-center w-100">+
+                                    Добавить логотип</label>
+                                <p class="fs-13 text-center">Минимум 200х100 пикселей, JPEG, PNG, GIF</p>
+                                <h5 class="fs-14 font-weight-bold text-center">Ссылка на профиль</h5>
+                                <a class="text-center" href="">zakupivli24.pb.ua/123456</a>
+                            </div>
+                        </aside>
+                    </div>
+                    <hr class="ml-3 mb-3 mt-4">
+                    <form novalidate class="col-lg-7 col-xl-7 col-md-8 contact-form">
+                        <fieldset>
+                            <legend class="h3">Контакты компании:</legend>
+                            <p class="room-fieldset-p fs-14">эта информация отображается на странице Вашей компании и
+                                будет видна
+                                всем посетителям</p>
+                            <div>
+                                <label for="phone" class="contact-form-label fs-14 d-block my-2">Телефон:</label>
+                                <input class="contact-form-input" id="phone" placeholder="+38(___) ___-__-__">
+                                <button class="contact-form-add-phone ptr bg-transparent mt-1 border-0 d-block fs-13 pl-0">
+                                    Добавить ещё номер
+                                </button>
+                            </div>
 
-                               <label class="contact-form-label fs-14 d-block my-2" for="email">E-mail</label>
-                               <input class="contact-form-input" type="email" id="email">
+                            <label class="contact-form-label fs-14 d-block my-2" for="email">E-mail</label>
+                            <input class="contact-form-input" type="email" id="email">
 
-                               <label for="website" class="contact-form-label fs-14 d-block my-2">Веб сайт</label>
-                               <input class="contact-form-input" id="website">
-                           </fieldset>
-                       </form>
-                   </section>
-                   <section id="add-company-page">
-                       <h2 class="font-weight-bold fs-24">Додавання компанії</h2>
-                       <form class="add-company-form col-lg-7 col-xl-7 col-md-8 col-xs-12 pt-4">
+                            <label for="website" class="contact-form-label fs-14 d-block my-2">Веб сайт</label>
+                            <input class="contact-form-input" id="website">
+                        </fieldset>
+                    </form>
+                </section>
+                <section id="add-company-page">
+                    <h2 class="font-weight-bold fs-24">Додавання компанії</h2>
+                    <form class="add-company-form col-lg-7 col-xl-7 col-md-8 col-xs-12 pt-4">
 
-                           <label class="d-flex justify-content-between align-items-center mb-2">Країна реєстрації
-                               <select class="add-company-form-select p-2 ptr col-lg-7">
-                                   <option value="Украина">Україна (UA-EDR)</option>
-                               </select>
-                           </label>
-                           <label class="d-flex justify-content-between align-items-center">ЕГРПОУ компанії:
-                               <span class="col-lg-7 d-flex p-0">
+                        <label class="d-flex justify-content-between align-items-center mb-2">Країна реєстрації
+                            <select class="add-company-form-select p-2 ptr col-lg-7">
+                                <option value="Украина">Україна (UA-EDR)</option>
+                            </select>
+                        </label>
+                        <label class="d-flex justify-content-between align-items-center">ЕГРПОУ компанії:
+                            <span class="col-lg-7 d-flex p-0">
                                <input class="add-company-form-input border-right-0 p-2 col-lg-9">
                                <button class="add-company-form-find text-green border-green border bg-transparent ptr col-lg-3">Знайти</button>
                            </span>
-                           </label>
-                       </form>
-                   </section>
-               </div>
-           </div>
-       </section>
+                        </label>
+                    </form>
+                </section>
+            </div>
+        </div>
+    </section>
 </main>
 <footer class="main-footer py-5 mt-5">
     <section class="container">

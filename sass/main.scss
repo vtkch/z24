@@ -134,4 +134,21 @@
             grid-gap: 2rem;
         }
     }
+
+    &-results-status {
+        background-image: linear-gradient(to right, transparent 0%, transparent 90%, var(--white) 90%, var(--white) 100%);
+        height: 3px;
+
+        &.bg-danger {
+            background-size: 20%;
+        }
+
+        &.bg-green {
+            background-size: 50%;
+        }
+
+        &.bg-warning {
+            background-size: 100%;
+        }
+    }
 }
