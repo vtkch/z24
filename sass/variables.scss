@@ -20,7 +20,6 @@ $badge-border-radius: 4px;
 $enable-rounded: false;
 $btn-line-height: 1;
 $grid-gutter-width: 0;
-$border-color: #fff;
 $caret-width: 6px;
 $mark-padding: 0;
 $mark-bg: #fff;
@@ -31,6 +30,8 @@ $btn-focus-box-shadow: none;
 $input-focus-box-shadow: none;
 $input-disabled-bg: #f8f6f6;
 $yellow: #ffd200;
+
+$light: lightgray;
 
 :root {
     font-family: Tahoma;

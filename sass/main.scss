@@ -129,4 +129,13 @@
             background-color: #F1F4F1;
         }
     }
+    &-results {
+        &-grid {
+            grid-template-columns: 150px minmax(150px, auto) 120px 150px 4rem;
+            grid-column-gap: 1.5rem;
+        }
+        &-container {
+            grid-gap: 2rem;
+        }
+    }
 }
