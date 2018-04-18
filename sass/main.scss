@@ -1,3 +1,5 @@
+@import '../node_modules/bootstrap/scss/mixins/size';
+
 .main-page {
     background: url(../img/main-page/bg-grid.png) no-repeat;/*
     min-height: 370px;*/
@@ -18,11 +20,10 @@
         @mixin arrow {
             border-left: 1px solid var(--green);
             border-top: 1px solid var(--green);
+            @include size(32px);
             position: absolute;
             background: #fff;
             display: block;
-            height: 32px;
-            width: 32px;
             content: '';
             z-index: 1;
         }
@@ -126,17 +127,25 @@
         &-grid {
             grid-template-columns: 150px minmax(150px, auto) 120px 150px calc(2rem + 10px);
             grid-column-gap: 1.5rem;
-            li:last-child {
-                background-image: url(../img/main-sprite.svg);
-                filter: grayscale(1) brightness(1.4);
-                background-position: -2px -388px;
-                align-self: flex-start;
-                background-size: 2.5rem;
-                height: 2rem;
-                width: 2rem;
+        }
+        &-star {
+            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+            background: #C6C6C6;
+            @include size(2rem);
+            &:before {
+                clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+                background: var(--white);
+                transform: scale(.7);
+                @include size(2rem);
+                position: absolute;
+                display: block;
+                content: '';
+            }
+            &-favorite {
+                background: var(--yellow);
+                &:before { display: none }
             }
         }
-        
         &-container {
             grid-gap: 2rem;
         }
