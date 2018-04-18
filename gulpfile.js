@@ -10,7 +10,7 @@ gulp.task('default', function () {
         .pipe(sass().on('error', sass.logError))
         .pipe(concat('main.css'))
         .pipe(csso())
-        .pipe(gulp.dest('./builded'));
+        .pipe(gulp.dest('./dist'));
 });
 
 gulp.task('sass:watch', function () {
