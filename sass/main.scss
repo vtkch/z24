@@ -4,9 +4,6 @@
     &-drunk-guys {
         object-fit: contain;
     }
-    &-link-button {
-        padding: 22px 40px 16px;
-    }
     &-info-block {
         & > .col-12:not(:last-child) {
             border-right: 1px solid rgba(182,182,182, .26);
@@ -127,9 +124,19 @@
     }
     &-results {
         &-grid {
-            grid-template-columns: 150px minmax(150px, auto) 120px 150px 4rem;
+            grid-template-columns: 150px minmax(150px, auto) 120px 150px calc(2rem + 10px);
             grid-column-gap: 1.5rem;
+            li:last-child {
+                background-image: url(../img/main-sprite.svg);
+                filter: grayscale(1) brightness(1.4);
+                background-position: -2px -388px;
+                align-self: flex-start;
+                background-size: 2.5rem;
+                height: 2rem;
+                width: 2rem;
+            }
         }
+        
         &-container {
             grid-gap: 2rem;
         }

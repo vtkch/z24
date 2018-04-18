@@ -29,10 +29,12 @@
 body {
     scroll-behavior: smooth;
 }
+/*
 
 main {
     min-height: 80vh;
 }
+*/
 
 :target:before {
     // fixing bug related sticky header+anchor overflow
