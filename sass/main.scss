@@ -127,6 +127,9 @@
         &-grid {
             grid-template-columns: 150px minmax(150px, auto) 120px 150px 2rem;
             grid-column-gap: 1.5rem;
+            &:hover {
+                background-color: #F6F6F6;
+            }
         }
         &-clock {
             grid-template-columns: min-content auto;
@@ -163,6 +166,7 @@
 
     &-results-status {
         background-image: linear-gradient(to right, transparent 0%, transparent 90%, var(--white) 90%, var(--white) 100%);
+        background-position: 2px 0;
         height: 3px;
         &.bg-treaty {
             background-size: 20%;
@@ -170,6 +174,13 @@
 
         &.bg-suggestion {
             background-size: 50%;
+        }
+        
+        &.bg-reviewed {
+            background-size: 25%;
+        }
+        &.bg-trading {
+            background-size: calc(100% / 3);
         }
     }
 }
