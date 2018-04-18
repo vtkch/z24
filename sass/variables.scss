@@ -13,7 +13,7 @@ $container-max-widths: (
         md: 720px,
         lg: 960px,
         xl: 1280px
-) !default;
+);
 
 $headings-margin-bottom: 0;
 $badge-border-radius: 4px;
@@ -30,14 +30,20 @@ $btn-focus-box-shadow: none;
 $input-focus-box-shadow: none;
 $input-disabled-bg: #f8f6f6;
 $yellow: #ffd200;
-$lightgray: #F1F4F1;
-$theme-colors: (
-    "lightgray": $lightgray,
-    "yellow": $yellow,
-    "green": $green
-) !default;
-
+$lightgrey: #F1F4F1;
+$status-danger: #ff3c3c;
+$status-warning: #ffb01e;
+$status-success: #11bd86;
 $light: #eaeaea;
+$theme-colors: (
+"lightgrey": $lightgrey,
+"yellow": $yellow,
+"green": $green,
+"treaty": $status-danger,
+"moderation": $status-warning,
+"suggestion": $status-success
+);
+
 
 :root {
     font-family: Tahoma;
