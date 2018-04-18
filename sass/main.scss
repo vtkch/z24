@@ -125,8 +125,18 @@
     }
     &-results {
         &-grid {
-            grid-template-columns: 150px minmax(150px, auto) 120px 150px calc(2rem + 10px);
+            grid-template-columns: 150px minmax(150px, auto) 120px 150px 2rem;
             grid-column-gap: 1.5rem;
+        }
+        &-clock {
+            grid-template-columns: min-content auto;
+            grid-gap: 10px;
+            &:before {
+                background-image: url(../img/main-page/clock.svg);
+                background-size: contain;
+                @include size(1rem);
+                content: '';
+            }
         }
         &-star {
             clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
