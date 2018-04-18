@@ -127,7 +127,7 @@
         &-grid {
             grid-template-columns: 150px minmax(150px, auto) 120px 150px 2rem;
             grid-column-gap: 1.5rem;
-            &:hover {
+            &:not(header):hover {
                 background-color: #F6F6F6;
             }
         }
@@ -158,9 +158,6 @@
                 background: var(--yellow);
                 &:before { display: none }
             }
-        }
-        &-container {
-            grid-gap: 2rem;
         }
     }
 

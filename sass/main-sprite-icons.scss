@@ -106,4 +106,19 @@
         background-size: 109px;
         transform: scale(1.25);
     }
+    
+    &-settings {
+        background-image: url(../img/main-sprite.svg);
+        background-position: -12px -812px;
+        @include size(100px, 80px);
+        background-size: 109px;
+        transform: scale(1.25);
+    }
+    &-demo {
+        background-image: url(../img/main-sprite.svg);
+        background-position: -12px -812px;
+        @include size(100px, 80px);
+        background-size: 109px;
+        transform: scale(1.25);
+    }
 }
