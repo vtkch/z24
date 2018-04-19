@@ -124,7 +124,7 @@
         background-size: cover;
     }
     &-results {
-        &-header{
+        &-header {
             grid-template-columns: 150px minmax(150px, auto) 120px 150px 2rem;
             grid-column-gap: 1.5rem;
             @media (max-width: map-get($grid-breakpoints, 'md')) {
@@ -140,6 +140,54 @@
             &:not(header):hover {
                 background-color: #F6F6F6;
             }
+            
+            &-date {
+                @media (max-width: map-get($grid-breakpoints, 'lg')) {
+                    grid-column: 1 / 10;
+                }
+            }
+        
+            &-description {
+                @media (max-width: map-get($grid-breakpoints, 'lg')) {
+                    grid-column: 1 / 10;
+                }
+            }
+        
+            &-cost {
+                @media (max-width: map-get($grid-breakpoints, 'md')) {
+                    grid-column: 1 / 4 span;
+                }
+            }
+        
+            &-status {
+                @media (max-width: map-get($grid-breakpoints, 'md')) {
+                    grid-column: 5 / 4 span;
+                }
+            }
+            &-star {
+                clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+                @media (max-width: map-get($grid-breakpoints, 'md')) {
+                    grid-column: 9 / 10;
+                }
+                background: #C6C6C6;
+                @include size(2rem);
+                &:before {
+                    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+                    background: var(--white);
+                    transform: scale(.7);
+                    @include size(2rem);
+                    position: absolute;
+                    display: block;
+                    content: '';
+                }
+                &-favorite {
+                    background: var(--yellow);
+                    &:before {
+                        display: none
+                    }
+                }
+            }
+        
         }
         &-clock {
             grid-template-columns: min-content auto;
@@ -149,24 +197,6 @@
                 background-size: contain;
                 @include size(1rem);
                 content: '';
-            }
-        }
-        &-star {
-            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
-            background: #C6C6C6;
-            @include size(2rem);
-            &:before {
-                clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
-                background: var(--white);
-                transform: scale(.7);
-                @include size(2rem);
-                position: absolute;
-                display: block;
-                content: '';
-            }
-            &-favorite {
-                background: var(--yellow);
-                &:before { display: none }
             }
         }
     }
@@ -186,6 +216,7 @@
         &.bg-reviewed {
             background-size: 25%;
         }
+        
         &.bg-trading {
             background-size: calc(100% / 3);
         }
