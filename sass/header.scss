@@ -16,7 +16,7 @@
         grid-template-columns: 1px auto min-content 1px auto auto 1px auto 1px auto;
         grid-gap: 20px;
         @media (max-width: map-get($grid-breakpoints, 'md')) {
-            grid-template-columns: auto min-content repeat(4, auto);
+            grid-template-columns: repeat(3, auto);
             grid-gap: 10px;
         }
         
@@ -24,11 +24,6 @@
             text-decoration: none;
             color: #000;
         }
-    }
-    
-    &-divider {
-        border-left: 1px solid rgba(141, 141, 141, .26);
-        height: 50px;
     }
 }
 

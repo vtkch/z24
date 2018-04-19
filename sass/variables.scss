@@ -37,8 +37,10 @@ $status-success: #11bd86;
 $status-trading: #FA71E6;
 $status-reviewed: #8483FF;
 $light: #eaeaea;
+$header-grey: #E8E8E8;
 $theme-colors: (
     "lightgrey": $lightgrey,
+    "header-grey": $header-grey,
     "yellow": $yellow,
     "green": $green,
     "treaty": $status-danger,
