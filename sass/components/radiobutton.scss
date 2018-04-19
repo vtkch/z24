@@ -1,0 +1,44 @@
+$radio-border-h-color: #a0a0a0 !default;
+$radio-border-color: #d7d7d7 !default;
+$radio-container-size: 24px;
+$radio-circle-size: 10px;
+
+.radio {
+    &-label {
+        &:not(:last-child) {
+            margin-bottom: 32px;
+        }
+        &:hover:before {
+            border-color: $radio-border-h-color;
+        }
+        input:checked + &:after {
+            background-color: $green;
+        }
+        &:after {
+            transition: background-color .3s;
+            transform: translate(7px, -17px);
+            height: $radio-circle-size;
+            width: $radio-circle-size;
+            position: absolute;
+            border-radius: 50%;
+            display: block;
+            content: '';
+        }
+        
+        input:checked + &:before {
+            border-color: $green;
+        }
+        
+        &:before {
+            border: 1px solid $radio-border-color;
+            transition: border-color .3s;
+            height: $radio-container-size;
+            width: $radio-container-size;
+            vertical-align: middle;
+            display: inline-block;
+            border-radius: 50%;
+            margin-right: 19px;
+            content: '';
+        }
+    }
+}
