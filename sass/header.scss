@@ -13,17 +13,20 @@
         max-height: 3rem;
     }
     &-nav {
-        grid-template-columns: 1px auto min-content 1px auto auto 1px auto 1px auto;
-        grid-gap: 20px;
+        grid-gap: .25rem;
         @media (max-width: map-get($grid-breakpoints, 'md')) {
-            grid-template-columns: repeat(3, auto);
-            grid-gap: 10px;
+            grid-template-columns: 50% 50%
         }
-        
+        @media (min-width: map-get($grid-breakpoints, 'md')) {
+            grid-template-columns: repeat(7, min-content) auto min-content min-content;
+        }
         a {
             text-decoration: none;
             color: #000;
         }
+    }
+    &-language {
+        grid-column-end: 11;
     }
 }
 
