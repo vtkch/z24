@@ -123,10 +123,11 @@
         background: url(../img/main-page/bg-grid-green.png) no-repeat;
         background-size: cover;
     }
+    
     &-results {
         &-header {
             grid-template-columns: repeat(10, 1fr);
-            grid-column-gap: .5rem;
+            grid-gap: .5rem 1rem;
             &-date {
                 grid-column: 2 span;
                 @media (max-width: map-get($grid-breakpoints, 'lg')) {
@@ -157,13 +158,12 @@
             &-star {
                 grid-column: 1 span;
             }
-            
         }
         &-grid {
             grid-template-columns: repeat(10, 1fr);
-            grid-gap: .5rem;
+            grid-gap: .5rem 1rem;
             @media (max-width: map-get($grid-breakpoints, 'md')) {
-                grid-row-gap: 1.5rem;
+                grid-gap: 1.5rem 0;
             }
             
             &:not(header):hover {
@@ -206,12 +206,10 @@
                     grid-column: 5 span;
                 }
             }
+            
             &-star {
                 grid-column: 1 span;
                 clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
-               /* @media (max-width: map-get($grid-breakpoints, 'lg')) {
-                    grid-column: 1 span;
-                }*/
                 background: #C6C6C6;
                 @include size(2rem);
                 &:before {
