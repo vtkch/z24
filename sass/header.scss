@@ -8,8 +8,8 @@
 
     &-fixed-height {
         @include text-truncate;
-        line-height: normal;
         white-space: normal;
+        line-height: 1rem;
         max-height: 3rem;
     }
     &-nav {
@@ -25,6 +25,7 @@
             color: #000;
         }
     }
+    
     &-language {
         grid-column-end: 11;
     }

@@ -125,50 +125,93 @@
     }
     &-results {
         &-header {
-            grid-template-columns: 150px minmax(150px, auto) 120px 150px 2rem;
-            grid-column-gap: 1.5rem;
-            @media (max-width: map-get($grid-breakpoints, 'md')) {
-                grid-template-columns: auto;
+            grid-template-columns: repeat(10, 1fr);
+            grid-column-gap: .5rem;
+            &-date {
+                grid-column: 2 span;
+                @media (max-width: map-get($grid-breakpoints, 'lg')) {
+                    grid-column: 2 span;
+                }
+                @media (max-width: map-get($grid-breakpoints, 'md')) {
+                    grid-column: 10 span;
+                }
             }
+            &-description {
+                grid-column: 4 span;
+                @media (max-width: map-get($grid-breakpoints, 'lg')) {
+                    grid-column: 2 span;
+                }
+            }
+            &-cost {
+                grid-column: 1 span;
+                @media (max-width: map-get($grid-breakpoints, 'lg')) {
+                    grid-column: 2 span;
+                }
+                @media (max-width: map-get($grid-breakpoints, 'md')) {
+                    grid-column: 4 span;
+                }
+            }
+            &-status {
+                grid-column: 2 span;
+            }
+            &-star {
+                grid-column: 1 span;
+            }
+            
         }
         &-grid {
-            grid-template-columns: 150px minmax(150px, auto) 120px 150px 2rem;
-            grid-gap: 1.5rem;
+            grid-template-columns: repeat(10, 1fr);
+            grid-gap: .5rem;
             @media (max-width: map-get($grid-breakpoints, 'md')) {
-                grid-template-columns: auto;
+                grid-row-gap: 1.5rem;
             }
+            
             &:not(header):hover {
                 background-color: #F6F6F6;
             }
             
             &-date {
+                grid-column: 2 span;
                 @media (max-width: map-get($grid-breakpoints, 'lg')) {
-                    grid-column: 1 / 10;
+                    grid-column: 4 span;
+                }
+                @media (max-width: map-get($grid-breakpoints, 'md')) {
+                    grid-column: 10 span;
                 }
             }
         
             &-description {
+                grid-column: 4 span;
                 @media (max-width: map-get($grid-breakpoints, 'lg')) {
-                    grid-column: 1 / 10;
+                    grid-column: 10 span;
                 }
             }
         
             &-cost {
+                grid-column: 1 span;
+                @media (max-width: map-get($grid-breakpoints, 'lg')) {
+                    grid-column: 2 span;
+                }
                 @media (max-width: map-get($grid-breakpoints, 'md')) {
-                    grid-column: 1 / 4 span;
+                    grid-column: 4 span;
                 }
             }
         
             &-status {
+                grid-column: 2 span;
+                @media (max-width: map-get($grid-breakpoints, 'lg')) {
+                    grid-column: 3 span;
+                }
                 @media (max-width: map-get($grid-breakpoints, 'md')) {
-                    grid-column: 5 / 4 span;
+                    grid-column: 5 span;
                 }
             }
             &-star {
+                grid-column: 1 span;
                 clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
-                @media (max-width: map-get($grid-breakpoints, 'md')) {
-                    grid-column: 9 / 10;
-                }
+               /* @media (max-width: map-get($grid-breakpoints, 'lg')) {
+                    grid-column: 1 span;
+                }*/
                 background: #C6C6C6;
                 @include size(2rem);
                 &:before {
