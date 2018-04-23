@@ -1,7 +1,6 @@
 @import '../node_modules/bootstrap/scss/mixins/size';
 
 .register {
-    &-results {
         &-header {
             grid-template-columns: repeat(10, 1fr);
             grid-gap: .5rem 1rem;
@@ -122,9 +121,8 @@
                 content: '';
             }
         }
-    }
     
-    &-results-status {
+    &-status {
         background-image: linear-gradient(to right, transparent 90%, var(--white) 90%);
         height: 3px;
         &.bg-treaty {
