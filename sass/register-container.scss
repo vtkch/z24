@@ -1,127 +1,126 @@
 @import '../node_modules/bootstrap/scss/mixins/size';
 
 .register {
-        &-header {
-            grid-template-columns: repeat(10, 1fr);
-            grid-gap: .5rem 1rem;
-            &-date {
-                @include media-breakpoint-up('md', $grid-breakpoints) {
-                    grid-column: 2 span;
-                }
-                @include media-breakpoint-up('xs', $grid-breakpoints) {
-                    grid-column: 10 span;
-                }
-            }
-            &-description {
-                grid-column: 4 span;
-                @media (max-width: map-get($grid-breakpoints, 'lg')) {
-                    grid-column: 2 span;
-                }/*
-                @include media-breakpoint-up('xs', $grid-breakpoints) {
-                    grid-column: 2 span;
-                }
-                @include media-breakpoint-up('md', $grid-breakpoints) {
-                    grid-column: 4 span;
-                }*/
-            }
-            &-cost {
-                grid-column: 1 span;
-                @media (max-width: map-get($grid-breakpoints, 'lg')) {
-                    grid-column: 2 span;
-                }
-                @media (max-width: map-get($grid-breakpoints, 'md')) {
-                    grid-column: 4 span;
-                }
-            }
-            &-status {
+    &-header {
+        grid-template-columns: repeat(10, 1fr);
+        grid-gap: .5rem 1rem;
+        &-date {
+            @include media-breakpoint-up('md', $grid-breakpoints) {
                 grid-column: 2 span;
             }
-            &-star {
-                grid-column: 1 span;
+            @include media-breakpoint-up('xs', $grid-breakpoints) {
+                grid-column: 1 / -1;
             }
         }
-        &-grid {
-            grid-template-columns: repeat(10, 1fr);
-            grid-gap: .5rem 1rem;
+        &-description {
+            grid-column: 4 span;
+            @media (max-width: map-get($grid-breakpoints, 'lg')) {
+                grid-column: 2 span;
+            }/*
+            @include media-breakpoint-up('xs', $grid-breakpoints) {
+                grid-column: 2 span;
+            }
+            @include media-breakpoint-up('md', $grid-breakpoints) {
+                grid-column: 4 span;
+            }*/
+        }
+        &-cost {
+            grid-column: 1 span;
+            @media (max-width: map-get($grid-breakpoints, 'lg')) {
+                grid-column: 2 span;
+            }
             @media (max-width: map-get($grid-breakpoints, 'md')) {
-                grid-gap: 1.5rem 0;
-            }
-            
-            &:not(header):hover {
-                background-color: #F6F6F6;
-            }
-            
-            &-date {
-                grid-column: 2 span;
-                @media (max-width: map-get($grid-breakpoints, 'lg')) {
-                    grid-column: 4 span;
-                }
-                @media (max-width: map-get($grid-breakpoints, 'md')) {
-                    grid-column: 10 span;
-                }
-            }
-            
-            &-description {
                 grid-column: 4 span;
-                @media (max-width: map-get($grid-breakpoints, 'lg')) {
-                    grid-column: 10 span;
-                }
             }
-            
-            &-cost {
-                grid-column: 1 span;
-                @media (max-width: map-get($grid-breakpoints, 'lg')) {
-                    grid-column: 2 span;
-                }
-                @media (max-width: map-get($grid-breakpoints, 'md')) {
-                    grid-column: 4 span;
-                }
-            }
-            
-            &-status {
-                grid-column: 2 span;
-                @media (max-width: map-get($grid-breakpoints, 'lg')) {
-                    grid-column: 3 span;
-                }
-                @media (max-width: map-get($grid-breakpoints, 'md')) {
-                    grid-column: 5 span;
-                }
-            }
-            
-            &-star {
-                grid-column: 1 span;
-                clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
-                background: #C6C6C6;
-                @include size(2rem);
-                &:before {
-                    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
-                    background: var(--white);
-                    transform: scale(.7);
-                    @include size(2rem);
-                    position: absolute;
-                    display: block;
-                    content: '';
-                }
-                &-favorite {
-                    background: var(--yellow);
-                    &:before {
-                        display: none
-                    }
-                }
-            }
-            
         }
-        &-clock {
-            grid-template-columns: min-content auto;
-            grid-gap: 10px;
+        &-status {
+            grid-column: 2 span;
+        }
+        &-star {
+            grid-column: 1 span;
+        }
+    }
+    &-grid {
+        grid-template-columns: repeat(10, 1fr);
+        grid-gap: .5rem 1rem;
+        @media (max-width: map-get($grid-breakpoints, 'md')) {
+            grid-gap: 1.5rem 0;
+        }
+        
+        &:not(header):hover {
+            background-color: #F6F6F6;
+        }
+        
+        &-date {
+            grid-column: 2 span;
+            @media (max-width: map-get($grid-breakpoints, 'lg')) {
+                grid-column: 4 span;
+            }
+            @media (max-width: map-get($grid-breakpoints, 'md')) {
+                grid-column: 1 / -1;
+            }
+        }
+        
+        &-description {
+            grid-column: 4 span;
+            @media (max-width: map-get($grid-breakpoints, 'lg')) {
+                grid-column: 1 / -1;
+            }
+        }
+        
+        &-cost {
+            grid-column: 1 span;
+            @media (max-width: map-get($grid-breakpoints, 'lg')) {
+                grid-column: 2 span;
+            }
+            @media (max-width: map-get($grid-breakpoints, 'md')) {
+                grid-column: 4 span;
+            }
+        }
+        
+        &-status {
+            grid-column: 2 span;
+            @media (max-width: map-get($grid-breakpoints, 'lg')) {
+                grid-column: 3 span;
+            }
+            @media (max-width: map-get($grid-breakpoints, 'md')) {
+                grid-column: 5 span;
+            }
+        }
+        
+        &-star {
+            grid-column: 1 span;
+            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+            background: #C6C6C6;
+            @include size(2rem);
             &:before {
-                background-image: url(../img/main-page/clock.svg);
-                background-size: contain;
-                @include size(1rem);
+                clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+                background: var(--white);
+                transform: scale(.7);
+                @include size(2rem);
+                position: absolute;
+                display: block;
                 content: '';
             }
+            &-favorite {
+                background: var(--yellow);
+                &:before {
+                    display: none
+                }
+            }
         }
-    
+        
+    }
+    &-clock {
+        grid-template-columns: min-content auto;
+        grid-gap: 10px;
+        &:before {
+            background-image: url(../img/main-page/clock.svg);
+            background-size: contain;
+            @include size(1rem);
+            content: '';
+        }
+    }
     &-status {
         background-image: linear-gradient(to right, transparent 90%, var(--white) 90%);
         height: 3px;
