@@ -129,11 +129,10 @@
             grid-template-columns: repeat(10, 1fr);
             grid-gap: .5rem 1rem;
             &-date {
-                grid-column: 2 span;
-                @media (max-width: map-get($grid-breakpoints, 'lg')) {
+                @include media-breakpoint-up('md', $grid-breakpoints) {
                     grid-column: 2 span;
                 }
-                @media (max-width: map-get($grid-breakpoints, 'md')) {
+                @include media-breakpoint-up('xs', $grid-breakpoints) {
                     grid-column: 10 span;
                 }
             }
@@ -141,7 +140,13 @@
                 grid-column: 4 span;
                 @media (max-width: map-get($grid-breakpoints, 'lg')) {
                     grid-column: 2 span;
+                }/*
+                @include media-breakpoint-up('xs', $grid-breakpoints) {
+                    grid-column: 2 span;
                 }
+                @include media-breakpoint-up('md', $grid-breakpoints) {
+                    grid-column: 4 span;
+                }*/
             }
             &-cost {
                 grid-column: 1 span;
@@ -243,23 +248,22 @@
     }
 
     &-results-status {
-        background-image: linear-gradient(to right, transparent 0%, transparent 90%, var(--white) 90%, var(--white) 100%);
-        background-position: 2px 0;
+        background-image: linear-gradient(to right, transparent 90%, var(--white) 90%);
         height: 3px;
         &.bg-treaty {
-            background-size: 20%;
+            background-size: calc(100% / 5 + 1px);
         }
 
         &.bg-suggestion {
-            background-size: 50%;
+            background-size: calc(100% / 2 + 1px);
         }
         
         &.bg-reviewed {
-            background-size: 25%;
+            background-size: calc(100% / 4 + 1px);
         }
         
         &.bg-trading {
-            background-size: calc(100% / 3);
+            background-size: calc(100% / 3 + 1px);
         }
     }
 }
