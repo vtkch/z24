@@ -1,270 +1,499 @@
 <!DOCTYPE html>
-<html lang="en"><head>
-    <title>Title</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="dist/main.css">
-</head>
+<html lang="en">
+    <head>
+        <title>Title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="dist/main.css">
+        <style>
+            /*            body {
+                            display: grid;
+                            grid-template-columns: 280px 1fr;
+                        }*/
 
-<body onload="location.hash = '#validation-page'">
-<header class="sticky-top border-bottom py-3 bg-white">
-    <div class="container d-flex">
-        <div class="row flex-nowrap">
-            <div class="col-6 col-md-2 d-flex align-items-center pr-2">
-                <a href="/">
-                    <img class="w-100 pr-1" alt="Brand" src="img/logo_z24.svg">
-                </a>
-            </div>
-            <ul class="col-6 justify-content-md-around col-md-10 d-grid sticky-top-nav fs-20 align-items-md-center">
-                <li class="d-none border-left border-header-grey mx-2 py-4 d-lg-block"></li>
-                <li class="d-none d-md-block"><a href="">Закупки</a></li>
-                <li class="d-none d-md-block text-center"><a href="">Каталог компаний</a></li>
-                <li class="border-left border-header-grey mx-2 py-4 d-none d-lg-block"></li>
-                <li class="d-flex align-items-center text-green"><span class="icon-phone ptr"></span>4050</li>
-                <li class="d-flex align-items-center text-green"><span class="icon-chat ptr"></span>Чат</li>
-                <li class="border-left border-header-grey mx-2 py-4 d-none d-lg-block"></li>
-                <li class="sticky-top-fixed-height d-none d-md-block text-center fs-14">ХМЕЛЬНИЦЬКИЙ НАВЧАЛЬНО-ВИХОВНИЙ
-                    КОМПЛЕКС №31 «ДОШКІЛЬНИЙ НАВЧАЛЬНИЙ
-                    ЗАКЛАД – ЗАГАЛЬНООСВІТНІЙ НАВЧАЛЬНИЙ ЗАКЛАД І СТУПЕНЯ»
-                    <!--<button class="border-green border ptr text-green bg-transparent fs-20 py-2 px-5 float-right">Login</button>-->
-                </li>
-                <li class="border-left border-header-grey mx-2 py-4 d-none d-lg-block"></li>
-                <li class="d-none d-md-block sticky-top-language">
-                    <button class="bg-transparent btn fs-20 d-flex btn align-items-center p-0 font-weight-bold border-0">RU <span class="sticky-top-caret text-green"></span></button>
-                </li>
-            </ul>
-        </div>
-    </div>
-</header>
-<main>
-    <section class="align-items-center bg-green col-12 d-grid py-5 text-center text-white">
-        <div class="container">
-            <div class="font-weight-bold fs-24">Государственные и коммерческие закупки</div>
-            <div class="fs-20 py-3">Официльный партнер:</div>
-            <img src="img/main-page/logo-prozorro.png" alt="">
-            <img src="img/main-page/rialto_tender.png" alt="">
-            <div class="container input-group pb-1">
-                <input type="search" class="form-control" placeholder="Поиск по названию закупки, классификатору, ЕГРПОУ..." aria-label="Recipient's username" aria-describedby="basic-addon2">
-                <button class="border-0 btn bg-yellow font-weight-bold px-5 py-3 btn">Найти</button>
-            </div>
-            <div class="container pt-3 pb-3 d-flex flex-md-row flex-column align-items-center">
-                <a href="" class="pl-md-5 pr-md-5 text-white"><span class="icon-settings"></span>Как это работает?</a>
-                <a href="" class="pl-md-3 text-white"><span class="icon-demo"></span>Войти в демо-режим</a>
-            </div>
-        </div>
-    </section>
-    <section class="container">
-        <div class="row">
-            <aside class="col-md-4 col-lg-3 col-xs-12 aside-block pt-4">
-                <h4 class="aside-block-header py-3 pl-4 fs-20 font-weight-bold">Моя компания</h4>
-                <ul class="aside-block-list pb-4 d-flex flex-column">
-                    <li class="active"><a href="#validation-page">Информация о компании</a></li>
-                    <li><a href="">Мои сотрудники</a></li>
-                    <li><a href="">Персональные настройки</a></li>
-                </ul>
-                <h4 class="aside-block-header py-3 pl-4 fs-20 font-weight-bold">Закупки</h4>
-                <ul class="aside-block-list pb-4">
-                    <li class="active"><a href="">Мои тендеры/заявки</a></li>
-                    <li><a href="">Создать новый тендер/заявку</a></li>
-                    <li><a href="">Мои документы<span class="badge badge-danger ml-2">925</span></a></li>
-                    <li><a href="">Отчет</a></li>
-                    <li><a href="">Календарь торгов<span class="badge badge-danger ml-2">925</span></a></li>
-                    <li><a href="">Уведомления</a></li>
-                    <li><a href="">Моя подписка</a></li>
-                </ul>
-                <section class="radio-group-container d-block">
-                    <input type="radio" id="rd-1" name="rd" hidden="">
-                    <label for="rd-1" data-error="some error to display" class="radio-label d-block ptr">Male</label>
+            button {
+                cursor: pointer;
+            }
 
-                    <input type="radio" id="rd-2" name="rd" hidden="">
-                    <label for="rd-2" class="radio-label d-block ptr">Female</label>
+            aside {
+                /*grid-column: 1;*/
+                background-color: #f1f4f1;
+                font-size: 18px;
+            }
 
-                    <input type="radio" id="rd-3" name="rd" hidden="">
-                    <label for="rd-3" class="radio-label d-block ptr">Shemale</label>
-                </section>
-                <a href="#add-company-page" class="aside-block-add-company border-green border text-green ptr bg-transparent p-3 text-center text-nowrap mb-5 d-block">+
-                    Добавить компанию</a>
-            </aside>
-            <div class="room col-lg-9 col-md-8 col-xs-12 pt-4">
-                <section id="validation-page">
-                    <div class="row">
-                        <div class="col-8">
-                            <h2 class="font-weight-bold fs-24">Информация о компании</h2>
-                            <form novalidate="">
-                                <fieldset>
-                                    <legend class="room-legend font-weight-bold">Юридическое название:</legend>
-                                    <label class="room-textarea-control position-relative mb-2 d-flex">
-                                        <span class="position-absolute font-weight-bold">UA:</span>
-                                        <textarea rows="3" placeholder="На Русском"></textarea>
-                                        <a href="">Изменить</a>
-                                    </label>
-                                    <label class="room-textarea-control position-relative mb-2 d-flex">
-                                        <span class="position-absolute font-weight-bold">EN:</span>
-                                        <textarea rows="3" placeholder="In English"></textarea>
-                                        <a href="">Изменить</a>
-                                    </label>
-                                </fieldset>
-                                <fieldset>
-                                    <legend class="room-legend font-weight-bold">Сокращённое название:</legend>
-                                    <label class="room-textarea-control position-relative mb-2 d-flex">
-                                        <span class="position-absolute font-weight-bold">UA:</span>
-                                        <textarea rows="3" placeholder="На Русском"></textarea>
-                                        <a href="">Изменить</a>
-                                    </label>
-                                    <label class="room-textarea-control position-relative mb-2 d-flex">
-                                        <span class="position-absolute font-weight-bold">EN:</span>
-                                        <textarea rows="3" placeholder="In English"></textarea>
-                                        <a href="">Изменить</a>
-                                    </label>
-                                </fieldset>
-                                <fieldset>
-                                    <legend class="room-legend font-weight-bold">Код ЕГРПОУ/ИНН:</legend>
-                                    <label class="room-input-control">
-                                        <input disabled="">
-                                    </label>
-                                </fieldset>
-                                <fieldset>
-                                    <legend class="room-legend font-weight-bold">Общая информация о компании:</legend>
-                                    <p class="room-fieldset-p fs-14">текст о Вашей компании, который видят посетители
-                                        Вашей страницы. Будет отображаться в профиле
-                                        компании под ее названием</p>
-                                    <label class="room-textarea-control position-relative mb-2 d-flex">
-                                        <textarea rows="3" disabled="" class="pl-3" placeholder="На Русском"></textarea>
-                                        <a href="">Изменить</a>
-                                    </label>
-                                </fieldset>
-                                <fieldset>
-                                    <legend class="room-legend font-weight-bold">Рынки (виды деятельности)</legend>
-                                    <p class="room-fieldset-p fs-14">укажите рынки, на которых Ваша компания
-                                        предоставляет товары или услуги.</p>
-                                    <label class="room-textarea-control position-relative mb-2 d-flex">
-                               <textarea rows="3" disabled="" class="pl-3">Бензин -&gt; Неэтилированный бензин; Бензин -&gt;
-       Этилированный бензин; Бензин -&gt; Бензин с этанолом</textarea>
-                                        <a href="">Изменить</a>
-                                    </label>
-                                </fieldset>
-                                <fieldset>
-                                    <legend class="room-legend font-weight-bold">Юридический адрес:</legend>
-                                    <label class="room-textarea-control position-relative mb-2 d-flex">
-                               <textarea rows="3" disabled="" class="pl-3">Украина,область Днепропетровская, город Днепр, улица Набережная
-       Победы, дом 32</textarea>
-                                        <a href="">Изменить</a>
-                                    </label>
-                                </fieldset>
-                                <fieldset>
-                                    <legend class="room-legend font-weight-bold">Фактический адрес:</legend>
-                                    <label class="room-textarea-control position-relative mb-2 d-flex">
-                               <textarea rows="3" disabled="" class="pl-3">Украина,область Днепропетровская, город Днепр, улица Набережная
-       Победы, дом 32</textarea>
-                                        <a href="">Изменить</a>
-                                    </label>
-                                </fieldset>
-                                <fieldset>
-                                    <legend class="room-legend font-weight-bold">Обновить информацию о компании данными
-                                        из ЕГР:
-                                    </legend>
-                                    <button class="room-submit px-4 py-2 ptr bg-yellow border-0">Обновить</button>
-                                </fieldset>
-                            </form>
-                        </div>
-                        <aside class="col-3 offset-1">
-                            <div class="d-flex flex-column">
-                                <!-- you should add is-company-main to assign button-->
-                                <button class="room-assign-btn room-is-company-main ptr fs-14 p-2">Назначить Главной</button>
-                                <input type="file" class="d-none" accept="image/*" id="logo">
-                                <label for="logo" class="room-assign-label ptr fs-13 mb-2 d-flex flex-column align-items-center w-100 text-center">+
-                                    Добавить логотип</label>
-                                <p class="fs-13 text-center">Минимум 200х100 пикселей, JPEG, PNG, GIF</p>
-                                <h5 class="fs-14 font-weight-bold text-center">Ссылка на профиль</h5>
-                                <a class="text-center" href="">zakupivli24.pb.ua/123456</a>
-                            </div>
-                        </aside>
+            main {
+                /*grid-column: 2;*/
+            }
+
+            .registry-sidebar-createbutton {
+                width: 100%;
+                font-size: 18px;
+                height: 48px;
+                border: none;
+                border-radius: 5px;
+                background-color: #ffd200;
+                color: #000;
+            }
+            .registry-sidebar-resetbutton {
+                background-color: inherit;
+                width: 100%;
+                height: 48px;
+                border-radius: 5px;
+                border: 2px solid #36ad39;
+                color: #36ad39;
+                font-size: 18px;
+            }
+            .registry-sidebar-subscribtion {
+                font-size: 14px;
+                background-color: #e3e5e2;
+            }
+            .registry-sidebar-subscribtion input[type] {
+                height: 50px;
+                border-radius: 5px 0 0 5px;
+                padding: 8px;
+                width: calc(-50px + 100%);
+            }
+            .registry-sidebar-subscribtion .input-group-addon {
+                width: 50px;
+                border-radius: 0 5px 5px 0;
+                background-color: #36ad39;
+                color: #fff;
+                border: none;
+            }
+            input[type=text], input[type=number], input[type=date], select {
+                border: 1px solid #ccc;
+                background-color: #fff;
+                height: 30px;
+            }
+            .registry-sidebar-budget-inputs input, .registry-sidebar-period-inputs input{
+                width: calc((-12px + 100%) / 2);
+            }
+
+            .borderb {
+                border-bottom: 1px solid #ccc;
+            }
+            a {
+                color: #36ad39;
+
+                border-bottom: 1px dashed;
+            }
+            a:hover {
+                color: #90bee4;
+                outline: 0 none;
+                text-decoration: none;
+            }
+            .fixed-space::after {
+                content: "–";
+                position: relative;
+            }
+            .icon-tooltip {
+                background-image: url(img/main-sprite.svg);
+                background-size: 26px;
+                width: 32px;
+                height: 20px;
+                background-position: 4px -463px;
+                background-repeat: no-repeat;
+                display: inline-block;
+            }
+        </style>
+    </head>
+    <body>
+        <header class="sticky-top border-bottom py-3 bg-white">
+            <div class="container d-flex">
+                <div class="row flex-nowrap">
+                    <div class="col-6 col-md-2 d-flex align-items-center pr-2">
+                        <a href="/">
+                            <img class="w-100 pr-1" alt="Brand" src="img/logo_z24.svg">
+                        </a>
                     </div>
-                    <hr class="ml-3 mb-3 mt-4">
-                    <form novalidate="" class="col-lg-7 col-xl-7 col-md-8 contact-form">
-                        <fieldset>
-                            <legend class="h3">Контакты компании:</legend>
-                            <p class="room-fieldset-p fs-14">эта информация отображается на странице Вашей компании и
-                                будет видна
-                                всем посетителям</p>
-                            <div>
-                                <label for="phone" class="contact-form-label fs-14 d-block my-2">Телефон:</label>
-                                <input class="contact-form-input" id="phone" placeholder="+38(___) ___-__-__">
-                                <button class="contact-form-add-phone ptr bg-transparent mt-1 border-0 d-block fs-13 pl-0">
-                                    Добавить ещё номер
-                                </button>
-                            </div>
-
-                            <label class="contact-form-label fs-14 d-block my-2" for="email">E-mail</label>
-                            <input class="contact-form-input" type="email" id="email">
-
-                            <label for="website" class="contact-form-label fs-14 d-block my-2">Веб сайт</label>
-                            <input class="contact-form-input" id="website">
-                        </fieldset>
-                    </form>
-                </section>
-                <section id="add-company-page">
-                    <h2 class="font-weight-bold fs-24">Додавання компанії</h2>
-                    <form class="add-company-form col-lg-7 col-xl-7 col-md-8 col-xs-12 pt-4">
-
-                        <label class="d-flex justify-content-between align-items-center mb-2">Країна реєстрації
-                            <select class="add-company-form-select p-2 ptr col-lg-7">
-                                <option value="Украина">Україна (UA-EDR)</option>
-                            </select>
-                        </label>
-                        <label class="d-flex justify-content-between align-items-center">ЕГРПОУ компанії:
-                            <span class="col-lg-7 d-flex p-0">
-                               <input class="add-company-form-input border-right-0 p-2 col-lg-9">
-                               <button class="add-company-form-find text-green border-green border bg-transparent ptr col-lg-3">Знайти</button>
-                           </span>
-                        </label>
-                    </form>
-                </section>
-            </div>
-        </div>
-    </section>
-</main>
-<footer class="main-footer py-5 mt-5">
-    <section class="container">
-        <div class="row">
-            <div class="col-xl-3 col-lg-4 col-md-6 col-xs-12">
-                <div class="d-grid main-footer-gap">
-                    <figure class="d-flex">
-                        <img src="img/footer/logo-pmarket.png" alt="Facebook">
-                        <figcaption class="h2 mb-0">ПриватМаркет</figcaption>
-                    </figure>
-                    <p>© ПриватБанк</p>
-                    <ul class="d-grid main-footer-social-gaps">
-                        <li class="icon-facebook ptr"></li>
-                        <li class="icon-youtube ptr"></li>
+                    <ul class="col-6 justify-content-md-around col-md-10 d-grid sticky-top-nav fs-20 align-items-md-center">
+                        <li class="d-none border-left border-header-grey mx-2 py-4 d-lg-block"></li>
+                        <li class="d-none d-md-block"><a href="">Закупки</a></li>
+                        <li class="d-none d-md-block text-center"><a href="">Каталог компаний</a></li>
+                        <li class="border-left border-header-grey mx-2 py-4 d-none d-lg-block"></li>
+                        <li class="d-flex align-items-center text-green"><span class="icon-phone ptr"></span>4050</li>
+                        <li class="d-flex align-items-center text-green"><span class="icon-chat ptr"></span>Чат</li>
+                        <li class="border-left border-header-grey mx-2 py-4 d-none d-lg-block"></li>
+                        <li class="sticky-top-fixed-height d-none d-md-block text-center fs-14">ХМЕЛЬНИЦЬКИЙ НАВЧАЛЬНО-ВИХОВНИЙ
+                            КОМПЛЕКС №31 «ДОШКІЛЬНИЙ НАВЧАЛЬНИЙ
+                            ЗАКЛАД – ЗАГАЛЬНООСВІТНІЙ НАВЧАЛЬНИЙ ЗАКЛАД І СТУПЕНЯ»
+                            <!--<button class="border-green border ptr text-green bg-transparent fs-20 py-2 px-5 float-right">Login</button>-->
+                        </li>
+                        <li class="border-left border-header-grey mx-2 py-4 d-none d-lg-block"></li>
+                        <li class="d-none d-md-block sticky-top-language">
+                            <button class="bg-transparent btn fs-20 d-flex btn align-items-center p-0 font-weight-bold border-0">RU <span class="sticky-top-caret text-green"></span></button>
+                        </li>
                     </ul>
                 </div>
             </div>
-            <div class="col-xl-2 col-lg-4 col-md-6 col-xs-12 d-grid">
-                <h5 class="h5 mb-0">Телефон горячей линии</h5>
-                <p class="h3 mb-0 d-flex"><span class="icon-footer-phone ptr"></span>4050</p>
-                <p class="fs-13">Бесплатно с мобильных</p>
+        </header>
+        <section>
+            <!--registry head-->
+            <div class="container">
+                <section class="row">
+                    <header class="col-12 col-md-6 pt-5 mt-2">
+                        <h1 class="fs-largest text-green text-center text-md-left font-weight-bold">Государственные
+                            и коммерческие
+                            ЗАКУПКИ</h1>
+                        <p class="main-page-logos d-flex flex-wrap flex-column flex-md-row align-items-center pt-4 justify-content-between">
+                            <mark class="bigger-text text-wrap">Официальный партнёр: </mark>
+                            <img src="img/main-page/logo-prozorro.png" alt="">
+                            <img src="img/main-page/rialto_tender.png" alt="">
+                        </p>
+                    </header>
+                </section>
             </div>
-            <div class="col-xl-2 col-lg-4 col-md-6 col-xs-12 d-grid">
-                <h5 class="h5 mb-0">Договор публичной оферты</h5>
-                <a href="">Условия и правила пользования</a>
-            </div>
-            <div class="col-xl-2 col-lg-4 col-md-6 col-xs-12 d-grid">
-                <h5 class="h5 mb-0">ЧАВО</h5>
-                <a href="">Для бизнеса</a>
-                <a href="">Для государственных заказчиков</a>
-            </div>
-            <div class="col-xl-2 col-lg-4 col-md-6 col-xs-12 d-grid">
-                <h5 class="h5 mb-0">Вопросы? Предложения?</h5>
-                <footer class="d-grid">
-                    <span>Пишите нам:</span>
-                    <a href="">info@privatmarket.ua</a>
-                    <a href="">Помощь в чате</a>
-                    <a href="">Карта сайта</a>
-                </footer>
-            </div>
-        </div>
-    </section>
-</footer>
-</body>
+        </section>
+        <section class="container row m-auto">
+            <aside class="col-lg-3 col-md-12">
+                <section class="p-4 registry-sidebar-subscribtion">
+                    <div class="mb-1">
+                        <span class="font-weight-bold">Підписатися на нові закупівлі</span>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" placeholder="Ваш Email">
+                        <button class="input-group-addon" ng-click="model.subscribeTender(template.subscribe.email)">
+                            >
+                        </button>
+                    </div>
+                </section>
+                <section class="pl-4 pr-4 registry-sidebar-primary">
+                    <section class="borderb">
+                        <div class="pt-4 pb-4">
+                            <button class="registry-sidebar-createbutton">Додати нову закупівлю</button>
+                        </div>
+                    </section>
+                    <section class="borderb">
+                        <div class="pt-4 pb-4">
+                            <ul>
+                                <li>
+                                    <input id="radio-type-tender" type="radio" name="type" hidden>
+                                    <label for="radio-type-tender" class="radio-label d-block ptr mb-2">
+                                        <span>Всі закупівлі</span>
+                                        <span class="icon-tooltip"></span>
+                                    </label>
+
+                                </li>
+                                <li>
+                                    <input id="radio-type-plan" type="radio" name="type" hidden>
+                                    <label for="radio-type-plan" class="radio-label d-block ptr mb-2">
+                                        <span>Плани закупівель</span>
+                                        <span class="icon-tooltip"></span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section class="borderb">
+                        <div class="pt-4 pb-4">
+                            <div class="mb-2">
+                                <span class="font-weight-bold">Обрати</span>
+                            </div>
+                            <ul>
+                                <li>
+                                    <input id="radio-group-all" type="radio" name="group" hidden>
+                                    <label for="radio-group-all" class="radio-label d-block ptr mb-2">Всі</label>
+                                </li>
+                                <li>
+                                    <input id="radio-group-recomended" type="radio" name="group" hidden>
+                                    <label for="radio-group-recomended" class="radio-label d-block ptr mb-2">Рекомендовані</label>
+                                </li>
+                                <li>
+                                    <input id="radio-group-selected" type="radio" name="group" hidden>
+                                    <label for="radio-group-selected" class="radio-label d-block ptr mb-2">Обрані</label>
+                                </li>
+                                <li>
+                                    <input id="radio-group-viewed" type="radio" name="group" hidden>
+                                    <label for="radio-group-viewed" class="radio-label d-block ptr mb-2">Переглянуті</label>
+                                </li>
+                                <li>
+                                    <input id="radio-group-subscribed" type="radio" name="group" hidden>
+                                    <label for="radio-group-subscribed" class="radio-label d-block ptr mb-2">Моя підписка</label>
+                                </li>
+                                <li>
+                                    <input id="radio-group-participated" type="radio" name="group" hidden>
+                                    <label for="radio-group-participated" class="radio-label d-block ptr mb-2">Я приймаю участь</label>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                    <div hidden="hidden">
+                        <div class="pt-4">
+                            <i class="glyphicon glyphicon-menu-down"></i>
+                        </div>
+                    </div>
+                </section>
+                <section class="pl-4 pr-4 registry-sidebar-secondary">  
+                    <section class="borderb">
+                        <div class="pt-4 pb-4">
+                            <i class="glyphicon glyphicon-map-marker"></i>
+                            <a href="#">Всі регіони</a>
+                        </div>
+                    </section>
+                    <section class="borderb">
+                        <div class="pt-4 pb-4">
+                            <div class="mb-2">
+                                <span class="font-weight-bold">Ринки</span>
+                                <a class="float-right" href="#">Змінити</a>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li>15000000-8 Продукти харчування, напої, тютюн та супутня продукція</li>
+                                    <li>16000000-5 Сільськогосподарська техніка</li>
+                                    <li>45000000-7 Будівельні роботи та поточний ремонт</li>
+                                    <li>48000000-8 Пакети програмного забезпечення та інформаційні системи</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <div class="pt-4">
+                            <div class="mb-2">
+                                <span class="font-weight-bold">Тип закупівлі</span>
+                            </div>
+                            <select class="w-100">
+                                <option>Всі закупівлі</option>
+                                <option>Допорогові закупівлі</option>
+                                <option>Відкриті торги</option>
+                                <option>Відкриті торги з публікацією англійською мовою</option>
+                                <option>Переговорна процедура для потреб оборони</option>
+                                <option>Звіт про укладений договір</option>
+                                <option>Переговорна процедура</option>
+                                <option>Переговорна процедура (скорочена)</option>
+                                <option>Конкурентний діалог 1-ий етап</option>
+                                <option>Конкурентний діалог 2-ий етап</option>
+                                <option>Конкурентний діалог з публікацією англійською мовою 1-ий етап</option>
+                                <option>Конкурентний діалог з публікацією англійською мовою 2-ий етап</option>
+                                <option>Відкриті торги для закупівлі енергосервісу</option>
+                            </select>
+                        </div>
+                    </section>
+                    <section>
+                        <div class="pt-4">
+                            <div class="mb-2"> 
+                                <span class="font-weight-bold">Статус</span>
+                            </div>
+                            <select class="w-100">
+                                <option>Всі статуси</option>
+                                <option>Період уточнень</option>
+                                <option>Період прийому пропозицій</option>
+                                <option>Предкваліфікація</option>
+                                <option>Прекваліфікація (період оскаржень)</option>
+                                <option>Торги</option>
+                                <option>Кваліфікація переможця</option>
+                                <option>Пропозиції розглянуто</option>
+                                <option>Опубліковано намір укласти договір</option>
+                                <option>Торги не відбулися</option>
+                                <option>Торги скасовано</option>
+                                <option>Завершено</option>
+                            </select>
+                        </div>
+                    </section>
+                    <section class="registry-sidebar-period">
+                        <div class="pt-4">
+                            <div class="mb-2">
+                                <span class="font-weight-bold">Період</span>
+                            </div>
+                            <div class="d-flex flex-row registry-sidebar-period-inputs">
+                                <input type="date">
+                                <div class="fixed-space"></div>
+                                <input type="date">
+                            </div>
+                        </div>
+                    </section>
+                    <section class="registry-sidebar-budget">
+                        <div class="pt-4">
+                            <div class="mb-2">
+                                <span class="font-weight-bold">Бюджет</span>
+                            </div>
+                            <div class="d-flex flex-row registry-sidebar-budget-inputs"> 
+                                <input type="number">
+                                <div class="fixed-space"></div>
+                                <input type="number">
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <div class="pt-4">
+                            <div class="mb-2">
+                                <span class="font-weight-bold">Донор закупівлі</span>
+                            </div>
+                            <select class="w-100">
+                                <option selected>Всі закупівлі</option>
+                                <option>Немає</option>
+                                <option>Світовий Банк</option>
+                            </select>
+                        </div>
+                    </section>
+                    <section>
+                        <div class="pt-4 pb-4">
+                            <button class="registry-sidebar-resetbutton">Скинути фільтр</button>
+                        </div>
+                    </section>
+                </section>  
+            </aside>
+            <main class="col-lg-9 col-md-12">
+                <section class="container px-2 mt-2">
+                    <ul class="row main-page-top-procurement-filters bg-lightgrey pl-4 py-3 d-flex">
+                        <li class="py-1 px-4 bg-white"><a href="">Государственные закупки</a></li>
+                        <li class="py-1 px-4"><a href="">Коммерческие закупки</a></li>
+                    </ul>
+                    <section class="main-page-results">
+                        <header class="d-grid main-page-results-header pt-5 fs-12">
+                            <h6 class="text-lg-center d-none d-md-block main-page-results-header-date">Дата публикации</h6>
+                            <h6 class="text-nowrap main-page-results-header-description">Информация о закупке</h6>
+                            <h6 class="text-lg-right d-none d-md-block main-page-results-header-cost">Бюджет</h6>
+                            <h6 class="d-none d-md-block main-page-results-header-status">Статус</h6>
+                            <h6 class="main-page-results-header-star"></h6>
+                        </header>
+                        <section class="d-grid py-4">
+                            <ul class="d-grid main-page-results-grid py-4 justify-content-center align-items-center border-bottom border-light">
+                                <li class="d-flex align-items-center flex-row flex-lg-column main-page-results-grid-date">
+                                    <time class="pr-4 pr-md-5 pr-lg-0">30.08.2017</time>
+                                    <img class="pt-1" src="img/main-page/prozorro_tender.png" alt=""></li>
+                                <li class="order-lg-0 order-1 main-page-results-grid-description">
+                                    <h5><strong class="font-weight-bold">Окна металлопластиковые</strong></h5>
+                                    <p class="py-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad amet, architecto ducimus eaque, eos facilis fuga laborum libero magni odit porro quaerat quam, quisquam ratione reprehenderit repudiandae similique tempora!</p>
+                                    <p class="pt-1">Код закупок: UA-2017-08-30-000332-c</p>
+                                </li>
+                                <li class="text-lg-right main-page-results-grid-cost">
+                                    <strong class="font-weight-bold pt-1">32 000 UAH</strong>
+                                    <p class="pt-1">Участие: 119грн</p>
+                                </li>
+                                <li class="main-page-results-grid-status">
+                                    <h5 class="pb-1 text-trading">Период уточнений</h5>
+                                    <time class="main-page-results-clock d-grid">по 31 августа, 13:00</time>
+                                    <div class="main-page-results-status bg-trading mt-2 mt-md-4"></div>
+                                </li>
+                                <li class="ptr main-page-results-grid-star main-page-results-grid-star-favorite align-self-start"></li>
+                            </ul>
+                            <ul class="d-grid main-page-results-grid py-4 justify-content-center align-items-center border-bottom border-light">
+                                <li class="d-flex align-items-center flex-row flex-lg-column main-page-results-grid-date">
+                                    <time class="pr-4 pr-md-5 pr-lg-0">30.08.2017</time>
+                                    <img class="pt-1" src="img/main-page/prozorro_tender.png" alt=""></li>
+                                <li class="order-lg-0 order-1 main-page-results-grid-description">
+                                    <h5><strong class="font-weight-bold">Окна металлопластиковые</strong></h5>
+                                    <p class="py-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad amet, architecto ducimus eaque, eos facilis fuga laborum libero magni odit porro quaerat quam, quisquam ratione reprehenderit repudiandae similique tempora!</p>
+                                    <p class="pt-1">Код закупок: UA-2017-08-30-000332-c</p>
+                                </li>
+                                <li class="text-lg-right main-page-results-grid-cost">
+                                    <strong class="font-weight-bold pt-1">32 000 UAH</strong>
+                                    <p class="pt-1">Участие: 119грн</p>
+                                </li>
+                                <li class="main-page-results-grid-status">
+                                    <h5 class="pb-1 text-suggestion">Период уточнений</h5>
+                                    <time class="main-page-results-clock d-grid">по 31 августа, 13:00</time>
+                                    <div class="main-page-results-status bg-suggestion mt-2 mt-md-4"></div>
+                                </li>
+                                <li class="ptr main-page-results-grid-star main-page-results-grid-star-favorite align-self-start"></li>
+                            </ul>
+                            <ul class="d-grid main-page-results-grid py-4 justify-content-center align-items-center border-bottom border-light">
+                                <li class="d-flex align-items-center flex-row flex-lg-column main-page-results-grid-date">
+                                    <time class="pr-4 pr-md-5 pr-lg-0">30.08.2017</time>
+                                    <img class="pt-1" src="img/main-page/prozorro_tender.png" alt=""></li>
+                                <li class="order-lg-0 order-1 main-page-results-grid-description">
+                                    <h5><strong class="font-weight-bold">Окна металлопластиковые</strong></h5>
+                                    <p class="py-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad amet, architecto ducimus eaque, eos facilis fuga laborum libero magni odit porro quaerat quam, quisquam ratione reprehenderit repudiandae similique tempora!</p>
+                                    <p class="pt-1">Код закупок: UA-2017-08-30-000332-c</p>
+                                </li>
+                                <li class="text-lg-right main-page-results-grid-cost">
+                                    <strong class="font-weight-bold pt-1">32 000 UAH</strong>
+                                    <p class="pt-1">Участие: 119грн</p>
+                                </li>
+                                <li class="main-page-results-grid-status">
+                                    <h5 class="pb-1 text-moderation">Период уточнений</h5>
+                                    <time class="main-page-results-clock d-grid">по 31 августа, 13:00</time>
+                                    <div class="main-page-results-status bg-moderation mt-2 mt-md-4"></div>
+                                </li>
+                                <li class="ptr main-page-results-grid-star main-page-results-grid-star-favorite align-self-start"></li>
+                            </ul>
+                            <ul class="d-grid main-page-results-grid py-4 justify-content-center align-items-center border-bottom border-light">
+                                <li class="d-flex align-items-center flex-row flex-lg-column main-page-results-grid-date">
+                                    <time class="pr-4 pr-md-5 pr-lg-0">30.08.2017</time>
+                                    <img class="pt-1" src="img/main-page/prozorro_tender.png" alt=""></li>
+                                <li class="order-lg-0 order-1 main-page-results-grid-description">
+                                    <h5><strong class="font-weight-bold">Окна металлопластиковые</strong></h5>
+                                    <p class="py-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad amet, architecto ducimus eaque, eos facilis fuga laborum libero magni odit porro quaerat quam, quisquam ratione reprehenderit repudiandae similique tempora!</p>
+                                    <p class="pt-1">Код закупок: UA-2017-08-30-000332-c</p>
+                                </li>
+                                <li class="text-lg-right main-page-results-grid-cost">
+                                    <strong class="font-weight-bold pt-1">32 000 UAH</strong>
+                                    <p class="pt-1">Участие: 119грн</p>
+                                </li>
+                                <li class="main-page-results-grid-status">
+                                    <h5 class="pb-1 text-treaty">Период уточнений</h5>
+                                    <time class="main-page-results-clock d-grid">по 31 августа, 13:00</time>
+                                    <div class="main-page-results-status bg-treaty mt-2 mt-md-4"></div>
+                                </li>
+                                <li class="ptr main-page-results-grid-star main-page-results-grid-star-favorite align-self-start"></li>
+                            </ul>
+                            <ul class="d-grid main-page-results-grid py-4 justify-content-center align-items-center border-bottom border-light">
+                                <li class="d-flex align-items-center flex-row flex-lg-column main-page-results-grid-date">
+                                    <time class="pr-4 pr-md-5 pr-lg-0">30.08.2017</time>
+                                    <img class="pt-1" src="img/main-page/prozorro_tender.png" alt=""></li>
+                                <li class="order-lg-0 order-1 main-page-results-grid-description">
+                                    <h5><strong class="font-weight-bold">Окна металлопластиковые</strong></h5>
+                                    <p class="py-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad amet, architecto ducimus eaque, eos facilis fuga laborum libero magni odit porro quaerat quam, quisquam ratione reprehenderit repudiandae similique tempora!</p>
+                                    <p class="pt-1">Код закупок: UA-2017-08-30-000332-c</p>
+                                </li>
+                                <li class="text-lg-right main-page-results-grid-cost">
+                                    <strong class="font-weight-bold pt-1">32 000 UAH</strong>
+                                    <p class="pt-1">Участие: 119грн</p>
+                                </li>
+                                <li class="main-page-results-grid-status">
+                                    <h5 class="pb-1 text-reviewed">Период уточнений</h5>
+                                    <time class="main-page-results-clock d-grid">по 31 августа, 13:00</time>
+                                    <div class="main-page-results-status bg-reviewed mt-2 mt-md-4"></div>
+                                </li>
+                                <li class="ptr main-page-results-grid-star main-page-results-grid-star-favorite align-self-start"></li>
+                            </ul>
+                        </section>
+                    </section>
+                </section>
+            </main> 
+        </section>
+        <footer class="main-footer py-5">
+            <section class="container">
+                <div class="row">
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-xs-12">
+                        <div class="d-grid main-footer-gap">
+                            <figure class="d-flex">
+                                <img src="img/footer/logo-pmarket.png" alt="Facebook">
+                                <figcaption class="h2 mb-0">ПриватМаркет</figcaption>
+                            </figure>
+                            <p>© ПриватБанк</p>
+                            <ul class="d-grid main-footer-social-gaps">
+                                <li class="icon-facebook ptr"></li>
+                                <li class="icon-youtube ptr"></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-4 col-md-6 col-xs-12 d-grid">
+                        <h5 class="h5 mb-0">Телефон горячей линии</h5>
+                        <p class="h3 mb-0 d-flex"><span class="icon-footer-phone ptr"></span>4050</p>
+                        <p class="fs-13">Бесплатно с мобильных</p>
+                    </div>
+                    <div class="col-xl-2 col-lg-4 col-md-6 col-xs-12 d-grid">
+                        <h5 class="h5 mb-0">Договор публичной оферты</h5>
+                        <a href="">Условия и правила пользования</a>
+                    </div>
+                    <div class="col-xl-2 col-lg-4 col-md-6 col-xs-12 d-grid">
+                        <h5 class="h5 mb-0">ЧАВО</h5>
+                        <a href="">Для бизнеса</a>
+                        <a href="">Для государственных заказчиков</a>
+                    </div>
+                    <div class="col-xl-2 col-lg-4 col-md-6 col-xs-12 d-grid">
+                        <h5 class="h5 mb-0">Вопросы? Предложения?</h5>
+                        <footer class="d-grid">
+                            <span>Пишите нам:</span>
+                            <a href="">info@privatmarket.ua</a>
+                            <a href="">Помощь в чате</a>
+                            <a href="">Карта сайта</a>
+                        </footer>
+                    </div>
+                </div>
+            </section>
+        </footer>
+    </body>
 </html>
