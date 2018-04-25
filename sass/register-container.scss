@@ -89,8 +89,8 @@
         }
         
         &-star {
-            grid-column: 1 span;
             clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+            grid-column: 1 span;
             background: #C6C6C6;
             @include size(2rem);
             &:before {

@@ -18,6 +18,9 @@
             grid-template-columns: 50% 50%
         }
         @media (min-width: map-get($grid-breakpoints, 'md')) {
+            grid-template-columns: repeat(4, min-content) auto min-content;
+        }
+        @media (min-width: map-get($grid-breakpoints, 'lg')) {
             grid-template-columns: repeat(7, min-content) auto min-content min-content;
         }
         a {
@@ -27,7 +30,10 @@
     }
     
     &-language {
-        grid-column-end: 11;
+        grid-column-end: -1;
+        &-container {
+            display: none;
+        }
     }
 }
 
