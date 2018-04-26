@@ -7,17 +7,6 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <link rel="stylesheet" href="dist/main.css">
         <style>
-            .registry-sidebar-subscribtion input[type] {
-                height: 50px;
-                border-radius: 5px 0 0 5px;
-                padding: 8px;
-                width: calc(-50px + 100%);
-            }
-            input[type=text], input[type=number], input[type=date], select {
-                border: 1px solid #ccc;
-                background-color: #fff;
-                height: 30px;
-            }
             .registry-sidebar-budget-inputs input, .registry-sidebar-period-inputs input{
                 width: calc((-12px + 100%) / 2);
             }
@@ -33,7 +22,6 @@
             }
             .fixed-space::after {
                 content: "–";
-                position: relative;
             }
             .icon-tooltip {
                 background-image: url(img/main-sprite.svg);
@@ -98,7 +86,7 @@
                 <section class="p-4 registry-sidebar-subscribe-block">
                     <h6 class="mb-2 font-weight-bold fs-14">Підписатися на нові закупівлі</h6>
                     <div class="input-group">
-                        <input class="pl-3 py-3 col-9" placeholder="Ваш Email">
+                        <input class="pl-3 py-3 col-9 border-input-border border" placeholder="Ваш Email">
                         <button class="col-3 ptr bg-green text-white border-0 registry-sidebar-subscribe d-flex justify-content-center" ng-click="model.subscribeTender(template.subscribe.email)"></button>
                     </div>
                 </section>
@@ -158,14 +146,14 @@
                         </div>
                     </div>
                 </section>
-                <section class="pl-4 pr-4 registry-sidebar-secondary">  
-                    <section class="borderb">
+                <section class="pl-4 pr-4 registry-sidebar-secondary">
+                    <section class="border-bottom border-grey">
                         <div class="pt-4 pb-4">
                             <i class="glyphicon glyphicon-map-marker"></i>
                             <a href="#">Всі регіони</a>
                         </div>
                     </section>
-                    <section class="borderb">
+                    <section class="border-bottom border-grey">
                         <div class="pt-4 pb-4">
                             <div class="mb-2">
                                 <span class="font-weight-bold">Ринки</span>
@@ -186,7 +174,7 @@
                             <div class="mb-2">
                                 <span class="font-weight-bold">Тип закупівлі</span>
                             </div>
-                            <select class="w-100">
+                            <select class="w-100 p-2">
                                 <option>Всі закупівлі</option>
                                 <option>Допорогові закупівлі</option>
                                 <option>Відкриті торги</option>
@@ -205,10 +193,10 @@
                     </section>
                     <section>
                         <div class="pt-4">
-                            <div class="mb-2"> 
+                            <div class="mb-2">
                                 <span class="font-weight-bold">Статус</span>
                             </div>
-                            <select class="w-100">
+                            <select class="w-100 p-2">
                                 <option>Всі статуси</option>
                                 <option>Період уточнень</option>
                                 <option>Період прийому пропозицій</option>
@@ -230,9 +218,9 @@
                                 <span class="font-weight-bold">Період</span>
                             </div>
                             <div class="d-flex flex-row registry-sidebar-period-inputs">
-                                <input type="date">
-                                <div class="fixed-space"></div>
-                                <input type="date">
+                                <input class="border-input-border border p-2" type="date">
+                                <div class="fixed-space d-flex align-items-center"></div>
+                                <input class="border-input-border border p-2" type="date">
                             </div>
                         </div>
                     </section>
@@ -241,10 +229,10 @@
                             <div class="mb-2">
                                 <span class="font-weight-bold">Бюджет</span>
                             </div>
-                            <div class="d-flex flex-row registry-sidebar-budget-inputs"> 
-                                <input type="number">
-                                <div class="fixed-space"></div>
-                                <input type="number">
+                            <div class="d-flex flex-row registry-sidebar-budget-inputs">
+                                <input class="border-input-border border p-2" type="number">
+                                <div class="fixed-space d-flex align-items-center"></div>
+                                <input class="border-input-border border p-2" type="number">
                             </div>
                         </div>
                     </section>
@@ -253,7 +241,7 @@
                             <div class="mb-2">
                                 <span class="font-weight-bold">Донор закупівлі</span>
                             </div>
-                            <select class="w-100">
+                            <select class="w-100 p-2">
                                 <option selected>Всі закупівлі</option>
                                 <option>Немає</option>
                                 <option>Світовий Банк</option>
