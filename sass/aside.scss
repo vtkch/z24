@@ -1,7 +1,4 @@
 .aside-block {
-    --footer-height: 212px;
-    min-height: calc(100vh - var(--footer-height));
-    background: #f3f3f3;
     &-header {
         border-left: 5px solid transparent;
     }

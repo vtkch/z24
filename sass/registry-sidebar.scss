@@ -1,0 +1,17 @@
+.registry-sidebar {
+    &-subscribe-block {
+        background: #e5e5e5;
+    }
+    &-subscribe {
+        &:before {
+            border-right: 1px solid #fff;
+            border-top: 1px solid #fff;
+            transform: rotate(45deg);
+            position: relative;
+            height: 1.5rem;
+            width: 1.5rem;
+            content: '';
+            left: -6px;
+        }
+    }
+}
