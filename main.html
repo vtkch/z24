@@ -6,6 +6,33 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="dist/main.css">
+    <script>
+        window.onload = function () {
+            var scrollAreas = ['first', 'second', 'third', 'fourth'],
+                currentPosition = window.pageYOffset,
+                countedPositions;
+
+            countedPositions = scrollAreas.map(area => {
+                return document.getElementById(area).offsetTop;
+            });
+
+            window.onscroll = function () {
+                var scrolled = window.pageYOffset || document.documentElement.scrollTop,
+                    currentElement = 0;
+
+                countedPositions.every((elementScrollTop, index) => {
+                    currentElement = index ? index - 1 : 0;
+                    return elementScrollTop < scrolled;
+                });
+
+                if (scrolled > currentPosition) {
+                    scrollTo(scrolled, countedPositions[currentElement + 1]);
+                } else {
+                    scrollTo(scrolled, countedPositions[currentElement - 1]);
+                }
+            };
+        };
+    </script>
 </head>
 <body>
     <header class="sticky-top border-bottom py-3 bg-white">
@@ -43,7 +70,7 @@
     </header>
     <main>
         <section class="main-page">
-            <div class="container">
+            <div id="first" class="container">
                 <section class="row">
                     <img src="img/main-page/drunk_guys3.png" alt="" class="col-6 d-none main-page-drunk-guys d-md-block order-1">
                     <header class="col-12 col-md-6 pt-5 mt-2">
@@ -92,7 +119,7 @@
                     </li>
                 </ul>
             </section>
-            <section class="row main-page-widget-block">
+            <section id="second" class="row main-page-widget-block">
                 <h2 class="fs-36 pt-5 mt-5 col-12 font-weight-bold text-center">Для клиентов ПриватБанка</h2>
                 <div class="container d-flex justify-content-around flex-wrap">
                     <figure class="d-flex flex-column main-page-widget-block-register align-items-center my-5 pt-5 col-md-6 col-lg-4 order-0 order-lg-0">
@@ -149,7 +176,7 @@
                     </section>
                 </div>
             </section>
-            <section class="main-page-top-categories bg-lightgrey pt-3">
+            <section id="third" class="main-page-top-categories bg-lightgrey pt-3">
                 <h2 class="fs-36 text-center col-12 font-weight-bold pt-5 pb-2">Топ категории</h2>
                 <div class="row pt-3 pb-4">
                     <!-- TODO: should change to row + col.... :(-->
@@ -167,7 +194,7 @@
                     </ul>
                 </div>
             </section>
-            <section class="main-page-top-procurement pt-2">
+            <section id="fourth" class="main-page-top-procurement pt-2">
                 <h2 class="fs-36 text-center col-12 font-weight-bold pt-5 text-white mb-3">Топ закупок</h2>
                 <div class="container input-group pb-1">
                     <input type="search" class="form-control" placeholder="Поиск по названию закупки, классификатору, ЕГРПОУ..." aria-label="Recipient's username" aria-describedby="basic-addon2">
