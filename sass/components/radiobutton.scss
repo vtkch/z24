@@ -6,6 +6,7 @@ $radio-circle-size: 6px;
 
 .radio {
     &-label {
+        position: relative;
         &:not(:last-child) {
             margin-bottom: 32px;
         }
@@ -17,13 +18,13 @@ $radio-circle-size: 6px;
         }
         &:after {
             transition: background-color .3s;
-            transform: translate(5px,-11px);
+            transform: translate(5px, 5px);
             height: $radio-circle-size;
             width: $radio-circle-size;
             position: absolute;
             border-radius: 50%;
-            display: block;
             content: '';
+            left: 0;
         }
         
         input:checked + &:before {
