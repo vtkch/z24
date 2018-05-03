@@ -57,468 +57,472 @@
                     <!--<button class="border-green border ptr text-green bg-transparent fs-20 py-2 px-5 float-right">Login</button>-->
                 </li>
                 <li class="border-left border-header-grey mx-2 py-4 d-none d-lg-block"></li>
-                <li class="d-none d-md-block sticky-top-language">
-                    <button class="bg-transparent btn fs-20 d-flex btn align-items-center p-0 font-weight-bold border-0">RU <span class="sticky-top-caret text-green"></span></button>
-                    <ul class="sticky-top-language-container position-absolute">
-                        <li>en</li>
-                        <li>uk</li>
+                <li class="d-none d-md-flex sticky-top-language align-self-stretch justify-content-center">
+
+                    <label class="bg-transparent btn fs-20 d-flex btn align-items-center p-0 font-weight-bold border-0" for="lang-list">
+                        RU <span class="sticky-top-caret text-green"></span>
+                    </label>
+                    <input type="checkbox" hidden id="lang-list" class="sticky-top-language-toggle">
+                    <ul class="sticky-top-language-container ptr position-absolute bg-white px-5 py-2 flex-column align-items-center">
+                        <li>EN</li>
+                        <li>UK</li>
                     </ul>
                 </li>
             </ul>
         </div>
     </div>
 </header>
-    <main>
-        <section class="main-page">
-            <div id="first" class="container">
-                <section class="row">
-                    <img src="img/main-page/drunk_guys3.png" alt="" class="col-6 d-none main-page-drunk-guys d-md-block order-1">
-                    <header class="col-12 col-md-6 pt-5 mt-2">
-                        <h1 class="fs-largest text-green text-center text-md-left font-weight-bold">Государственные
-                            и коммерческие
-                            ЗАКУПКИ</h1>
-                        <p class="main-page-logos d-flex flex-wrap flex-column flex-md-row align-items-center pt-4 justify-content-between">
-                            <mark class="bigger-text text-wrap">Официальный партнёр: </mark>
-                            <img src="img/main-page/logo-prozorro.png" alt="">
-                            <img src="img/main-page/rialto_tender.png" alt="">
-                        </p>
-                    </header>
-                </section>
+<main>
+    <section class="main-page">
+        <div id="first" class="container">
+            <section class="row">
+                <img src="img/main-page/drunk_guys3.png" alt="" class="col-6 d-none main-page-drunk-guys d-md-block order-1">
+                <header class="col-12 col-md-6 pt-5 mt-2">
+                    <h1 class="fs-largest text-green text-center text-md-left font-weight-bold">Государственные
+                        и коммерческие
+                        ЗАКУПКИ</h1>
+                    <p class="main-page-logos d-flex flex-wrap flex-column flex-md-row align-items-center pt-4 justify-content-between">
+                        <mark class="bigger-text text-wrap">Официальный партнёр: </mark>
+                        <img src="img/main-page/logo-prozorro.png" alt="">
+                        <img src="img/main-page/rialto_tender.png" alt="">
+                    </p>
+                </header>
+            </section>
+        </div>
+        <section class="row py-5 mt-3 mb-2 bg-green text-white">
+            <div class="col-12 col-md-6 pr-5 pl-4 pl-md-0 text-md-right border-right border-white">
+                <h4 class="fs-36 pb-3">Заказчикам</h4>
+                <p class="pb-1">Закуповуйте ефективно.</p>
+                <p class="pb-4">У нас найбільша база постачальників</p>
+                <button class="mt-2 py-3 px-5 ptr bg-yellow border-0 fs-24">Создать закупку</button>
             </div>
-            <section class="row py-5 mt-3 mb-2 bg-green text-white">
-                <div class="col-12 col-md-6 pr-5 pl-4 pl-md-0 text-md-right border-right border-white">
-                    <h4 class="fs-36 pb-3">Заказчикам</h4>
-                    <p class="pb-1">Закуповуйте ефективно.</p>
-                    <p class="pb-4">У нас найбільша база постачальників</p>
-                    <button class="mt-2 py-3 px-5 ptr bg-yellow border-0 fs-24">Создать закупку</button>
-                </div>
-                <div class="col-12 col-md-6 pl-4 pl-md-5">
-                    <h4 class="fs-36 pb-3">Создать закупку</h4>
-                    <p class="pb-1">Збільшуйте продажі.</p>
-                    <p class="pb-4">Отримайте доступ до всіх тендерів</p>
-                    <button class="mt-2 py-3 px-5 ptr bg-yellow border-0 fs-24 mr-2">Перейти к закупкам</button>
-                    <button class="mt-2 border-0 py-3 px-5 ptr bg-white text-green fs-24">Настроить подписку</button>
-                </div>
-            </section>
-            <section class="container">
-                <ul class="row my-3 main-page-info-block">
-                    <li class="col-12 col-md-4 d-flex align-items-center py-3">
-                        <div class="icon-coins ptr pl-3"></div>
-                        <h5 class="pr-3 font-weight-bold h3">43.65</h5>
-                        <p>млрд грн. Сумма открытых тендеров</p>
-                    </li>
-                    <li class="col-12 col-md-4 d-flex align-items-center py-3">
-                        <div class="icon-hummer ptr pl-3"></div>
-                        <h5 class="pr-3 font-weight-bold h3">43.65</h5>
-                        <p>Количество активных тендеров</p>
-                    </li>
-                    <li class="col-12 col-md-4 d-flex align-items-center py-3">
-                        <div class="icon-people ptr pl-3"></div>
-                        <h5 class="pr-3 font-weight-bold h3">43.65</h5>
-                        <p>Активных участников за месяц</p>
-                    </li>
-                </ul>
-            </section>
-            <section id="second" class="row main-page-widget-block">
-                <h2 class="fs-36 pt-5 mt-5 col-12 font-weight-bold text-center">Для клиентов ПриватБанка</h2>
-                <div class="container d-flex justify-content-around flex-wrap">
-                    <figure class="d-flex flex-column main-page-widget-block-register align-items-center my-5 pt-5 col-md-6 col-lg-4 order-0 order-lg-0">
-                        <img src="" class="icon-easy-register ptr d-block" alt="">
-                        <figcaption class="text-center">
-                            <p class="h3 pt-4 pb-1">Простая регистрация</p>
-                            <p class="h4 text-green pt-3 main-page-widget-block-details">Подробнее »</p>
-                        </figcaption>
-                    </figure>
-                    <figure class="d-flex flex-column main-page-widget-block-part-of align-items-center my-5 pt-5 col-md-6 col-lg-4 order-0 order-lg-0">
-                        <img src="" class="icon-part-of ptr d-block" alt="">
-                        <figcaption class="text-center">
-                            <p class="h3 pt-4 pb-1">Участие без оплаты</p>
-                            <p class="h4 text-green pt-3 main-page-widget-block-details">Подробнее »</p>
-                        </figcaption>
-                    </figure>
-                    <figure class="d-flex flex-column main-page-widget-block-free-consulting align-items-center my-5 pt-5 col-md-4 col-lg-4 order-2 order-lg-0">
-                        <img src="" class="icon-free-consulting ptr d-block" alt="">
-                        <figcaption class="text-center">
-                            <p class="h3 pt-4 pb-1">Безкоштовна юридична консультація</p>
-                            <p class="h4 text-green pt-3 main-page-widget-block-details">Подробнее »</p>
-                        </figcaption>
-                    </figure>
-
-                    <figure class="d-flex flex-column main-page-widget-block-security align-items-center my-5 pt-5 col-md-4 order-2 order-lg-2">
-                        <img src="" class="icon-high-security ptr d-block" alt="">
-                        <figcaption class="text-center">
-                            <p class="h3 pt-4 pb-1">Повышенная надёжность</p>
-                            <p class="h4 text-green pt-3 main-page-widget-block-details">Подробнее »</p>
-                        </figcaption>
-                    </figure>
-                    <figure class="d-flex flex-column main-page-widget-block-support align-items-center my-5 pt-5 col-md-4 order-2 order-lg-2">
-                        <img src="" class="icon-support ptr d-block" alt="">
-                        <figcaption class="text-center">
-                            <p class="h3 pt-4 pb-1">Поддержка 24/7/365</p>
-                            <p class="h4 text-green pt-3 main-page-widget-block-details">Подробнее »</p>
-                        </figcaption>
-                    </figure>
-                    <section class="h4 p-5 mx-5 col-12 order-1 order-lg-1 main-page-conditions border-top border-bottom border-green text-center">
-                        <p class="px-5 align-items-center">Досить вказати свій логін, пароль і заповнити контактні дані.
-                            Робота по публічній оферті без необхідності підписувати паперові договори.
-                            Без депозитних платежів.</p>
-                        <p class="px-5 align-items-center">Ви берете участь відразу після авторизації завдяки відсутності депозитних платежів.
-                            Оплата за участі стягується автоматично з вашого банківського рахунку в ПриватБанку за підсумком місяця.
-                            Ми не стягуємо плату за скасовані замовником тендери.</p>
-                        <p class="px-5 align-items-center">Професійні юристи банку, які супроводжують власні закупівлі,
-                            готові надати кваліфіковані консультації клієнтам майданчика за телефоном 4050.</p>
-                        <p class="px-5 align-items-center">Повна автоматизація процесів:
-                            повідомлення по важливим подіям; календар; оплата за участь і фінансова звітність;
-                            хмарне сховище документів; моніторинг збоїв системи.</p>
-                        <p class="px-5 align-items-center">Цілодобова підтримка клієнтів в чаті і по телефону 4050 (безкоштовно з мобільного) за будь-яких питань.
-                            Онлайн підтримка IT-фахівців та юристів банку.</p>
-
-                    </section>
-                </div>
-            </section>
-            <section id="third" class="main-page-top-categories bg-lightgrey pt-3">
-                <h2 class="fs-36 text-center col-12 font-weight-bold pt-5 pb-2">Топ категории</h2>
-                <div class="row pt-3 pb-4">
-                    <!-- TODO: should change to row + col.... :(-->
-                    <ul class="container d-flex main-page-top-categories-list justify-content-between mb-5 flex-wrap">
-                        <li class="text-center fs-24 mb-5 main-page-top-categories-work ptr d-flex justify-content-center align-items-center col-xs-12 col-md-5 col-lg-3">Строительные работы</li>
-                        <li class="text-center fs-24 mb-5 main-page-top-categories-goods ptr d-flex justify-content-center align-items-center col-xs-12 col-md-5 col-lg-3 offset-lg-1">Продукты питания</li>
-                        <li class="text-center fs-24 mb-5 main-page-top-categories-oil ptr d-flex justify-content-center align-items-center col-xs-12 col-md-5 col-lg-3 offset-lg-1">Нефтепродукты</li>
-                        <li class="text-center fs-24 mb-5 main-page-top-categories-chemistry ptr d-flex justify-content-center align-items-center col-xs-12 col-md-5 col-lg-3">Медицинская продукция</li>
-                        <li class="text-center fs-24 mb-5 main-page-top-categories-items ptr d-flex justify-content-center align-items-center col-xs-12 col-md-5 col-lg-3 offset-lg-1">Конструкционные материалы</li>
-                        <li class="text-center fs-24 mb-5 main-page-top-categories-tech ptr d-flex justify-content-center align-items-center col-xs-12 col-md-5 col-lg-3 offset-lg-1">Офисная и компьютерная техника</li>
-                        <li class="text-center fs-24 mb-5 main-page-top-categories-furniture ptr d-flex justify-content-center align-items-center col-xs-12 col-md-5 col-lg-3">Мебель</li>
-                        <li class="text-center fs-24 mb-5 main-page-top-categories-services ptr d-flex justify-content-center align-items-center col-xs-12 col-md-5 col-lg-3 offset-lg-1">Услуги ремонта и тех.обслуживания</li>
-                        <li class="text-center fs-24 mb-5 main-page-top-categories-agricultural ptr d-flex justify-content-center align-items-center col-xs-12 col-md-5 col-lg-3 offset-lg-1">Сельскохозяйственная продукция</li>
-                        <li class="col-12"><button class="border-0 btn bg-yellow py-4 fs-32 w-100">Перейти к закупкам →</button></li>
-                    </ul>
-                </div>
-            </section>
-            <section id="fourth" class="main-page-top-procurement pt-2">
-                <h2 class="fs-36 text-center col-12 font-weight-bold pt-5 text-white mb-3">Топ закупок</h2>
-                <div class="container input-group pb-1">
-                    <input type="search" class="form-control" placeholder="Поиск по названию закупки, классификатору, ЕГРПОУ..." aria-label="Recipient's username" aria-describedby="basic-addon2">
-                    <button class="border-0 btn bg-yellow font-weight-bold px-5 py-3 btn">Найти</button>
-                </div>
-                <div class="container pt-3 pb-3 d-flex flex-md-row flex-column align-items-center">
-                    <a href="" class="pl-md-5 pr-md-5 text-white"><span class="icon-settings"></span>Как это работает?</a>
-                    <a href="" class="pl-md-3 text-white"><span class="icon-demo"></span>Войти в демо-режим</a>
-                </div>
-            </section>
-            <section class="container mt-4 px-2">
-                <ul class="row main-page-top-procurement-filters bg-lightgrey pl-4 py-3 d-flex">
-                    <li class="py-1 px-4 bg-white"><a href="">Государственные закупки</a></li>
-                    <li class="py-1 px-4"><a href="">Коммерческие закупки</a></li>
-                </ul>
-                <section class="register-results">
-                    <header class="d-grid register-header pt-5 fs-12">
-                        <h6 class="text-lg-center d-none d-md-block register-header-date">Дата публикации</h6>
-                        <h6 class="text-nowrap register-header-description">Информация о закупке</h6>
-                        <h6 class="text-lg-right d-none d-md-block register-header-cost">Бюджет</h6>
-                        <h6 class="d-none d-md-block register-header-status">Статус</h6>
-                        <h6 class="register-header-star"></h6>
-                    </header>
-                    <section class="d-grid py-4">
-                        <ul class="d-grid register-grid ptr py-4 justify-content-center align-items-center border-bottom border-light">
-                            <li class="d-flex align-items-center flex-row flex-lg-column register-grid-date">
-                                <time class="pr-4 pr-md-5 pr-lg-0">30.08.2017</time>
-                                <img class="pt-1" src="img/main-page/prozorro_tender.png" alt=""></li>
-                            <li class="order-lg-0 order-1 register-grid-description">
-                                <h5><strong class="font-weight-bold">Окна металлопластиковые</strong></h5>
-                                <p class="py-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad amet, architecto ducimus eaque, eos facilis fuga laborum libero magni odit porro quaerat quam, quisquam ratione reprehenderit repudiandae similique tempora!</p>
-                                <p class="pt-1">Код закупок: UA-2017-08-30-000332-c</p>
-                            </li>
-                            <li class="text-lg-right register-grid-cost">
-                                <strong class="font-weight-bold pt-1">32 000 UAH</strong>
-                                <p class="pt-1">Участие: 119грн</p>
-                            </li>
-                            <li class="register-grid-status">
-                                <h5 class="pb-1 text-trading">Период уточнений</h5>
-                                <time class="register-clock d-grid">по 31 августа, 13:00</time>
-                                <div class="register-status bg-trading mt-2 mt-md-4"></div>
-                            </li>
-                            <li class="ptr register-grid-star register-grid-star-favorite align-self-start"></li>
-                        </ul>
-                        <ul class="d-grid register-grid ptr py-4 justify-content-center align-items-center border-bottom border-light">
-                            <li class="d-flex align-items-center flex-row flex-lg-column register-grid-date">
-                                <time class="pr-4 pr-md-5 pr-lg-0">30.08.2017</time>
-                                <img class="pt-1" src="img/main-page/prozorro_tender.png" alt=""></li>
-                            <li class="order-lg-0 order-1 register-grid-description">
-                                <h5><strong class="font-weight-bold">Окна металлопластиковые</strong></h5>
-                                <p class="py-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad amet, architecto ducimus eaque, eos facilis fuga laborum libero magni odit porro quaerat quam, quisquam ratione reprehenderit repudiandae similique tempora!</p>
-                                <p class="pt-1">Код закупок: UA-2017-08-30-000332-c</p>
-                            </li>
-                            <li class="text-lg-right register-grid-cost">
-                                <strong class="font-weight-bold pt-1">32 000 UAH</strong>
-                                <p class="pt-1">Участие: 119грн</p>
-                            </li>
-                            <li class="register-grid-status">
-                                <h5 class="pb-1 text-suggestion">Период уточнений</h5>
-                                <time class="register-clock d-grid">по 31 августа, 13:00</time>
-                                <div class="register-status bg-suggestion mt-2 mt-md-4"></div>
-                            </li>
-                            <li class="ptr register-grid-star register-grid-star-favorite align-self-start"></li>
-                        </ul>
-                        <ul class="d-grid register-grid ptr py-4 justify-content-center align-items-center border-bottom border-light">
-                            <li class="d-flex align-items-center flex-row flex-lg-column register-grid-date">
-                                <time class="pr-4 pr-md-5 pr-lg-0">30.08.2017</time>
-                                <img class="pt-1" src="img/main-page/prozorro_tender.png" alt=""></li>
-                            <li class="order-lg-0 order-1 register-grid-description">
-                                <h5><strong class="font-weight-bold">Окна металлопластиковые</strong></h5>
-                                <p class="py-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad amet, architecto ducimus eaque, eos facilis fuga laborum libero magni odit porro quaerat quam, quisquam ratione reprehenderit repudiandae similique tempora!</p>
-                                <p class="pt-1">Код закупок: UA-2017-08-30-000332-c</p>
-                            </li>
-                            <li class="text-lg-right register-grid-cost">
-                                <strong class="font-weight-bold pt-1">32 000 UAH</strong>
-                                <p class="pt-1">Участие: 119грн</p>
-                            </li>
-                            <li class="register-grid-status">
-                                <h5 class="pb-1 text-moderation">Период уточнений</h5>
-                                <time class="register-clock d-grid">по 31 августа, 13:00</time>
-                                <div class="register-status bg-moderation mt-2 mt-md-4"></div>
-                            </li>
-                            <li class="ptr register-grid-star register-grid-star-favorite align-self-start"></li>
-                        </ul>
-                        <ul class="d-grid register-grid ptr py-4 justify-content-center align-items-center border-bottom border-light">
-                            <li class="d-flex align-items-center flex-row flex-lg-column register-grid-date">
-                                <time class="pr-4 pr-md-5 pr-lg-0">30.08.2017</time>
-                                <img class="pt-1" src="img/main-page/prozorro_tender.png" alt=""></li>
-                            <li class="order-lg-0 order-1 register-grid-description">
-                                <h5><strong class="font-weight-bold">Окна металлопластиковые</strong></h5>
-                                <p class="py-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad amet, architecto ducimus eaque, eos facilis fuga laborum libero magni odit porro quaerat quam, quisquam ratione reprehenderit repudiandae similique tempora!</p>
-                                <p class="pt-1">Код закупок: UA-2017-08-30-000332-c</p>
-                            </li>
-                            <li class="text-lg-right register-grid-cost">
-                                <strong class="font-weight-bold pt-1">32 000 UAH</strong>
-                                <p class="pt-1">Участие: 119грн</p>
-                            </li>
-                            <li class="register-grid-status">
-                                <h5 class="pb-1 text-treaty">Период уточнений</h5>
-                                <time class="register-clock d-grid">по 31 августа, 13:00</time>
-                                <div class="register-status bg-treaty mt-2 mt-md-4"></div>
-                            </li>
-                            <li class="ptr register-grid-star register-grid-star-favorite align-self-start"></li>
-                        </ul>
-                        <ul class="d-grid register-grid ptr py-4 justify-content-center align-items-center border-bottom border-light">
-                            <li class="d-flex align-items-center flex-row flex-lg-column register-grid-date">
-                                <time class="pr-4 pr-md-5 pr-lg-0">30.08.2017</time>
-                                <img class="pt-1" src="img/main-page/prozorro_tender.png" alt=""></li>
-                            <li class="order-lg-0 order-1 register-grid-description">
-                                <h5><strong class="font-weight-bold">Окна металлопластиковые</strong></h5>
-                                <p class="py-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad amet, architecto ducimus eaque, eos facilis fuga laborum libero magni odit porro quaerat quam, quisquam ratione reprehenderit repudiandae similique tempora!</p>
-                                <p class="pt-1">Код закупок: UA-2017-08-30-000332-c</p>
-                            </li>
-                            <li class="text-lg-right register-grid-cost">
-                                <strong class="font-weight-bold pt-1">32 000 UAH</strong>
-                                <p class="pt-1">Участие: 119грн</p>
-                            </li>
-                            <li class="register-grid-status">
-                                <h5 class="pb-1 text-reviewed">Период уточнений</h5>
-                                <time class="register-clock d-grid">по 31 августа, 13:00</time>
-                                <div class="register-status bg-reviewed mt-2 mt-md-4"></div>
-                            </li>
-                            <li class="ptr register-grid-star register-grid-star-favorite align-self-start"></li>
-                        </ul>
-                    </section>
-                    <footer class="pb-5">
-                        <button class="col-12 py-4 bg-green border-0 text-white fs-32">Загрузить ещё</button>
-                    </footer>
-                </section>
-            </section>
+            <div class="col-12 col-md-6 pl-4 pl-md-5">
+                <h4 class="fs-36 pb-3">Создать закупку</h4>
+                <p class="pb-1">Збільшуйте продажі.</p>
+                <p class="pb-4">Отримайте доступ до всіх тендерів</p>
+                <button class="mt-2 py-3 px-5 ptr bg-yellow border-0 fs-24 mr-2">Перейти к закупкам</button>
+                <button class="mt-2 border-0 py-3 px-5 ptr bg-white text-green fs-24">Настроить подписку</button>
+            </div>
         </section>
-        <!--<section class="container">
-            <div class="row">
-                <aside class="col-md-4 col-lg-3 col-xs-12 aside-block pt-4">
-                    <h4 class="aside-block-header py-3 pl-4 fs-20 font-weight-bold">Моя компания</h4>
-                    <ul class="aside-block-list pb-4 d-flex flex-column">
-                        <li class="active"><a href="#validation-page">Информация о компании</a></li>
-                        <li><a href="">Мои сотрудники</a></li>
-                        <li><a href="">Персональные настройки</a></li>
-                    </ul>
-                    <h4 class="aside-block-header py-3 pl-4 fs-20 font-weight-bold">Закупки</h4>
-                    <ul class="aside-block-list pb-4">
-                        <li class="active"><a href="">Мои тендеры/заявки</a></li>
-                        <li><a href="">Создать новый тендер/заявку</a></li>
-                        <li><a href="">Мои документы<span class="badge badge-danger ml-2">925</span></a></li>
-                        <li><a href="">Отчет</a></li>
-                        <li><a href="">Календарь торгов<span class="badge badge-danger ml-2">925</span></a></li>
-                        <li><a href="">Уведомления</a></li>
-                        <li><a href="">Моя подписка</a></li>
-                    </ul>
-                    <a href="#add-company-page" class="aside-block-add-company text-green ptr bg-transparent p-3 text-center text-nowrap mb-5 d-block">+ Добавить компанию</a>
-                </aside>
-                <div class="room col-lg-9 col-md-8 col-xs-12 pt-4">
-                    <section id="validation-page">
-                        <div class="row">
-                            <div class="col-8">
-                                <h2>Информация о компании</h2>
-                                <form novalidate>
-                                    <fieldset>
-                                        <legend class="room-legend">Юридическое название:</legend>
-                                        <label class="room-textarea-control mb-2 d-flex">
-                                            <span>UA:</span>
-                                            <textarea rows="3" placeholder="На Русском"></textarea>
-                                            <a href="">Изменить</a>
-                                        </label>
-                                        <label class="room-textarea-control mb-2 d-flex">
-                                            <span>EN:</span>
-                                            <textarea rows="3" placeholder="In English"></textarea>
-                                            <a href="">Изменить</a>
-                                        </label>
-                                    </fieldset>
-                                    <fieldset>
-                                        <legend class="room-legend">Сокращённое название:</legend>
-                                        <label class="room-textarea-control mb-2 d-flex">
-                                            <span>UA:</span>
-                                            <textarea rows="3" placeholder="На Русском"></textarea>
-                                            <a href="">Изменить</a>
-                                        </label>
-                                        <label class="room-textarea-control mb-2 d-flex">
-                                            <span>EN:</span>
-                                            <textarea rows="3" placeholder="In English"></textarea>
-                                            <a href="">Изменить</a>
-                                        </label>
-                                    </fieldset>
-                                    <fieldset>
-                                        <legend class="room-legend">Код ЕГРПОУ/ИНН:</legend>
-                                        <label class="room-input-control">
-                                            <input disabled>
-                                        </label>
-                                    </fieldset>
-                                    <fieldset>
-                                        <legend class="room-legend">Общая информация о компании:</legend>
-                                        <p class="room-fieldset-p fs-14">текст о Вашей компании, который видят посетители Вашей страницы. Будет отображаться в профиле
-                                            компании под ее названием</p>
-                                        <label class="room-textarea-control mb-2 d-flex">
-                                            <textarea rows="3"  disabled class="pl-3" placeholder="На Русском"></textarea>
-                                            <a href="">Изменить</a>
-                                        </label>
-                                    </fieldset>
-                                    <fieldset>
-                                        <legend class="room-legend">Рынки (виды деятельности)</legend>
-                                        <p class="room-fieldset-p fs-14">укажите рынки, на которых Ваша компания предоставляет товары или услуги.</p>
-                                        <label class="room-textarea-control mb-2 d-flex">
-                                <textarea rows="3" disabled class="pl-3" >Бензин -> Неэтилированный бензин; Бензин ->
-        Этилированный бензин; Бензин -> Бензин с этанолом</textarea>
-                                            <a href="">Изменить</a>
-                                        </label>
-                                    </fieldset>
-                                    <fieldset>
-                                        <legend class="room-legend">Юридический адрес:</legend>
-                                        <label class="room-textarea-control mb-2 d-flex">
-                                <textarea rows="3" disabled class="pl-3" >Украина,область Днепропетровская, город Днепр, улица Набережная
-        Победы, дом 32</textarea>
-                                            <a href="">Изменить</a>
-                                        </label>
-                                    </fieldset>
-                                    <fieldset>
-                                        <legend class="room-legend">Фактический адрес:</legend>
-                                        <label class="room-textarea-control mb-2 d-flex">
-                                <textarea rows="3" disabled class="pl-3" >Украина,область Днепропетровская, город Днепр, улица Набережная
-        Победы, дом 32</textarea>
-                                            <a href="">Изменить</a>
-                                        </label>
-                                    </fieldset>
-                                    <fieldset>
-                                        <legend class="room-legend">Обновить информацию о компании данными из ЕГР:</legend>
-                                        <button class="room-submit bg-yellow border-0">Обновить</button>
-                                    </fieldset>
-                                </form>
-                            </div>
-                            <aside class="col-3 offset-1">
-                                <div class="d-flex flex-column">
-                                    &lt;!&ndash; you should add is-company-main to assign button&ndash;&gt;
-                                    <button class="room-assign-btn fs-14 p-2">Назначить Главной</button>
-                                    <input type="file" class="d-none" accept="image/*" id="logo">
-                                    <label for="logo" class="room-assign-label fs-13 mb-2 d-flex flex-column align-items-center w-100">+ Добавить логотип</label>
-                                    <p class="fs-13 text-center">Минимум 200х100 пикселей, JPEG, PNG, GIF</p>
-                                    <h5 class="fs-14 font-weight-bold text-center">Ссылка на профиль</h5>
-                                    <a class="text-center" href="">zakupivli24.pb.ua/123456</a>
-                                </div>
-                            </aside>
-                        </div>
-                        <hr class="ml-3 mb-3 mt-4">
-                        <form novalidate class="col-lg-7 col-xl-7 col-md-8 contact-form">
-                            <fieldset>
-                                <legend class="h3">Контакты компании:</legend>
-                                <p class="room-fieldset-p fs-14">эта информация отображается на странице Вашей компании и будет видна
-                                    всем посетителям</p>
-                                <div>
-                                    <label for="phone" class="contact-form-label fs-14 d-block my-2">Телефон:</label>
-                                    <input class="contact-form-input" id="phone" placeholder="+38(___) ___-__-__">
-                                    <button class="contact-form-add-phone ptr bg-transparent mt-1 border-0 d-block fs-13 pl-0">Добавить ещё номер</button>
-                                </div>
-
-                                <label class="contact-form-label fs-14 d-block my-2" for="email">E-mail</label>
-                                <input class="contact-form-input" type="email" id="email">
-
-                                <label for="website" class="contact-form-label fs-14 d-block my-2">Веб сайт</label>
-                                <input class="contact-form-input" id="website">
-                            </fieldset>
-                        </form>
-                    </section>
-                    <section id="add-company-page">
-                        <h2>Додавання компанії</h2>
-                        <form class="add-company-form col-lg-7 col-xl-7 col-md-8 col-xs-12 pt-4">
-
-                            <label class="d-flex justify-content-between align-items-center mb-2">Країна реєстрації
-                                <select class="add-company-form-select p-2 ptr col-lg-7">
-                                    <option value="Украина">Україна (UA-EDR)</option>
-                                </select>
-                            </label>
-                            <label class="d-flex justify-content-between align-items-center">ЕГРПОУ компанії:
-                                <span class="col-lg-7 d-flex p-0">
-                                <input class="add-company-form-input border-right-0 p-2 col-lg-9">
-                                <button class="add-company-form-find bg-transparent ptr col-lg-3">Знайти</button>
-                            </span>
-                            </label>
-                        </form>
-                    </section>
-                </div>
-            </div>
-        </section>-->
-    </main>
-    <footer class="main-footer py-5">
         <section class="container">
-            <div class="row">
-                <div class="col-xl-3 col-lg-4 col-md-6 col-xs-12">
-                    <div class="d-grid main-footer-gap">
-                        <figure class="d-flex">
-                            <img src="img/footer/logo-pmarket.png" alt="Facebook">
-                            <figcaption class="h2 mb-0">ПриватМаркет</figcaption>
-                        </figure>
-                        <p>© ПриватБанк</p>
-                        <ul class="d-grid main-footer-social-gaps">
-                            <li class="icon-facebook ptr"></li>
-                            <li class="icon-youtube ptr"></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-xl-2 col-lg-4 col-md-6 col-xs-12 d-grid">
-                    <h5 class="h5 mb-0">Телефон горячей линии</h5>
-                    <p class="h3 mb-0 d-flex"><span class="icon-footer-phone ptr"></span>4050</p>
-                    <p class="fs-13">Бесплатно с мобильных</p>
-                </div>
-                <div class="col-xl-2 col-lg-4 col-md-6 col-xs-12 d-grid">
-                    <h5 class="h5 mb-0">Договор публичной оферты</h5>
-                    <a href="">Условия и правила пользования</a>
-                </div>
-                <div class="col-xl-2 col-lg-4 col-md-6 col-xs-12 d-grid">
-                    <h5 class="h5 mb-0">ЧАВО</h5>
-                    <a href="">Для бизнеса</a>
-                    <a href="">Для государственных заказчиков</a>
-                </div>
-                <div class="col-xl-2 col-lg-4 col-md-6 col-xs-12 d-grid">
-                    <h5 class="h5 mb-0">Вопросы? Предложения?</h5>
-                    <footer class="d-grid">
-                        <span>Пишите нам:</span>
-                        <a href="">info@privatmarket.ua</a>
-                        <a href="">Помощь в чате</a>
-                        <a href="">Карта сайта</a>
-                    </footer>
-                </div>
+            <ul class="row my-3 main-page-info-block">
+                <li class="col-12 col-md-4 d-flex align-items-center py-3">
+                    <div class="icon-coins ptr pl-3"></div>
+                    <h5 class="pr-3 font-weight-bold h3">43.65</h5>
+                    <p>млрд грн. Сумма открытых тендеров</p>
+                </li>
+                <li class="col-12 col-md-4 d-flex align-items-center py-3">
+                    <div class="icon-hummer ptr pl-3"></div>
+                    <h5 class="pr-3 font-weight-bold h3">43.65</h5>
+                    <p>Количество активных тендеров</p>
+                </li>
+                <li class="col-12 col-md-4 d-flex align-items-center py-3">
+                    <div class="icon-people ptr pl-3"></div>
+                    <h5 class="pr-3 font-weight-bold h3">43.65</h5>
+                    <p>Активных участников за месяц</p>
+                </li>
+            </ul>
+        </section>
+        <section id="second" class="row main-page-widget-block">
+            <h2 class="fs-36 pt-5 mt-5 col-12 font-weight-bold text-center">Для клиентов ПриватБанка</h2>
+            <div class="container d-flex justify-content-around flex-wrap">
+                <figure class="d-flex flex-column main-page-widget-block-register align-items-center my-5 pt-5 col-md-6 col-lg-4 order-0 order-lg-0">
+                    <img src="" class="icon-easy-register ptr d-block" alt="">
+                    <figcaption class="text-center">
+                        <p class="h3 pt-4 pb-1">Простая регистрация</p>
+                        <p class="h4 text-green pt-3 main-page-widget-block-details">Подробнее »</p>
+                    </figcaption>
+                </figure>
+                <figure class="d-flex flex-column main-page-widget-block-part-of align-items-center my-5 pt-5 col-md-6 col-lg-4 order-0 order-lg-0">
+                    <img src="" class="icon-part-of ptr d-block" alt="">
+                    <figcaption class="text-center">
+                        <p class="h3 pt-4 pb-1">Участие без оплаты</p>
+                        <p class="h4 text-green pt-3 main-page-widget-block-details">Подробнее »</p>
+                    </figcaption>
+                </figure>
+                <figure class="d-flex flex-column main-page-widget-block-free-consulting align-items-center my-5 pt-5 col-md-4 col-lg-4 order-2 order-lg-0">
+                    <img src="" class="icon-free-consulting ptr d-block" alt="">
+                    <figcaption class="text-center">
+                        <p class="h3 pt-4 pb-1">Безкоштовна юридична консультація</p>
+                        <p class="h4 text-green pt-3 main-page-widget-block-details">Подробнее »</p>
+                    </figcaption>
+                </figure>
+
+                <figure class="d-flex flex-column main-page-widget-block-security align-items-center my-5 pt-5 col-md-4 order-2 order-lg-2">
+                    <img src="" class="icon-high-security ptr d-block" alt="">
+                    <figcaption class="text-center">
+                        <p class="h3 pt-4 pb-1">Повышенная надёжность</p>
+                        <p class="h4 text-green pt-3 main-page-widget-block-details">Подробнее »</p>
+                    </figcaption>
+                </figure>
+                <figure class="d-flex flex-column main-page-widget-block-support align-items-center my-5 pt-5 col-md-4 order-2 order-lg-2">
+                    <img src="" class="icon-support ptr d-block" alt="">
+                    <figcaption class="text-center">
+                        <p class="h3 pt-4 pb-1">Поддержка 24/7/365</p>
+                        <p class="h4 text-green pt-3 main-page-widget-block-details">Подробнее »</p>
+                    </figcaption>
+                </figure>
+                <section class="h4 p-5 mx-5 col-12 order-1 order-lg-1 main-page-conditions border-top border-bottom border-green text-center">
+                    <p class="px-5 align-items-center">Досить вказати свій логін, пароль і заповнити контактні дані.
+                        Робота по публічній оферті без необхідності підписувати паперові договори.
+                        Без депозитних платежів.</p>
+                    <p class="px-5 align-items-center">Ви берете участь відразу після авторизації завдяки відсутності депозитних платежів.
+                        Оплата за участі стягується автоматично з вашого банківського рахунку в ПриватБанку за підсумком місяця.
+                        Ми не стягуємо плату за скасовані замовником тендери.</p>
+                    <p class="px-5 align-items-center">Професійні юристи банку, які супроводжують власні закупівлі,
+                        готові надати кваліфіковані консультації клієнтам майданчика за телефоном 4050.</p>
+                    <p class="px-5 align-items-center">Повна автоматизація процесів:
+                        повідомлення по важливим подіям; календар; оплата за участь і фінансова звітність;
+                        хмарне сховище документів; моніторинг збоїв системи.</p>
+                    <p class="px-5 align-items-center">Цілодобова підтримка клієнтів в чаті і по телефону 4050 (безкоштовно з мобільного) за будь-яких питань.
+                        Онлайн підтримка IT-фахівців та юристів банку.</p>
+
+                </section>
             </div>
         </section>
-    </footer>
+        <section id="third" class="main-page-top-categories bg-lightgrey pt-3">
+            <h2 class="fs-36 text-center col-12 font-weight-bold pt-5 pb-2">Топ категории</h2>
+            <div class="row pt-3 pb-4">
+                <!-- TODO: should change to row + col.... :(-->
+                <ul class="container d-flex main-page-top-categories-list justify-content-between mb-5 flex-wrap">
+                    <li class="text-center fs-24 mb-5 main-page-top-categories-work ptr d-flex justify-content-center align-items-center col-xs-12 col-md-5 col-lg-3">Строительные работы</li>
+                    <li class="text-center fs-24 mb-5 main-page-top-categories-goods ptr d-flex justify-content-center align-items-center col-xs-12 col-md-5 col-lg-3 offset-lg-1">Продукты питания</li>
+                    <li class="text-center fs-24 mb-5 main-page-top-categories-oil ptr d-flex justify-content-center align-items-center col-xs-12 col-md-5 col-lg-3 offset-lg-1">Нефтепродукты</li>
+                    <li class="text-center fs-24 mb-5 main-page-top-categories-chemistry ptr d-flex justify-content-center align-items-center col-xs-12 col-md-5 col-lg-3">Медицинская продукция</li>
+                    <li class="text-center fs-24 mb-5 main-page-top-categories-items ptr d-flex justify-content-center align-items-center col-xs-12 col-md-5 col-lg-3 offset-lg-1">Конструкционные материалы</li>
+                    <li class="text-center fs-24 mb-5 main-page-top-categories-tech ptr d-flex justify-content-center align-items-center col-xs-12 col-md-5 col-lg-3 offset-lg-1">Офисная и компьютерная техника</li>
+                    <li class="text-center fs-24 mb-5 main-page-top-categories-furniture ptr d-flex justify-content-center align-items-center col-xs-12 col-md-5 col-lg-3">Мебель</li>
+                    <li class="text-center fs-24 mb-5 main-page-top-categories-services ptr d-flex justify-content-center align-items-center col-xs-12 col-md-5 col-lg-3 offset-lg-1">Услуги ремонта и тех.обслуживания</li>
+                    <li class="text-center fs-24 mb-5 main-page-top-categories-agricultural ptr d-flex justify-content-center align-items-center col-xs-12 col-md-5 col-lg-3 offset-lg-1">Сельскохозяйственная продукция</li>
+                    <li class="col-12"><button class="border-0 btn bg-yellow py-4 fs-32 w-100">Перейти к закупкам →</button></li>
+                </ul>
+            </div>
+        </section>
+        <section id="fourth" class="main-page-top-procurement pt-2">
+            <h2 class="fs-36 text-center col-12 font-weight-bold pt-5 text-white mb-3">Топ закупок</h2>
+            <div class="container input-group pb-1">
+                <input type="search" class="form-control" placeholder="Поиск по названию закупки, классификатору, ЕГРПОУ..." aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <button class="border-0 btn bg-yellow font-weight-bold px-5 py-3 btn">Найти</button>
+            </div>
+            <div class="container pt-3 pb-3 d-flex flex-md-row flex-column align-items-center">
+                <a href="" class="pl-md-5 pr-md-5 text-white"><span class="icon-settings"></span>Как это работает?</a>
+                <a href="" class="pl-md-3 text-white"><span class="icon-demo"></span>Войти в демо-режим</a>
+            </div>
+        </section>
+        <section class="container mt-4 px-2">
+            <ul class="row main-page-top-procurement-filters bg-lightgrey pl-4 py-3 d-flex">
+                <li class="py-1 px-4 bg-white"><a href="">Государственные закупки</a></li>
+                <li class="py-1 px-4"><a href="">Коммерческие закупки</a></li>
+            </ul>
+            <section class="register-results">
+                <header class="d-grid register-header pt-5 fs-12">
+                    <h6 class="text-lg-center d-none d-md-block register-header-date">Дата публикации</h6>
+                    <h6 class="text-nowrap register-header-description">Информация о закупке</h6>
+                    <h6 class="text-lg-right d-none d-md-block register-header-cost">Бюджет</h6>
+                    <h6 class="d-none d-md-block register-header-status">Статус</h6>
+                    <h6 class="register-header-star"></h6>
+                </header>
+                <section class="d-grid py-4">
+                    <ul class="d-grid register-grid ptr py-4 justify-content-center align-items-center border-bottom border-light">
+                        <li class="d-flex align-items-center flex-row flex-lg-column register-grid-date">
+                            <time class="pr-4 pr-md-5 pr-lg-0">30.08.2017</time>
+                            <img class="pt-1" src="img/main-page/prozorro_tender.png" alt=""></li>
+                        <li class="order-lg-0 order-1 register-grid-description">
+                            <h5><strong class="font-weight-bold">Окна металлопластиковые</strong></h5>
+                            <p class="py-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad amet, architecto ducimus eaque, eos facilis fuga laborum libero magni odit porro quaerat quam, quisquam ratione reprehenderit repudiandae similique tempora!</p>
+                            <p class="pt-1">Код закупок: UA-2017-08-30-000332-c</p>
+                        </li>
+                        <li class="text-lg-right register-grid-cost">
+                            <strong class="font-weight-bold pt-1">32 000 UAH</strong>
+                            <p class="pt-1">Участие: 119грн</p>
+                        </li>
+                        <li class="register-grid-status">
+                            <h5 class="pb-1 text-trading">Период уточнений</h5>
+                            <time class="register-clock d-grid">по 31 августа, 13:00</time>
+                            <div class="register-status bg-trading mt-2 mt-md-4"></div>
+                        </li>
+                        <li class="ptr register-grid-star register-grid-star-favorite align-self-start"></li>
+                    </ul>
+                    <ul class="d-grid register-grid ptr py-4 justify-content-center align-items-center border-bottom border-light">
+                        <li class="d-flex align-items-center flex-row flex-lg-column register-grid-date">
+                            <time class="pr-4 pr-md-5 pr-lg-0">30.08.2017</time>
+                            <img class="pt-1" src="img/main-page/prozorro_tender.png" alt=""></li>
+                        <li class="order-lg-0 order-1 register-grid-description">
+                            <h5><strong class="font-weight-bold">Окна металлопластиковые</strong></h5>
+                            <p class="py-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad amet, architecto ducimus eaque, eos facilis fuga laborum libero magni odit porro quaerat quam, quisquam ratione reprehenderit repudiandae similique tempora!</p>
+                            <p class="pt-1">Код закупок: UA-2017-08-30-000332-c</p>
+                        </li>
+                        <li class="text-lg-right register-grid-cost">
+                            <strong class="font-weight-bold pt-1">32 000 UAH</strong>
+                            <p class="pt-1">Участие: 119грн</p>
+                        </li>
+                        <li class="register-grid-status">
+                            <h5 class="pb-1 text-suggestion">Период уточнений</h5>
+                            <time class="register-clock d-grid">по 31 августа, 13:00</time>
+                            <div class="register-status bg-suggestion mt-2 mt-md-4"></div>
+                        </li>
+                        <li class="ptr register-grid-star register-grid-star-favorite align-self-start"></li>
+                    </ul>
+                    <ul class="d-grid register-grid ptr py-4 justify-content-center align-items-center border-bottom border-light">
+                        <li class="d-flex align-items-center flex-row flex-lg-column register-grid-date">
+                            <time class="pr-4 pr-md-5 pr-lg-0">30.08.2017</time>
+                            <img class="pt-1" src="img/main-page/prozorro_tender.png" alt=""></li>
+                        <li class="order-lg-0 order-1 register-grid-description">
+                            <h5><strong class="font-weight-bold">Окна металлопластиковые</strong></h5>
+                            <p class="py-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad amet, architecto ducimus eaque, eos facilis fuga laborum libero magni odit porro quaerat quam, quisquam ratione reprehenderit repudiandae similique tempora!</p>
+                            <p class="pt-1">Код закупок: UA-2017-08-30-000332-c</p>
+                        </li>
+                        <li class="text-lg-right register-grid-cost">
+                            <strong class="font-weight-bold pt-1">32 000 UAH</strong>
+                            <p class="pt-1">Участие: 119грн</p>
+                        </li>
+                        <li class="register-grid-status">
+                            <h5 class="pb-1 text-moderation">Период уточнений</h5>
+                            <time class="register-clock d-grid">по 31 августа, 13:00</time>
+                            <div class="register-status bg-moderation mt-2 mt-md-4"></div>
+                        </li>
+                        <li class="ptr register-grid-star register-grid-star-favorite align-self-start"></li>
+                    </ul>
+                    <ul class="d-grid register-grid ptr py-4 justify-content-center align-items-center border-bottom border-light">
+                        <li class="d-flex align-items-center flex-row flex-lg-column register-grid-date">
+                            <time class="pr-4 pr-md-5 pr-lg-0">30.08.2017</time>
+                            <img class="pt-1" src="img/main-page/prozorro_tender.png" alt=""></li>
+                        <li class="order-lg-0 order-1 register-grid-description">
+                            <h5><strong class="font-weight-bold">Окна металлопластиковые</strong></h5>
+                            <p class="py-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad amet, architecto ducimus eaque, eos facilis fuga laborum libero magni odit porro quaerat quam, quisquam ratione reprehenderit repudiandae similique tempora!</p>
+                            <p class="pt-1">Код закупок: UA-2017-08-30-000332-c</p>
+                        </li>
+                        <li class="text-lg-right register-grid-cost">
+                            <strong class="font-weight-bold pt-1">32 000 UAH</strong>
+                            <p class="pt-1">Участие: 119грн</p>
+                        </li>
+                        <li class="register-grid-status">
+                            <h5 class="pb-1 text-treaty">Период уточнений</h5>
+                            <time class="register-clock d-grid">по 31 августа, 13:00</time>
+                            <div class="register-status bg-treaty mt-2 mt-md-4"></div>
+                        </li>
+                        <li class="ptr register-grid-star register-grid-star-favorite align-self-start"></li>
+                    </ul>
+                    <ul class="d-grid register-grid ptr py-4 justify-content-center align-items-center border-bottom border-light">
+                        <li class="d-flex align-items-center flex-row flex-lg-column register-grid-date">
+                            <time class="pr-4 pr-md-5 pr-lg-0">30.08.2017</time>
+                            <img class="pt-1" src="img/main-page/prozorro_tender.png" alt=""></li>
+                        <li class="order-lg-0 order-1 register-grid-description">
+                            <h5><strong class="font-weight-bold">Окна металлопластиковые</strong></h5>
+                            <p class="py-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad amet, architecto ducimus eaque, eos facilis fuga laborum libero magni odit porro quaerat quam, quisquam ratione reprehenderit repudiandae similique tempora!</p>
+                            <p class="pt-1">Код закупок: UA-2017-08-30-000332-c</p>
+                        </li>
+                        <li class="text-lg-right register-grid-cost">
+                            <strong class="font-weight-bold pt-1">32 000 UAH</strong>
+                            <p class="pt-1">Участие: 119грн</p>
+                        </li>
+                        <li class="register-grid-status">
+                            <h5 class="pb-1 text-reviewed">Период уточнений</h5>
+                            <time class="register-clock d-grid">по 31 августа, 13:00</time>
+                            <div class="register-status bg-reviewed mt-2 mt-md-4"></div>
+                        </li>
+                        <li class="ptr register-grid-star register-grid-star-favorite align-self-start"></li>
+                    </ul>
+                </section>
+                <footer class="pb-5">
+                    <button class="col-12 py-4 bg-green border-0 text-white fs-32">Загрузить ещё</button>
+                </footer>
+            </section>
+        </section>
+    </section>
+    <!--<section class="container">
+        <div class="row">
+            <aside class="col-md-4 col-lg-3 col-xs-12 aside-block pt-4">
+                <h4 class="aside-block-header py-3 pl-4 fs-20 font-weight-bold">Моя компания</h4>
+                <ul class="aside-block-list pb-4 d-flex flex-column">
+                    <li class="active"><a href="#validation-page">Информация о компании</a></li>
+                    <li><a href="">Мои сотрудники</a></li>
+                    <li><a href="">Персональные настройки</a></li>
+                </ul>
+                <h4 class="aside-block-header py-3 pl-4 fs-20 font-weight-bold">Закупки</h4>
+                <ul class="aside-block-list pb-4">
+                    <li class="active"><a href="">Мои тендеры/заявки</a></li>
+                    <li><a href="">Создать новый тендер/заявку</a></li>
+                    <li><a href="">Мои документы<span class="badge badge-danger ml-2">925</span></a></li>
+                    <li><a href="">Отчет</a></li>
+                    <li><a href="">Календарь торгов<span class="badge badge-danger ml-2">925</span></a></li>
+                    <li><a href="">Уведомления</a></li>
+                    <li><a href="">Моя подписка</a></li>
+                </ul>
+                <a href="#add-company-page" class="aside-block-add-company text-green ptr bg-transparent p-3 text-center text-nowrap mb-5 d-block">+ Добавить компанию</a>
+            </aside>
+            <div class="room col-lg-9 col-md-8 col-xs-12 pt-4">
+                <section id="validation-page">
+                    <div class="row">
+                        <div class="col-8">
+                            <h2>Информация о компании</h2>
+                            <form novalidate>
+                                <fieldset>
+                                    <legend class="room-legend">Юридическое название:</legend>
+                                    <label class="room-textarea-control mb-2 d-flex">
+                                        <span>UA:</span>
+                                        <textarea rows="3" placeholder="На Русском"></textarea>
+                                        <a href="">Изменить</a>
+                                    </label>
+                                    <label class="room-textarea-control mb-2 d-flex">
+                                        <span>EN:</span>
+                                        <textarea rows="3" placeholder="In English"></textarea>
+                                        <a href="">Изменить</a>
+                                    </label>
+                                </fieldset>
+                                <fieldset>
+                                    <legend class="room-legend">Сокращённое название:</legend>
+                                    <label class="room-textarea-control mb-2 d-flex">
+                                        <span>UA:</span>
+                                        <textarea rows="3" placeholder="На Русском"></textarea>
+                                        <a href="">Изменить</a>
+                                    </label>
+                                    <label class="room-textarea-control mb-2 d-flex">
+                                        <span>EN:</span>
+                                        <textarea rows="3" placeholder="In English"></textarea>
+                                        <a href="">Изменить</a>
+                                    </label>
+                                </fieldset>
+                                <fieldset>
+                                    <legend class="room-legend">Код ЕГРПОУ/ИНН:</legend>
+                                    <label class="room-input-control">
+                                        <input disabled>
+                                    </label>
+                                </fieldset>
+                                <fieldset>
+                                    <legend class="room-legend">Общая информация о компании:</legend>
+                                    <p class="room-fieldset-p fs-14">текст о Вашей компании, который видят посетители Вашей страницы. Будет отображаться в профиле
+                                        компании под ее названием</p>
+                                    <label class="room-textarea-control mb-2 d-flex">
+                                        <textarea rows="3"  disabled class="pl-3" placeholder="На Русском"></textarea>
+                                        <a href="">Изменить</a>
+                                    </label>
+                                </fieldset>
+                                <fieldset>
+                                    <legend class="room-legend">Рынки (виды деятельности)</legend>
+                                    <p class="room-fieldset-p fs-14">укажите рынки, на которых Ваша компания предоставляет товары или услуги.</p>
+                                    <label class="room-textarea-control mb-2 d-flex">
+                            <textarea rows="3" disabled class="pl-3" >Бензин -> Неэтилированный бензин; Бензин ->
+    Этилированный бензин; Бензин -> Бензин с этанолом</textarea>
+                                        <a href="">Изменить</a>
+                                    </label>
+                                </fieldset>
+                                <fieldset>
+                                    <legend class="room-legend">Юридический адрес:</legend>
+                                    <label class="room-textarea-control mb-2 d-flex">
+                            <textarea rows="3" disabled class="pl-3" >Украина,область Днепропетровская, город Днепр, улица Набережная
+    Победы, дом 32</textarea>
+                                        <a href="">Изменить</a>
+                                    </label>
+                                </fieldset>
+                                <fieldset>
+                                    <legend class="room-legend">Фактический адрес:</legend>
+                                    <label class="room-textarea-control mb-2 d-flex">
+                            <textarea rows="3" disabled class="pl-3" >Украина,область Днепропетровская, город Днепр, улица Набережная
+    Победы, дом 32</textarea>
+                                        <a href="">Изменить</a>
+                                    </label>
+                                </fieldset>
+                                <fieldset>
+                                    <legend class="room-legend">Обновить информацию о компании данными из ЕГР:</legend>
+                                    <button class="room-submit bg-yellow border-0">Обновить</button>
+                                </fieldset>
+                            </form>
+                        </div>
+                        <aside class="col-3 offset-1">
+                            <div class="d-flex flex-column">
+                                &lt;!&ndash; you should add is-company-main to assign button&ndash;&gt;
+                                <button class="room-assign-btn fs-14 p-2">Назначить Главной</button>
+                                <input type="file" class="d-none" accept="image/*" id="logo">
+                                <label for="logo" class="room-assign-label fs-13 mb-2 d-flex flex-column align-items-center w-100">+ Добавить логотип</label>
+                                <p class="fs-13 text-center">Минимум 200х100 пикселей, JPEG, PNG, GIF</p>
+                                <h5 class="fs-14 font-weight-bold text-center">Ссылка на профиль</h5>
+                                <a class="text-center" href="">zakupivli24.pb.ua/123456</a>
+                            </div>
+                        </aside>
+                    </div>
+                    <hr class="ml-3 mb-3 mt-4">
+                    <form novalidate class="col-lg-7 col-xl-7 col-md-8 contact-form">
+                        <fieldset>
+                            <legend class="h3">Контакты компании:</legend>
+                            <p class="room-fieldset-p fs-14">эта информация отображается на странице Вашей компании и будет видна
+                                всем посетителям</p>
+                            <div>
+                                <label for="phone" class="contact-form-label fs-14 d-block my-2">Телефон:</label>
+                                <input class="contact-form-input" id="phone" placeholder="+38(___) ___-__-__">
+                                <button class="contact-form-add-phone ptr bg-transparent mt-1 border-0 d-block fs-13 pl-0">Добавить ещё номер</button>
+                            </div>
+
+                            <label class="contact-form-label fs-14 d-block my-2" for="email">E-mail</label>
+                            <input class="contact-form-input" type="email" id="email">
+
+                            <label for="website" class="contact-form-label fs-14 d-block my-2">Веб сайт</label>
+                            <input class="contact-form-input" id="website">
+                        </fieldset>
+                    </form>
+                </section>
+                <section id="add-company-page">
+                    <h2>Додавання компанії</h2>
+                    <form class="add-company-form col-lg-7 col-xl-7 col-md-8 col-xs-12 pt-4">
+
+                        <label class="d-flex justify-content-between align-items-center mb-2">Країна реєстрації
+                            <select class="add-company-form-select p-2 ptr col-lg-7">
+                                <option value="Украина">Україна (UA-EDR)</option>
+                            </select>
+                        </label>
+                        <label class="d-flex justify-content-between align-items-center">ЕГРПОУ компанії:
+                            <span class="col-lg-7 d-flex p-0">
+                            <input class="add-company-form-input border-right-0 p-2 col-lg-9">
+                            <button class="add-company-form-find bg-transparent ptr col-lg-3">Знайти</button>
+                        </span>
+                        </label>
+                    </form>
+                </section>
+            </div>
+        </div>
+    </section>-->
+</main>
+<footer class="main-footer py-5">
+    <section class="container">
+        <div class="row">
+            <div class="col-xl-3 col-lg-4 col-md-6 col-xs-12">
+                <div class="d-grid main-footer-gap">
+                    <figure class="d-flex">
+                        <img src="img/footer/logo-pmarket.png" alt="Facebook">
+                        <figcaption class="h2 mb-0">ПриватМаркет</figcaption>
+                    </figure>
+                    <p>© ПриватБанк</p>
+                    <ul class="d-grid main-footer-social-gaps">
+                        <li class="icon-facebook ptr"></li>
+                        <li class="icon-youtube ptr"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xl-2 col-lg-4 col-md-6 col-xs-12 d-grid">
+                <h5 class="h5 mb-0">Телефон горячей линии</h5>
+                <p class="h3 mb-0 d-flex"><span class="icon-footer-phone ptr"></span>4050</p>
+                <p class="fs-13">Бесплатно с мобильных</p>
+            </div>
+            <div class="col-xl-2 col-lg-4 col-md-6 col-xs-12 d-grid">
+                <h5 class="h5 mb-0">Договор публичной оферты</h5>
+                <a href="">Условия и правила пользования</a>
+            </div>
+            <div class="col-xl-2 col-lg-4 col-md-6 col-xs-12 d-grid">
+                <h5 class="h5 mb-0">ЧАВО</h5>
+                <a href="">Для бизнеса</a>
+                <a href="">Для государственных заказчиков</a>
+            </div>
+            <div class="col-xl-2 col-lg-4 col-md-6 col-xs-12 d-grid">
+                <h5 class="h5 mb-0">Вопросы? Предложения?</h5>
+                <footer class="d-grid">
+                    <span>Пишите нам:</span>
+                    <a href="">info@privatmarket.ua</a>
+                    <a href="">Помощь в чате</a>
+                    <a href="">Карта сайта</a>
+                </footer>
+            </div>
+        </div>
+    </section>
+</footer>
 </body>
 </html>

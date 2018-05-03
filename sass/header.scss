@@ -5,7 +5,6 @@
     &-caret {
         @include caret-down;
     }
-
     &-fixed-height {
         @include text-truncate;
         white-space: normal;
@@ -28,11 +27,28 @@
             color: #000;
         }
     }
-    
+
     &-language {
+        position: relative;
         grid-column-end: -1;
+        &-toggle:checked + &-container {
+            display: flex;
+        }
         &-container {
+            box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+            border: .5px solid lightgrey;
             display: none;
+            top: 100%;
+            &:before {
+                box-shadow: -1px -1px 1px #ece9e9;
+                transform: rotate(45deg);
+                background-color: #fff;
+                position: absolute;
+                height: 1rem;
+                width: 1rem;
+                content: '';
+                top: -.5rem;
+            }
         }
     }
 }
