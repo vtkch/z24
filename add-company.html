@@ -9,36 +9,42 @@
 
 <body onload="location.hash = '#validation-page'">
 <header class="sticky-top border-bottom py-3 bg-white">
-<div class="container d-flex">
-    <div class="row flex-nowrap">
-        <div class="col-6 col-md-3 d-flex align-items-center pr-2">
-            <a href="/">
-                <img class="w-100 pr-1" alt="Brand" src="img/logo_z24.svg">
-            </a>
+    <div class="container d-flex">
+        <div class="row flex-nowrap">
+            <div class="col-6 col-md-4 col-lg-3 d-flex align-items-center pr-2">
+                <a href="/">
+                    <img class="w-100 pr-1" alt="Brand" src="img/logo_z24.svg">
+                </a>
+            </div>
+            <ul class="col-6 justify-content-md-around col-lg-9 col-md-8 d-grid sticky-top-nav fs-20 align-items-md-center">
+                <li class="d-none border-left border-header-grey mx-2 py-4 d-lg-block"></li>
+                <li class="d-none d-md-block"><a href="">Закупки</a></li>
+                <li class="d-none d-md-block text-center"><a href="">Каталог компаний</a></li>
+                <li class="border-left border-header-grey mx-2 py-4 d-none d-lg-block"></li>
+                <li class="d-flex align-items-center text-green"><span class="icon-phone ptr"></span>4050</li>
+                <li class="d-flex align-items-center text-green"><span class="icon-chat ptr"></span>Чат</li>
+                <li class="border-left border-header-grey mx-2 py-4 d-none d-lg-block"></li>
+                <li class="sticky-top-fixed-height d-none d-md-block text-center fs-14">ХМЕЛЬНИЦЬКИЙ НАВЧАЛЬНО-ВИХОВНИЙ
+                    КОМПЛЕКС №31 «ДОШКІЛЬНИЙ НАВЧАЛЬНИЙ
+                    ЗАКЛАД – ЗАГАЛЬНООСВІТНІЙ НАВЧАЛЬНИЙ ЗАКЛАД І СТУПЕНЯ»
+                    <!--<button class="border-green border ptr text-green bg-transparent fs-20 py-2 px-5 float-right">Login</button>-->
+                </li>
+                <li class="border-left border-header-grey mx-2 py-4 d-none d-lg-block"></li>
+                <li class="d-none d-md-block sticky-top-language">
+                    <button class="bg-transparent btn fs-20 d-flex btn align-items-center p-0 font-weight-bold border-0">RU <span class="sticky-top-caret text-green"></span></button>
+                    <ul class="sticky-top-language-container position-absolute">
+                        <li>en</li>
+                        <li>uk</li>
+                    </ul>
+                </li>
+            </ul>
         </div>
-        <ul class="col-6 justify-content-md-around col-md-10 d-grid sticky-top-nav fs-20 align-items-md-center">
-            <li class="d-none border-left border-header-grey mx-2 py-4 d-lg-block"></li>
-            <li class="d-none d-md-block"><a href="">Закупки</a></li>
-            <li class="d-none d-md-block text-center"><a href="">Каталог компаний</a></li>
-            <li class="border-left border-header-grey mx-2 py-4 d-none d-lg-block"></li>
-            <li class="d-flex align-items-center text-green"><span class="icon-phone ptr"></span>4050</li>
-            <li class="d-flex align-items-center text-green"><span class="icon-chat ptr"></span>Чат</li>
-            <li class="border-left border-header-grey mx-2 py-4 d-none d-lg-block"></li>
-            <li class="sticky-top-fixed-height d-none d-md-block text-center fs-14">
-                <button class="company-button border-green border ptr text-green bg-transparent fs-20 py-2 px-5 float-right">Вход</button>
-            </li>
-            <li class="border-left border-header-grey mx-2 py-4 d-none d-lg-block"></li>
-            <li class="d-none d-md-block sticky-top-language">
-                <button class="bg-transparent btn fs-20 d-flex btn align-items-center p-0 font-weight-bold border-0">RU <span class="sticky-top-caret text-green"></span></button>
-            </li>
-        </ul>
     </div>
-</div>
 </header>
 <main>
 <section class="container">
     <div class="row">
-        <aside class="col-md-3 col-6 col-xs-12 aside-block pt-4">
+        <aside class="col-md-4 col-6 col-xs-12 aside-block bg-aside pt-4 d-md-block d-sm-none">
             <h4 class="aside-block-header py-3 pl-4 fs-20 font-weight-bold">Моя компания</h4>
             <ul class="aside-block-list pb-4 d-flex flex-column">
                 <li class="active"><a href="#validation-page">Информация о компании</a></li>
@@ -59,74 +65,74 @@
                class="aside-block-add-company border-green border text-green ptr bg-transparent p-3 text-center text-nowrap mb-5 d-block">+
                 Добавить компанию</a>
         </aside>
-        <div class="col-lg-8 col-md-9 company pt-4">
-        <div class="fs-14">
-            <h2 class="font-weight-bold fs-24">Додавання компанії</h2>
-            <form novalidate>
-                <fieldset class="col-lg-11">
-                    <label class="position-relative mb-2 d-flex">
-                        <span class="col-4 company-legend">Країна реєстрації:</span>
-                        <select class="company-submenu-link registry-sidebar-subscribe w-100">
+        <div class="col-md-8 company pt-md-4 pl-md-4">
+        <div class="fs-14 pt-3 pl-3">
+            <h2 class="font-weight-bold fs-24 mb-1">Додавання компанії</h2>
+            <form class="mt-2 col-lg-10 add-company-form d-block" novalidate>
+                <fieldset>
+                    <label class="position-relative mb-2 d-flex align-items-center">
+                        <span class="col-4">Країна реєстрації:</span>
+                        <select class="add-company-form-select ptr w-100 p-2">
                             <option selected="">Україна (UA-EDR)</option>
                             <option>Європа</option>
                             <option>США</option>
                         </select>
-                        <button class="company-select-botton border-0 registry-sidebar-subscribe d-flex" ng-click=""></button>
+                        <button class="border-0 d-flex add-company-form-select-button position-absolute ptr h-100 bg-transparent" ng-click="">
+                            <span class="add-company-form-select-arrow"></span>
+                        </button>
                     </label>
-                    <label class="position-relative mb-2 d-flex">
-                        <span class="col-4 company-legend">ЕГРПОУ компанії:</span>
-                        <div class="container input-group pb-1">
+                    <label class="position-relative mb-2 d-flex align-items-center">
+                        <span class="col-4">ЕГРПОУ компанії:</span>
+                        <span class="container input-group pb-1">
                             <input type="search" class="form-control" placeholder="14360570" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                            <button class="company-button-radius-right border-green border ptr text-green bg-transparent fs-20 py-2 px-5 float-right">Знайти</button>
-                        </div>
+                            <button class="border-green border ptr text-green bg-transparent fs-20 py-2 px-5 float-right">Знайти</button>
+                        </span>
                     </label>
                 </fieldset>
-            </form>
-            <form>
                 <fieldset>
-                    <h2 class=" pt-5 pb-4 company-legend font-weight-bold">Інформація про компанію з Єдиного державного реєстру станом на 03.03.2018р.</h2>
-                    <label class="company-textarea-control position-relative mb-2 d-flex">
-                        <p class="col-4 ">Повна назва компанії:</p>
-                        <textarea disabled rows="2" placeholder="ПУБЛІЧНЕ АКЦІОНЕРНЕ ТОВАРИСТВО КОМЕРЦІЙНИЙ БАНК 'ПРИВАТБАНК'"></textarea>
+                    <h2 class="pt-5 pb-4 fs-18 font-weight-bold">Інформація про компанію з Єдиного державного реєстру станом на 03.03.2018р.</h2>
+                    <label class="position-relative mb-2 d-flex align-items-center">
+                        <span class="col-4">Повна назва компанії:</span>
+                        <textarea class="w-100 p-2 border border-input-border" disabled rows="2" placeholder="ПУБЛІЧНЕ АКЦІОНЕРНЕ ТОВАРИСТВО КОМЕРЦІЙНИЙ БАНК 'ПРИВАТБАНК'"></textarea>
                     </label>
-                    <label class="company-textarea-control position-relative mb-2 d-flex">
-                        <p class="col-4 ">Коротка назва компанії:</p>
-                        <textarea disabled rows="1" placeholder="ПАТ КБ 'ПРИВАТБАНК'"></textarea>
+                    <label class="position-relative mb-2 d-flex align-items-center">
+                        <span class="col-4 ">Коротка назва компанії:</span>
+                        <textarea class="w-100 p-2 border border-input-border" disabled rows="1" placeholder="ПАТ КБ 'ПРИВАТБАНК'"></textarea>
                     </label>
-                    <label class="company-textarea-control position-relative mb-2 d-flex">
-                        <p class="col-4 ">ЕГРПОУ компанії:</p>
-                        <textarea disabled class="w-auto" rows="1" placeholder="14360570"></textarea>
+                    <label class="position-relative mb-2 d-flex align-items-center">
+                        <span class="col-4 ">ЕГРПОУ компанії:</span>
+                        <textarea class="col-3 p-2 border border-input-border" disabled rows="1" placeholder="14360570"></textarea>
                     </label>
-                    <label class="company-textarea-control position-relative mb-2 d-flex">
-                        <p class="col-4 ">Юридична адреса:</p>
-                        <textarea disabled rows="2" placeholder="Украина,область Днепропетровская, город Днепр, улица Набережная Победы, дом 32"></textarea>
+                    <label class="position-relative mb-2 d-flex align-items-center">
+                        <span class="col-4 ">Юридична адреса:</span>
+                        <textarea class="w-100 p-2 border border-input-border" disabled rows="2" placeholder="Украина,область Днепропетровская, город Днепр, улица Набережная Победы, дом 32"></textarea>
                     </label>
-                    <label class="company-textarea-control position-relative mb-2 d-flex">
-                        <p class="col-4 ">Стан компанії:</p>
-                        <textarea disabled class="col-lg-7" rows="1" placeholder="зареєстровано"></textarea>
+                    <label class="position-relative mb-2 d-flex align-items-center">
+                        <span class="col-4 ">Стан компанії:</span>
+                        <textarea disabled class="w-100 p-2 border border-input-border" rows="1" placeholder="зареєстровано"></textarea>
+                    </label>
+                    <label class="position-relative mb-2 d-flex align-items-center mt-5">
+                        <span class="col-4 font-weight-bold">Реєстрація на <span class="text-green">Z</span>akupivli&nbsp;<span class="text-green">&nbsp;24</span>:</span>
+                        <textarea disabled class="w-auto p-2 border border-input-border" rows="1" placeholder="Відсутня"></textarea>
                     </label>
                 </fieldset>
-                <fieldset class="company-textarea-control">
-                    <p class="col-4 d-inline-flex company-legend font-weight-bold">Реєстрація на&nbsp<span class="text-green">Z</span>akupivli<span class="text-green">24</span>:</p>
-                    <textarea disabled class="w-auto" rows="1" placeholder="Відсутня"></textarea>
-                </fieldset>
-                <p class="p-4">Для реєстрації компанії необхідно погодитись з умовами договору та підтвердити реєстрацію компанії за допомогою <strong> ЕЦП Директора: </strong></p>
-                <fieldset class="d-flex flex-wrap">
-                    <div class="col-9 d-flex justify-content-between pb-3">
-                        <label class="col-5"><input type="checkbox">Погоджуюсь на обробку персональних даних та з умовами <a href="">Договору публічної оферти</a></label>
-                        <button class="company-button border-0 btn bg-yellow text-white font-weight-bold px-5 py-3 btn">Підписати ЕЦП</button>
-                    </div>
-                    <div class="d-flex justify-content-center pt-3">
-                        <button class="company-button border-0 btn bg-green text-white font-weight-bold px-5 py-3 btn">Зареєструватись</button>
-                    </div>
-                </fieldset>
+                <p class="pt-4 pb-4">Для реєстрації компанії необхідно погодитись з умовами договору та підтвердити реєстрацію компанії за допомогою <strong class="font-weight-bold"> ЕЦП Директора: </strong></p>
+                <div class="row">
+                    <article class="checkbox-container col-6">
+                        <input type="checkbox" hidden id="checkbox-1">
+                        <label for="checkbox-1" class="checkbox-label"><span>Погоджуюсь на обробку персональних даних та з умовами <a href="">Договору публічної оферти</a></span></label>
+                    </article>
+
+                    <button class="border-0 offset-1 btn bg-yellow text-white font-weight-bold py-3 btn">Підписати ЕЦП</button>
+                </div>
+                <button class="border-0 btn bg-green text-white d-flex my-5 font-weight-bold px-5 mx-auto py-3 btn">Зареєструватись</button>
             </form>
         </div>
         </div>
     </div>
 </section>
 </main>
-<footer class="main-footer py-5 mt-5">
+<footer class="main-footer py-5">
 <section class="container">
     <div class="row">
         <div class="col-xl-3 col-lg-4 col-md-6 col-xs-12">

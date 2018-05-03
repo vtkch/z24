@@ -3,120 +3,32 @@
         border: 1px solid rgb(169, 169, 169);
         outline: none;
     }
-}
-
-.company {
-    padding-left: 38px;
-    section:not(:target) {
-        display: none;
+    &-down-arrow {
+        width: 2rem;
+        right: 0;
     }
-    h2 {
-        padding-bottom: 10px;
-        padding-top: 14px;
+    [disabled] {
+        background-color: $input-disabled-bg;
+        resize: none;
     }
-
-    aside {
-        padding-top: 14px;
-    }
-
-    &-button {
-        border-radius: 5px;
-        &-radius-right {
-            border-top-right-radius: 5px;
-            border-bottom-right-radius: 5px;
+    &-select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        &-button {
+            pointer-events: none;
+            width: 2rem;
+            right: 0;
+            &:focus {
+                outline: none;
+            }
         }
-    }
-
-    &-fieldset-p {
-        margin-bottom: 13px;
-        color: #7f7f7f;
-    }
-
-    &-legend {
-        padding-bottom: 5px;
-        padding-top: 30px;
-    }
-    &-assign-btn {
-        background: url(../img/main-sprite.svg) no-repeat 10px 6px;  //* ../img/desk-chair2.png
-        border: 1px solid #d0d0d0;
-        margin-bottom: 10px;
-        color: #454545;
-    }
-    &-is-company-main {
-        background: url(../img/main-sprite.svg) var(--yellow) no-repeat 10px 6px; // ../img/desk-chair.png
-        background-size: 28px;
-        background-position-y: -314px;
-    }
-    &-assign-label {
-        justify-content: space-evenly;
-        background-color: #ececec;
-        height: 160px;
-        &:before {
-            content: url(../img/briefcase.png);
+        &-arrow {
+            transform: translateY(-5px) rotate(45deg);
+            border-bottom: 1px solid #555;
+            border-right: 1px solid #555;
+            height: 1rem;
+            width: 1rem;
         }
-    }
-
-    :disabled {
-        background: #f8f6f6;
-    }
-    :focus {
-        outline: none;
-    }
-
-    &-input-control {
-        input {
-            border: 1px solid #d5d5d5;
-            padding: 10px;
-        }
-    }
-    &-textarea-control {
-        span {
-            left: 15px;
-            top: 17px;
-        }
-
-        textarea {
-            box-shadow: inset 1px 1.7px 2px 0 rgba(9, 12, 18, .09);
-            padding: 15px 15px 15px 50px;
-            border: 1px solid #d5d5d5;
-            line-height: normal;
-            overflow: hidden;
-            resize: none;
-            width: 520px;
-        }
-
-        a {
-            border-bottom: 1px dashed currentColor;
-            transform: translate(8px, 15px);
-            text-decoration: dashed;
-            align-self: baseline;
-            color: #1d75c1;
-        }
-    }
-    &-submit {
-        color: #5c5c5c;
-    }
-
-    &-select-botton {
-        //border-bottom: 1px solid #fff;
-        //border-right: 1px solid #fff;
-        transform: rotate(90deg);
-        //position: relative;
-        //height: 4.5rem;
-        width: 4.5rem;
-        content: '';
-        margin-left: -15px;
     }
 }
-
-/*
-.registry-sidebar-subscribe:before {
-    border-bottom: 1px solid #fff;
-    border-right: 1px solid #fff;
-    transform: rotate(45deg);
-    position: relative;
-    height: 1.5rem;
-    width: 1.5rem;
-    content: '';
-}
-*/
