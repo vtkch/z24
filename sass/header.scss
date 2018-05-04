@@ -31,13 +31,27 @@
     &-language {
         position: relative;
         grid-column-end: -1;
-        &-toggle:checked + &-container {
-            display: flex;
+        &-toggle:checked {
+            & + label {
+                .sticky-top-language-container {
+                    display: flex;
+                }
+                &:before {
+                    position: fixed;
+                    height: 100vh;
+                    width: 100vw;
+                    content: '';
+                    left: 0;
+                    top: 0;
+                }
+            }
         }
         &-container {
             box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
             border: .5px solid lightgrey;
+            position: relative;
             display: none;
+            z-index: 10;
             top: 100%;
             &:before {
                 box-shadow: -1px -1px 1px #ece9e9;
