@@ -1,12 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en"><head>
     <title>Title</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="dist/main.css">
 </head>
-
 <body onload="location.hash = '#subscription'">
 <header class="sticky-top border-bottom py-3 bg-white">
     <div class="container d-flex">
@@ -48,7 +46,7 @@
 <main>
     <section class="container">
         <div class="row">
-            <aside class="col-md-4 col-lg-3 col-6 col-xs-12 aside-block bg-aside pt-4 d-md-block d-none">
+            <aside class="col-md-4 col-lg-3 col-xs-12 aside-block bg-aside pt-4">
                 <h4 class="aside-block-header py-3 pl-4 fs-20 font-weight-bold">Моя компания</h4>
                 <ul class="aside-block-list pb-4 d-flex flex-column">
                     <li class="active"><a href="#validation-page">Информация о компании</a></li>
@@ -57,33 +55,34 @@
                 </ul>
                 <h4 class="aside-block-header py-3 pl-4 fs-20 font-weight-bold">Закупки</h4>
                 <ul class="aside-block-list pb-4">
-                    <li class="active"><a href="">Мои тендеры/заявки</a></li>
+                    <li><a href="">Мои тендеры/заявки</a></li>
                     <li><a href="">Создать новый тендер/заявку</a></li>
                     <li><a href="">Мои документы<span class="badge badge-danger ml-2">925</span></a></li>
                     <li><a href="">Отчет</a></li>
                     <li><a href="">Календарь торгов<span class="badge badge-danger ml-2">925</span></a></li>
                     <li><a href="">Уведомления</a></li>
-                    <li><a href="">Моя подписка</a></li>
+                    <li class="active"><a href="">Моя подписка</a></li>
                 </ul>
-                <a href="#add-company-page"
-                   class="aside-block-add-company border-green border text-green ptr bg-transparent p-3 text-center text-nowrap mb-5 d-block">+
+                <a href="#add-company-page" class="aside-block-add-company border-green border text-green ptr bg-transparent p-3 text-center text-nowrap mb-5 d-block">+
                     Добавить компанию</a>
             </aside>
-            <div class="room col-md-8 col-lg-9 col-xs-12 pt-4">
+            <div class="room col-lg-9 col-md-8 col-xs-12 pt-4">
                 <section id="validation-page">
                     <div class="row">
-                        <div class="col-md-7 col-lg-6">
+                        <div class="col-8">
                             <h2 class="font-weight-bold fs-24">Информация о компании</h2>
-                            <form novalidate>
+                            <form novalidate="">
                                 <fieldset>
                                     <legend class="room-legend font-weight-bold">Юридическое название:</legend>
                                     <label class="room-textarea-control position-relative mb-2 d-flex">
                                         <span class="position-absolute font-weight-bold">UA:</span>
                                         <textarea rows="3" placeholder="На Русском"></textarea>
+                                        <a href="">Изменить</a>
                                     </label>
                                     <label class="room-textarea-control position-relative mb-2 d-flex">
                                         <span class="position-absolute font-weight-bold">EN:</span>
                                         <textarea rows="3" placeholder="In English"></textarea>
+                                        <a href="">Изменить</a>
                                     </label>
                                 </fieldset>
                                 <fieldset>
@@ -91,16 +90,18 @@
                                     <label class="room-textarea-control position-relative mb-2 d-flex">
                                         <span class="position-absolute font-weight-bold">UA:</span>
                                         <textarea rows="3" placeholder="На Русском"></textarea>
+                                        <a href="">Изменить</a>
                                     </label>
                                     <label class="room-textarea-control position-relative mb-2 d-flex">
                                         <span class="position-absolute font-weight-bold">EN:</span>
                                         <textarea rows="3" placeholder="In English"></textarea>
+                                        <a href="">Изменить</a>
                                     </label>
                                 </fieldset>
                                 <fieldset>
                                     <legend class="room-legend font-weight-bold">Код ЕГРПОУ/ИНН:</legend>
                                     <label class="room-input-control">
-                                        <input disabled>
+                                        <input disabled="">
                                     </label>
                                 </fieldset>
                                 <fieldset>
@@ -109,8 +110,8 @@
                                         Вашей страницы. Будет отображаться в профиле
                                         компании под ее названием</p>
                                     <label class="room-textarea-control position-relative mb-2 d-flex">
-                                        <textarea rows="3" disabled class="pl-3" placeholder="На Русском"></textarea>
-
+                                        <textarea rows="3" disabled="" class="pl-3" placeholder="На Русском"></textarea>
+                                        <a href="">Изменить</a>
                                     </label>
                                 </fieldset>
                                 <fieldset>
@@ -118,22 +119,25 @@
                                     <p class="room-fieldset-p fs-14">укажите рынки, на которых Ваша компания
                                         предоставляет товары или услуги.</p>
                                     <label class="room-textarea-control position-relative mb-2 d-flex">
-                               <textarea rows="3" disabled class="pl-3">Бензин -> Неэтилированный бензин; Бензин ->
-       Этилированный бензин; Бензин -> Бензин с этанолом</textarea>
+                               <textarea rows="3" disabled="" class="pl-3">Бензин -&gt; Неэтилированный бензин; Бензин -&gt;
+       Этилированный бензин; Бензин -&gt; Бензин с этанолом</textarea>
+                                        <a href="">Изменить</a>
                                     </label>
                                 </fieldset>
                                 <fieldset>
                                     <legend class="room-legend font-weight-bold">Юридический адрес:</legend>
                                     <label class="room-textarea-control position-relative mb-2 d-flex">
-                               <textarea rows="3" disabled class="pl-3">Украина,область Днепропетровская, город Днепр, улица Набережная
+                               <textarea rows="3" disabled="" class="pl-3">Украина,область Днепропетровская, город Днепр, улица Набережная
        Победы, дом 32</textarea>
+                                        <a href="">Изменить</a>
                                     </label>
                                 </fieldset>
                                 <fieldset>
                                     <legend class="room-legend font-weight-bold">Фактический адрес:</legend>
                                     <label class="room-textarea-control position-relative mb-2 d-flex">
-                               <textarea rows="3" disabled class="pl-3">Украина,область Днепропетровская, город Днепр, улица Набережная
+                               <textarea rows="3" disabled="" class="pl-3">Украина,область Днепропетровская, город Днепр, улица Набережная
        Победы, дом 32</textarea>
+                                        <a href="">Изменить</a>
                                     </label>
                                 </fieldset>
                                 <fieldset>
@@ -144,13 +148,12 @@
                                 </fieldset>
                             </form>
                         </div>
-                        <aside class="col-lg-4 col-md-4 col-xl-3 offset-md-1 offset-lg-2">
+                        <aside class="col-3 offset-1">
                             <div class="d-flex flex-column">
                                 <!-- you should add is-company-main to assign button-->
                                 <button class="room-assign-btn room-is-company-main ptr fs-14 p-2">Назначить Главной</button>
                                 <input type="file" class="d-none" accept="image/*" id="logo">
-                                <label for="logo"
-                                       class="room-assign-label ptr fs-13 mb-2 d-flex flex-column align-items-center w-100 text-center">+
+                                <label for="logo" class="room-assign-label ptr fs-13 mb-2 d-flex flex-column align-items-center w-100 text-center">+
                                     Добавить логотип</label>
                                 <p class="fs-13 text-center">Минимум 200х100 пикселей, JPEG, PNG, GIF</p>
                                 <h5 class="fs-14 font-weight-bold text-center">Ссылка на профиль</h5>
@@ -158,8 +161,8 @@
                             </div>
                         </aside>
                     </div>
-                    <hr class="mb-3 mt-4 border-lightgrey">
-                    <form novalidate class="col-lg-7 col-xl-7 col-md-8 contact-form">
+                    <hr class="ml-3 mb-3 mt-4">
+                    <form novalidate="" class="col-lg-7 col-xl-7 col-md-8 contact-form">
                         <fieldset>
                             <legend class="h3">Контакты компании:</legend>
                             <p class="room-fieldset-p fs-14">эта информация отображается на странице Вашей компании и
@@ -198,7 +201,91 @@
                         </label>
                     </form>
                 </section>
-                <section id="subscription"></section>
+                <section id="subscription">
+                    <div class="row pb-5">
+                        <div class="col-12">
+                            <h2 class="fs-24">Підписатися на нові тендери і заявки на email</h2>
+                            <p>Виберіть критерії, за якими Ви хочете отримувати повідомлення про нові тендери і заявках, які
+                                публікуються на ПриватМаркеті.</p>
+                            <a href="" class="d-inline-block text-blue-link dashed-underline ">Відео-інструкція, як підписатися</a>
+                        </div>
+                        <div class="col-6 mt-4">
+                            <h4 class="fs-18">Ваша компанія</h4>
+                            <p class="fs-14 pt-1">Виберіть, для якої компанії Ви налаштовуєте цю розсилку?</p>
+                        </div>
+                        <div class="col-6 mt-4 d-flex align-items-center">ТОВ "МАКСТРОЙ ДІСК"</div>
+                        <div class="col-12">Визначте критерії підписки</div>
+                        <div class="col-6 mt-4">
+                            <h4 class="fs-18">Класифікатори</h4>
+                            <p class="fs-14 pt-1">Ви можете вказати класифікатори, за якими Вам будуть надсилатися всі нові тендери і заявки (можна вказати один або більше)</p>
+                        </div>
+                        <div class="col-6 mt-4 d-flex align-items-center">
+                            <a href="" class="text-blue-link dashed-underline  fs-20">Вказати класифікатори</a>
+                        </div>
+                        <div class="col-6 mt-4">
+                            <h4 class="fs-18">Регіони</h4>
+                            <p class="fs-14 pt-1">Ви можете вибрати регіони, з якими будуть пов'язані тендери і заявки (можна вказати один або більше)</p>
+                        </div>
+                        <div class="col-6 mt-4 d-flex align-items-center"><a href="" class="text-blue-link dashed-underline fs-20">Вибрати регіони</a></div>
+
+                        <div class="col-6 mt-4">
+                            <h4 class="fs-18">Бюджет закупівлі (грн)</h4>
+                            <p class="fs-14 pt-1">Ви можете вказати цікаві вам суми закупівель</p>
+                        </div>
+                        <div class="col-6 mt-4 d-flex align-items-center">
+                            <input class="text-right px-3 py-2 subscriptions-input" placeholder="від">&nbsp;-&nbsp;<input class="subscriptions-input text-right py-2 px-3" placeholder="до">
+                            <a href="" class="ml-4 position-absolute subscriptions-clear text-blue-link dashed-underline ">Очистити</a>
+                        </div>
+
+                        <div class="col-6 mt-4">
+                            <h4 class="fs-18">Ключові слова</h4>
+                            <p class="fs-14 pt-1">Напишіть через кому всі ключові слова (радимо написати російською та українською). Якщо в оголошенні про тендер зустрінеться одне з цих слів, Ви отримаєте повідомлення.</p>
+                        </div>
+                        <div class="col-6 mt-4 d-flex align-items-center">
+                            <textarea class="w-100" cols="30" rows="5"></textarea>
+                        </div>
+
+
+                        <div class="col-6 mt-4">
+                            <h4 class="fs-18">Мінус-слова</h4>
+                            <p class="fs-14 pt-1">Напишіть через кому слова які ви хочете виключити з пошуку. Якщо в оголошенні зустрінеться одне з цих слів, Ви не отримаєте повідомлення.</p>
+                        </div>
+                        <div class="col-6 mt-4 d-flex align-items-center">
+                            <textarea class="w-100" cols="30" rows="5"></textarea>
+                        </div>
+
+                        <div class="col-6 mt-4">
+                            <h4 class="fs-18">Компанія</h4>
+                            <p class="fs-14 pt-1">Ви можете вказати компанії, чиї тендери і заявки Вас цікавлять (можна вказати одну або кілька).</p>
+                        </div>
+                        <div class="col-6 mt-4 d-flex align-items-center">
+                            <input class="px-3 py-2" placeholder="Назва або ОКПО компанії">
+                            <a href="" class="ml-4 d-block subscriptions-clear text-blue-link dashed-underline">Додати ще</a>
+                        </div>
+
+
+                        <div class="col-6 mt-4">
+                            <h4 class="fs-18">Тип підписки</h4>
+                        </div>
+                        <div class="col-6 mt-4">
+                            <ul>
+                                <li class="py-3">
+                                    <input type="radio" id="standard" name="rd" hidden>
+                                    <label for="standard" data-error="some error to display" class="radio-label d-block ptr">Стандартна (рекомендується). Інформація про тендери буде надсилатися відразу на эл. почту</label>
+                                </li>
+                                <li class="py-3">
+                                    <input type="radio" id="extended" name="rd" hidden>
+                                    <label for="extended" data-error="some error to display" class="radio-label d-block ptr">Розширена, в окремому файлі формату Excel.</label>
+                                </li>
+                            </ul>
+                            <input class="px-3 py-2" placeholder="Назва або ОКПО компанії">
+                            <a href="" class="ml-4 d-block subscriptions-clear text-blue-link dashed-underline">Додати ще</a>
+                        </div>
+
+
+                    </div>
+
+                </section>
             </div>
         </div>
     </section>

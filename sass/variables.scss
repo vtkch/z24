@@ -66,6 +66,7 @@ $aside-color: #f3f3f3;
 $header-grey: #E8E8E8;
 $input-border: #d5d5d5;
 $link-color: #00ac34;
+$blue-link-color: #317bbc;
 $theme-colors: (
     "input-border": $input-border,
     "aside": $aside-color,
@@ -78,6 +79,7 @@ $theme-colors: (
     "trading": $status-trading,
     "moderation": $status-warning,
     "suggestion": $status-success,
+    "blue-link": $blue-link-color
 );
 
 :root {
