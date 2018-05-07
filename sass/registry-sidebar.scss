@@ -20,5 +20,8 @@
     &-fixed-space::after {
         content: "–";
     }
+    &-dashed-underline {
+        border-bottom: 1px dashed currentColor;
+    }
     
 }
