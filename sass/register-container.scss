@@ -1,6 +1,10 @@
 @import '../node_modules/bootstrap/scss/mixins/size';
 
 .register {
+    &-green-bg {
+        background: url(../img/main-page/bg-grid-green.png) no-repeat;
+        background-size: cover;
+    }
     &-header {
         grid-template-columns: repeat(10, 1fr);
         grid-gap: .5rem 1rem;

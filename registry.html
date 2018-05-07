@@ -6,34 +6,6 @@
         <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <link rel="stylesheet" href="dist/main.css">
-        <style>
-            .registry-sidebar-budget-inputs input,
-            .registry-sidebar-period-inputs input{
-                width: calc((-12px + 100%) / 2);
-            }
-
-            a {
-                color: #36ad39;
-                border-bottom: 1px dashed;
-            }
-            a:hover {
-                color: #90bee4;
-                outline: 0 none;
-                text-decoration: none;
-            }
-            .fixed-space::after {
-                content: "–";
-            }
-            .icon-tooltip {
-                background-image: url(img/main-sprite.svg);
-                background-size: 26px;
-                width: 32px;
-                height: 20px;
-                background-position: 4px -463px;
-                background-repeat: no-repeat;
-                display: inline-block;
-            }
-        </style>
     </head>
     <body>
     <header class="sticky-top border-bottom py-3 bg-white">
@@ -73,20 +45,30 @@
             </div>
         </div>
     </header>
-        <section>
+        <section class="register-green-bg">
             <!--registry head-->
             <div class="container">
                 <section class="row">
-                    <header class="col-12 col-md-6 pt-5 mt-2">
-                        <h1 class="fs-largest text-green text-center text-md-left font-weight-bold">Государственные
+                    <header class="pt-5 mt-2 col-12 text-white pb-3">
+                        <h1 class="text-center fs-36 font-weight-bold">Государственные
                             и коммерческие
                             ЗАКУПКИ</h1>
-                        <p class="main-page-logos d-flex flex-wrap flex-column flex-md-row align-items-center pt-4 justify-content-between">
-                            <mark class="bigger-text text-wrap">Официальный партнёр: </mark>
-                            <img src="img/main-page/logo-prozorro.png" alt="">
+                        <p class="main-page-logos d-flex pt-4 justify-content-center align-items-center">
+                            <mark class="bigger-text text-wrap text-white">Официальный партнёр: </mark>
+                            <img class="px-4" src="img/main-page/logo-prozorro.png" alt="">
                             <img src="img/main-page/rialto_tender.png" alt="">
                         </p>
                     </header>
+                    <section class="py-4 col-12">
+                        <div class="container input-group pb-1">
+                            <input type="search" class="form-control" placeholder="Поиск по названию закупки, классификатору, ЕГРПОУ..." aria-label="Recipient's username" aria-describedby="basic-addon2">
+                            <button class="border-0 btn bg-yellow font-weight-bold px-5 py-3 btn">Найти</button>
+                        </div>
+                        <div class="container pt-3 pb-3 d-flex flex-md-row flex-column align-items-center">
+                            <a href="" class="pl-md-5 pr-md-5 text-white"><span class="icon-settings"></span>Как это работает?</a>
+                            <a href="" class="pl-md-3 text-white"><span class="icon-demo"></span>Войти в демо-режим</a>
+                        </div>
+                    </section>
                 </section>
             </div>
         </section>
@@ -222,10 +204,10 @@
                             <div class="mb-2">
                                 <span class="font-weight-bold">Період</span>
                             </div>
-                            <div class="d-flex flex-row registry-sidebar-period-inputs">
-                                <input class="border-input-border border p-2" type="date">
-                                <div class="fixed-space d-flex align-items-center"></div>
-                                <input class="border-input-border border p-2" type="date">
+                            <div class="d-flex flex-row">
+                                <input class="border-input-border border p-2 registry-sidebar-small-input" type="date">
+                                <div class="registry-sidebar-fixed-space d-flex align-items-center"></div>
+                                <input class="border-input-border border p-2 registry-sidebar-small-input" type="date">
                             </div>
                         </div>
                     </section>
@@ -234,10 +216,10 @@
                             <div class="mb-2">
                                 <span class="font-weight-bold">Бюджет</span>
                             </div>
-                            <div class="d-flex flex-row registry-sidebar-budget-inputs">
-                                <input class="border-input-border border p-2" type="number">
-                                <div class="fixed-space d-flex align-items-center"></div>
-                                <input class="border-input-border border p-2" type="number">
+                            <div class="d-flex flex-row">
+                                <input class="border-input-border border p-2 registry-sidebar-small-input" type="number">
+                                <div class="registry-sidebar-fixed-space d-flex align-items-center"></div>
+                                <input class="border-input-border border p-2 registry-sidebar-small-input" type="number">
                             </div>
                         </div>
                     </section>
