@@ -2,43 +2,48 @@ $radio-border-h-color: #a0a0a0 !default;
 $radio-border-color: #d7d7d7 !default;
 $radio-container-size: 16px;
 $radio-circle-size: 6px;
+@import './variables';
 
 .radio {
     &-label {
         position: relative;
-        &:not(:last-child) {
-            margin-bottom: 32px;
+        margin-bottom: 32px;
+        align-items: center;
+        cursor: pointer;
+        display: flex;
+        &:last-child {
+            margin-bottom: 0;
         }
         &:hover:before {
-            border-color: $radio-border-h-color;
+            border-color: var(--radio-border-h-color);
         }
         input:checked + &:after {
-            background-color: $green;
+            background-color: var(--green);
         }
         &:after {
-            transition: background-color .3s;
-            transform: translate(5px, 5px);
-            height: $radio-circle-size;
-            width: $radio-circle-size;
+            left: calc(calc(var(--radio-container-size) - var(--radio-circle-size)) / 2 + var(--radio-border-width));
+            top: calc(50% - calc(var(--radio-circle-size)) / 2);
+            transition: background-color var(--transition-time);
+            height: var(--radio-circle-size);
+            width: var(--radio-circle-size);
             position: absolute;
             border-radius: 50%;
+            display: block;
             content: '';
-            left: 0;
         }
         
         input:checked + &:before {
-            border-color: $green;
+            border-color: var(--green);
         }
         
         &:before {
-            border: 1px solid $radio-border-color;
-            transition: border-color .3s;
-            height: $radio-container-size;
-            width: $radio-container-size;
-            vertical-align: middle;
-            display: inline-block;
+            min-width: calc(var(--radio-container-size) + var(--radio-border-width));
+            transition: border-color var(--transition-time);
+            border: 1px solid var(--radio-border-color);
+            height: var(--radio-container-size);
+            width: var(--radio-container-size);
             border-radius: 50%;
-            margin-right: 10px;
+            margin-right: 20px;
             content: '';
         }
     }

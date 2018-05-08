@@ -204,7 +204,7 @@
                 <section id="subscription">
                     <div class="row pb-5">
                         <div class="col-12">
-                            <h2 class="fs-24">Підписатися на нові тендери і заявки на email</h2>
+                            <h2 class="fs-24 font-weight-bold">Підписатися на нові тендери і заявки на email</h2>
                             <p>Виберіть критерії, за якими Ви хочете отримувати повідомлення про нові тендери і заявках, які
                                 публікуються на ПриватМаркеті.</p>
                             <a href="" class="d-inline-block text-blue-link dashed-underline ">Відео-інструкція, як підписатися</a>
@@ -258,11 +258,10 @@
                             <h4 class="fs-18">Компанія</h4>
                             <p class="fs-14 pt-1">Ви можете вказати компанії, чиї тендери і заявки Вас цікавлять (можна вказати одну або кілька).</p>
                         </div>
-                        <div class="col-6 mt-4 d-flex align-items-center">
-                            <input class="px-3 py-2" placeholder="Назва або ОКПО компанії">
-                            <a href="" class="ml-4 d-block subscriptions-clear text-blue-link dashed-underline">Додати ще</a>
+                        <div class="col-6 mt-4">
+                            <input class="px-3 py-2 d-block" placeholder="Назва або ОКПО компанії">
+                            <a href="" class="d-inline-block mt-2 text-blue-link dashed-underline">Додати ще</a>
                         </div>
-
 
                         <div class="col-6 mt-4">
                             <h4 class="fs-18">Тип підписки</h4>
@@ -271,17 +270,28 @@
                             <ul>
                                 <li class="py-3">
                                     <input type="radio" id="standard" name="rd" hidden>
-                                    <label for="standard" data-error="some error to display" class="radio-label d-block ptr">Стандартна (рекомендується). Інформація про тендери буде надсилатися відразу на эл. почту</label>
+                                    <label for="standard" data-error="some error to display" class="radio-label ptr">Стандартна (рекомендується). Інформація про тендери буде надсилатися відразу на эл. почту</label>
                                 </li>
                                 <li class="py-3">
                                     <input type="radio" id="extended" name="rd" hidden>
-                                    <label for="extended" data-error="some error to display" class="radio-label d-block ptr">Розширена, в окремому файлі формату Excel.</label>
+                                    <label for="extended" data-error="some error to display" class="radio-label ptr">Розширена, в окремому файлі формату Excel.</label>
                                 </li>
                             </ul>
-                            <input class="px-3 py-2" placeholder="Назва або ОКПО компанії">
-                            <a href="" class="ml-4 d-block subscriptions-clear text-blue-link dashed-underline">Додати ще</a>
                         </div>
 
+
+                        <div class="col-6 mt-4">
+                            <h4 class="fs-18">Компанія</h4>
+                            <p class="fs-14 pt-1">Ви можете вказати компанії, чиї тендери і заявки Вас цікавлять (можна вказати одну або кілька).</p>
+                        </div>
+                        <div class="col-6 mt-4">
+                            <input class="px-3 py-2 d-block" type="email" placeholder="user@example.com">
+                            <a href="" class="d-inline-block mt-2 text-blue-link dashed-underline">Додати ще</a>
+                        </div>
+
+                        <footer class="col-12">
+                            <button class="border-0 btn bg-green px-5 text-white d-flex my-5 font-weight-bold mx-auto py-3 btn">Підписатись</button>
+                        </footer>
 
                     </div>
 
