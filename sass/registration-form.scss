@@ -1,0 +1,13 @@
+.registration-form {
+    grid-template-columns: repeat(3, 2fr);
+    grid-gap: 1.5rem;
+    &-email {
+        grid-column: 2 span;
+    }
+    &-language {
+        grid-column: 1 / 1;
+    }
+    &-agreement {
+        grid-column: 1 / 3;
+    }
+}

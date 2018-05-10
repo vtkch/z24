@@ -82,6 +82,19 @@ $theme-colors: (
     "blue-link": $blue-link-color
 );
 
+$input-disabled-background-color: #f1f1f1 !default;
+
+$input-border-focus-color: #75af26 !default;
+
+$input-border-hover-color: #a0a0a0 !default;
+
+$input-border-color: #cbcbcb !default;
+
+$input-label-color: #a0a0a0 !default;
+
+$input-border-width: 1px !default;
+$input-indent: 1.5rem !default;
+$input-height: 56px !default;
 :root {
     //radio
     --radio-border-h-color: #{$radio-border-h-color};
@@ -93,7 +106,15 @@ $theme-colors: (
     --checkbox-border-h-color: #{$checkbox-border-h-color};
     --checkbox-border-color: #{$checkbox-border-color};
     --checkbox-size: #{$checkbox-size};
-
+    
+    --inp-dis-bg-color: #{$input-disabled-background-color};
+    --inp-border-f-color: #{$input-border-focus-color};
+    --inp-border-h-color: #{$input-border-hover-color};
+    --inp-border-width: #{$input-border-width};
+    --inp-border-color: #{$input-border-color};
+    --inp-label-color: #{$input-label-color};
+    --inp-indent: #{$input-indent};
+    --inp-height: #{$input-height};
     
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;

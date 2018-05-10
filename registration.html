@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="dist/main.css">
+</head>
+<body>
+<header class="sticky-top border-bottom py-3 bg-white">
+    <div class="container d-flex">
+        <div class="row flex-nowrap">
+            <div class="col-6 col-md-4 col-lg-3 d-flex align-items-center pr-2">
+                <a href="/">
+                    <img class="w-100 pr-1" alt="Brand" src="img/logo_z24.svg">
+                </a>
+            </div>
+            <ul class="col-6 justify-content-md-around col-lg-9 col-md-8 d-grid sticky-top-nav fs-20 align-items-md-center">
+                <li class="d-none border-left border-header-grey mx-2 py-4 d-lg-block"></li>
+                <li class="d-none d-md-block"><a href="">Закупки</a></li>
+                <li class="d-none d-md-block text-center"><a href="">Каталог компаний</a></li>
+                <li class="border-left border-header-grey mx-2 py-4 d-none d-lg-block"></li>
+                <li class="d-flex align-items-center text-green"><span class="icon-phone ptr"></span>4050</li>
+                <li class="d-flex align-items-center text-green"><span class="icon-chat ptr"></span>Чат</li>
+                <li class="border-left border-header-grey mx-2 py-4 d-none d-lg-block"></li>
+                <li class="sticky-top-fixed-height d-none d-md-block text-center fs-14">ХМЕЛЬНИЦЬКИЙ НАВЧАЛЬНО-ВИХОВНИЙ
+                    КОМПЛЕКС №31 «ДОШКІЛЬНИЙ НАВЧАЛЬНИЙ
+                    ЗАКЛАД – ЗАГАЛЬНООСВІТНІЙ НАВЧАЛЬНИЙ ЗАКЛАД І СТУПЕНЯ»
+                    <!--<button class="border-green border ptr text-green bg-transparent fs-20 py-2 px-5 float-right">Login</button>-->
+                </li>
+                <li class="border-left border-header-grey mx-2 py-4 d-none d-lg-block"></li>
+                <li class="d-none d-md-flex sticky-top-language align-self-stretch justify-content-center">
+                    <input type="checkbox" hidden id="lang-list" class="sticky-top-language-toggle">
+                    <label class="bg-transparent btn fs-20 d-flex btn justify-content-center align-items-center p-0 font-weight-bold border-0" for="lang-list">
+                        RU <span class="sticky-top-caret text-green"></span>
+                        <ul class="sticky-top-language-container ptr position-absolute bg-white py-2 flex-column align-items-center">
+                            <li class="px-5">EN</li>
+                            <li class="px-5">UK</li>
+                        </ul>
+                    </label>
+
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+<main>
+    <!--registry head-->
+    <header class="py-3 register-green-bg">
+        <h1 class="h1 text-white text-center py-4 font-weight-bold">Регистрация пользователя</h1>
+    </header>
+    <section class="container">
+        <form class="d-grid registration-form py-5">
+            <div class="control">
+                <input id="lastname" required class="control-input" autofocus>
+                <label for="lastname" class="control-label">Фамилия:</label>
+            </div>
+            <div class="control">
+                <input id="firstname" required class="control-input">
+                <label for="firstname" class="control-label">Имя:</label>
+            </div>
+            <div class="control">
+                <input id="surname" required class="control-input">
+                <label for="surname" class="control-label">Отчество:</label>
+            </div>
+            <div class="control registration-form-email">
+                <input id="email" required class="control-input">
+                <label for="email" class="control-label">user@example.com</label>
+            </div>
+            <div class="control">
+                <input id="phone" type="tel" required class="control-input">
+                <label for="phone" class="control-label">Моб. телефон (логин):</label>
+            </div>
+            <div class="control">
+                <input id="pwd" required class="control-input">
+                <label for="pwd" class="control-label">Пароль:</label>
+            </div>
+            <div class="control">
+                <input id="confirm-pwd" required class="control-input">
+                <label for="confirm-pwd" class="control-label">Повторите пароль:</label>
+            </div>
+            <div class="control registration-form-language">
+                <input id="language" required class="control-input">
+                <label for="language" class="control-label">Украинский</label>
+            </div>
+
+            <div class="checkbox-container registration-form-agreement">
+                <input type="checkbox" hidden id="checkbox-1">
+                <label for="checkbox-1" class="checkbox-label"><span class="pl-3">Погоджуюсь на обробку персональних даних та з умовами <a href="">Договору публічної оферти</a></span></label>
+            </div>
+        </form>
+    </section>
+</main>
+<footer class="main-footer py-5">
+    <section class="container">
+        <div class="row">
+            <div class="col-xl-3 col-lg-4 col-md-6 col-xs-12">
+                <div class="d-grid main-footer-gap">
+                    <figure class="d-flex">
+                        <img src="img/footer/logo-pmarket.png" alt="Facebook">
+                        <figcaption class="h2 mb-0">ПриватМаркет</figcaption>
+                    </figure>
+                    <p>© ПриватБанк</p>
+                    <ul class="d-grid main-footer-social-gaps">
+                        <li class="icon-facebook ptr"></li>
+                        <li class="icon-youtube ptr"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xl-2 col-lg-4 col-md-6 col-xs-12 d-grid">
+                <h5 class="h5 mb-0">Телефон горячей линии</h5>
+                <p class="h3 mb-0 d-flex"><span class="icon-footer-phone ptr"></span>4050</p>
+                <p class="fs-13">Бесплатно с мобильных</p>
+            </div>
+            <div class="col-xl-2 col-lg-4 col-md-6 col-xs-12 d-grid">
+                <h5 class="h5 mb-0">Договор публичной оферты</h5>
+                <a href="">Условия и правила пользования</a>
+            </div>
+            <div class="col-xl-2 col-lg-4 col-md-6 col-xs-12 d-grid">
+                <h5 class="h5 mb-0">ЧАВО</h5>
+                <a href="">Для бизнеса</a>
+                <a href="">Для государственных заказчиков</a>
+            </div>
+            <div class="col-xl-2 col-lg-4 col-md-6 col-xs-12 d-grid">
+                <h5 class="h5 mb-0">Вопросы? Предложения?</h5>
+                <footer class="d-grid">
+                    <span>Пишите нам:</span>
+                    <a href="">info@privatmarket.ua</a>
+                    <a href="">Помощь в чате</a>
+                    <a href="">Карта сайта</a>
+                </footer>
+            </div>
+        </div>
+    </section>
+</footer>
+</body>
+</html>

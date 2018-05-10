@@ -1,0 +1,75 @@
+@import '../variables';
+@import '../../node_modules/bootstrap/scss/mixins/text-truncate';
+@import '../helpers';
+
+.control {
+  --transform: translateY(calc(var(--shift) * -1)) scale(.75, .75);
+  --transition-time: .2s;
+  --shift: 10px;
+  min-height: var(--inp-height);
+  position: relative;
+  cursor: pointer;
+  &-errors {
+    color: var(--main-danger-color);
+    text-indent: var(--inp-indent);
+    font-size: 13px;
+    margin-top: 5px;
+  }
+  &-label {
+    transform-origin: var(--inp-indent);
+    transition: var(--transition-time);
+    text-indent: var(--inp-indent);
+    color: var(--inp-label-color);
+    height: var(--inp-height);
+    width: calc(100% - 36px);
+    @include text-truncate;
+    align-items: center;
+    position: absolute;
+    user-select: none;
+    font-size: 17px;
+    display: flex;
+    top: 0;
+    .control-input:focus + & {
+      transform: var(--transform);
+    }
+  }
+  &-input {
+    padding-right: calc(var(--icon-size) + var(--inp-indent) + 12px);
+    border: var(--inp-border-width) solid var(--inp-border-color);
+    text-indent: calc(var(--inp-indent) - var(--inp-border-width));
+    transition: background-color var(--transition-time);
+    color: var(--main-black-color);
+    height: var(--inp-height);
+    @include text-truncate;
+    box-sizing: border-box;
+    font-size: 17px;
+    width: 100%;
+    /*&[type="file"]::-webkit-file-upload-button  {
+      -webkit-appearance: none;
+      all: unset;
+      width: 0;
+      padding: 10px 0 0 20px;
+    }*/
+    &:disabled {
+      background-color: var(--inp-dis-bg-color);
+    }
+    &:hover {
+      border-color: var(--inp-border-h-color);
+    }
+    &::placeholder {
+      color: transparent;
+    }
+
+    &:valid, &[value]:disabled {
+      padding-top: var(--shift);
+      & + .control-label {
+        transform: var(--transform);
+      }
+    }
+    &:focus {
+      border-color: var(--inp-border-f-color);
+      padding-top: var(--shift);
+      outline: none
+    }
+  }
+}
