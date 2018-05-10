@@ -3,9 +3,9 @@
 .checkbox {
   $this: &;
   &-container {
+    transition: var(--transition-time);
     --border-width: 1px;
     --shift: 10px;
-    transition: var(--transition-time);
     position: relative;
     &:hover > #{$this}-label:before {
       border-color: var(--inp-border-h-color);
@@ -19,7 +19,7 @@
     cursor: pointer;
     display: flex;
     &:before {
-      border: 1px solid var(--checkbox-border-color);
+      border: var(--border-width) solid var(--checkbox-border-color);
       min-width: var(--checkbox-size);
       height: var(--checkbox-size);
       transition: border-color 1s;
