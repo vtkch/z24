@@ -35,15 +35,10 @@
 @import 'helpers';
 
 body {
+    -webkit-scroll-behavior: smooth;
     scroll-behavior: smooth;
     min-height: 100vh;
 }
-/*
-
-main {
-    min-height: 80vh;
-}
-*/
 
 :target:before {
     // fixing bug related sticky header+anchor overflow

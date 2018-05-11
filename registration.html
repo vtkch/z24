@@ -80,11 +80,13 @@
                 <input id="confirm-pwd" required class="control-input">
                 <label for="confirm-pwd" class="control-label">Повторите пароль:</label>
             </div>
-            <div class="control registration-form-from-start">
-                <input id="language" required class="control-input">
-                <label for="language" class="control-label">Украинский</label>
-            </div>
-
+            <select class="control registration-form-from-start registration-form-placeholder-color px-4">
+                <option value="en">Английский</option>
+                <option value="uk">Украинский</option>
+                <option value="ru">Русский</option>
+                <!--<input id="language" required class="control-input">
+                <label for="language" class="control-label">Украинский</label>-->
+            </select>
             <div class="checkbox-container registration-form-agreement mb-3">
                 <input type="checkbox" hidden id="checkbox-1">
                 <label for="checkbox-1" class="checkbox-label"><span class="pl-3">Погоджуюсь на обробку персональних даних та з умовами <a href="">Договору публічної оферти</a></span></label>
