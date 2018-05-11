@@ -5,4 +5,8 @@
     &-clear {
         left: 100%;
     }
+    &-range {
+        grid-template-columns: repeat(3, auto);
+        grid-gap: 10px;
+    }
 }

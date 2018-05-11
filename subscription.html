@@ -232,17 +232,27 @@
                             <h4 class="fs-18">Бюджет закупівлі (грн)</h4>
                             <p class="fs-14 pt-1 pr-4">Ви можете вказати цікаві вам суми закупівель</p>
                         </div>
-                        <div class="col-6 mt-4 d-flex align-items-center">
-                            <input class="text-right px-3 py-2 subscriptions-input" placeholder="від">&nbsp;-&nbsp;<input class="subscriptions-input text-right py-2 px-3" placeholder="до">
-                            <a href="" class="ml-4 position-absolute subscriptions-clear text-blue-link dashed-underline ">Очистити</a>
-                        </div>
+                        <div class="col-6 mt-4 d-grid subscriptions-range align-items-center">
+                            <div class="control subscriptions-input">
+                                <input id="from" required class="control-input">
+                                <label for="from" class="control-label">від</label>
+                                <span class="control-label-icon control-label-icon-clear"></span>
+                            </div>
+                             -
+                            <div class="control subscriptions-input">
+                                <input id="to" required class="control-input">
+                                <label for="to" class="control-label">до</label>
+                                <span class="control-label-icon control-label-icon-clear"></span>
+                            </div>
+                            <!--<input class="text-right px-3 py-2 subscriptions-input" placeholder="від">&nbsp;-&nbsp;<input class="subscriptions-input text-right py-2 px-3" placeholder="до">-->
 
+                        </div>
                         <div class="col-6 mt-4">
                             <h4 class="fs-18">Ключові слова</h4>
                             <p class="fs-14 pt-1 pr-4">Напишіть через кому всі ключові слова (радимо написати російською та українською). Якщо в оголошенні про тендер зустрінеться одне з цих слів, Ви отримаєте повідомлення.</p>
                         </div>
                         <div class="col-6 mt-4 d-flex align-items-center">
-                            <textarea class="w-100" cols="30" rows="5"></textarea>
+                            <textarea class="w-100 p-3" cols="30" rows="3"></textarea>
                         </div>
 
 
@@ -251,18 +261,21 @@
                             <p class="fs-14 pt-1 pr-4">Напишіть через кому слова які ви хочете виключити з пошуку. Якщо в оголошенні зустрінеться одне з цих слів, Ви не отримаєте повідомлення.</p>
                         </div>
                         <div class="col-6 mt-4 d-flex align-items-center">
-                            <textarea class="w-100" cols="30" rows="5"></textarea>
+                            <textarea class="w-100 p-3" cols="30" rows="3"></textarea>
                         </div>
 
                         <div class="col-6 mt-4">
                             <h4 class="fs-18">Компанія</h4>
                             <p class="fs-14 pt-1 pr-4">Ви можете вказати компанії, чиї тендери і заявки Вас цікавлять (можна вказати одну або кілька).</p>
                         </div>
-                        <div class="col-6 mt-4">
-                            <input class="px-3 py-2 d-block" placeholder="Назва або ОКПО компанії">
-                            <a href="" class="d-inline-block mt-2 text-blue-link dashed-underline">Додати ще</a>
-                        </div>
+                        <div class="col-6 mt-4 control">
+                            <input id="egrpou" required class="control-input">
+                            <label for="egrpou" class="control-label">Назва або ОКПО компанії</label>
 
+<!--                            <input class="px-3 py-2 d-block" placeholder="Назва або ОКПО компанії">-->
+
+                        </div>
+                        <a href="" class="offset-6 d-inline-block mt-2 text-blue-link dashed-underline">Додати ще</a>
                         <div class="col-6 mt-4">
                             <h4 class="fs-18">Тип підписки</h4>
                         </div>
@@ -284,9 +297,9 @@
                             <h4 class="fs-18">Компанія</h4>
                             <p class="fs-14 pt-1 pr-4">Ви можете вказати компанії, чиї тендери і заявки Вас цікавлять (можна вказати одну або кілька).</p>
                         </div>
-                        <div class="col-6 mt-4">
-                            <input class="px-3 py-2 d-block" type="email" placeholder="user@example.com">
-                            <a href="" class="d-inline-block mt-2 text-blue-link dashed-underline">Додати ще</a>
+                        <div class="col-6 mt-4 control">
+                            <input id="eml" required class="control-input">
+                            <label for="eml" class="control-label">user@example.com</label>
                         </div>
                         <footer class="col-12">
                             <button class="border-0 btn bg-green px-5 text-white d-flex my-5 font-weight-bold mx-auto py-3 btn">Підписатись</button>
