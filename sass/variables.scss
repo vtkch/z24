@@ -67,6 +67,7 @@ $header-grey: #E8E8E8;
 $input-border: #d5d5d5;
 $link-color: #00ac34;
 $blue-link-color: #317bbc;
+$error-color: #ff4c4c;
 $theme-colors: (
     "input-border": $input-border,
     "aside": $aside-color,
@@ -107,7 +108,7 @@ $input-height: 56px !default;
     --checkbox-border-h-color: #{$checkbox-border-h-color};
     --checkbox-border-color: #{$checkbox-border-color};
     --checkbox-size: #{$checkbox-size};
-    
+    --error-color: #{$error-color};
     --inp-dis-bg-color: #{$input-disabled-background-color};
     --inp-border-f-color: #{$green};
     --inp-border-h-color: #{$input-border-hover-color};
