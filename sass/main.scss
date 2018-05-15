@@ -78,9 +78,10 @@
     &-top-categories {
         &-list {
             & > li:not(:last-child) {
-                background: url(../img/main-page/split-category.svg) #fff no-repeat;
+                background-image: url(../img/main-page/sprite2.svg);
                 box-shadow: 0 7px 24px 0 rgba(0, 0, 0, .13);
-                min-height: 150px;
+                background-color: #fff;
+                min-height: 170px;
                 &:hover {
                     box-shadow: 0 7px 32px 0 rgba(0, 0, 0, .33);
                     background-color: var(--green);
@@ -89,29 +90,29 @@
             }
         }
         
-        &-work {/*
-            background: url(../img/main-page/split-category.svg) no-repeat;*/
+        &-work {
+            background-position: -117px -13px;
         }
         &-goods {
-        
+            background-position: -4px -432px;
         }
         &-oil {
-        
+            background-position: -76px -1621px;
         }
         &-chemistry {
-        
+            background-position: -85px -819px;
         }
         &-items {
-        
+            background-position: 16px -1218px;
         }
         &-tech {
-        
+            background-position: -84px -2024px;
         }
         &-furniture {
-        
+            background-position: 16px 189px;
         }
         &-services {
-        
+            background-position: 16px -2411px;
         }
         &-agricultural {
         
