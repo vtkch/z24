@@ -17,10 +17,10 @@
             grid-template-columns: 50% 50%
         }
         @media (min-width: map-get($grid-breakpoints, 'md')) {
-            grid-template-columns: repeat(4, min-content) auto min-content;
+            grid-template-columns: repeat(4, min-content) 1fr min-content;
         }
         @media (min-width: map-get($grid-breakpoints, 'lg')) {
-            grid-template-columns: repeat(7, min-content) auto min-content min-content;
+            grid-template-columns: repeat(7, min-content) 1fr min-content min-content;
         }
         a {
             text-decoration: none;

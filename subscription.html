@@ -8,7 +8,7 @@
 <body onload="location.hash = '#subscription'">
 <header class="sticky-top border-bottom py-3 bg-white">
     <div class="container d-flex">
-        <div class="row flex-nowrap">
+        <div class="row flex-nowrap w-100">
             <div class="col-6 col-md-4 col-lg-3 d-flex align-items-center pr-2">
                 <a href="/">
                     <img class="w-100 pr-1" alt="Brand" src="img/logo_z24.svg">
@@ -22,10 +22,21 @@
                 <li class="d-flex align-items-center text-green"><span class="icon-phone ptr"></span>4050</li>
                 <li class="d-flex align-items-center text-green"><span class="icon-chat ptr"></span>Чат</li>
                 <li class="border-left border-header-grey mx-2 py-4 d-none d-lg-block"></li>
-                <li class="sticky-top-fixed-height d-none d-md-block text-center fs-14">ХМЕЛЬНИЦЬКИЙ НАВЧАЛЬНО-ВИХОВНИЙ
+                <!-- already logined user-->
+               <!-- <li class="sticky-top-fixed-height d-none d-md-flex text-center fs-14 justify-content-around flex-column flex-lg-row ptr">ХМЕЛЬНИЦЬКИЙ НАВЧАЛЬНО-ВИХОВНИЙ
                     КОМПЛЕКС №31 «ДОШКІЛЬНИЙ НАВЧАЛЬНИЙ
                     ЗАКЛАД – ЗАГАЛЬНООСВІТНІЙ НАВЧАЛЬНИЙ ЗАКЛАД І СТУПЕНЯ»
-                    <!--<button class="border-green border ptr text-green bg-transparent fs-20 py-2 px-5 float-right">Login</button>-->
+                </li>-->
+
+                <!-- login + signup-->
+               <!-- <li class="sticky-top-fixed-height d-none d-md-flex text-center fs-14 justify-content-around flex-column flex-lg-row ptr">
+                      <button class="border-green border text-white bg-green fs-18 py-1 py-lg-2 px-sm-2 px-md-4 px-xl-5">Signup</button>
+                      <button class="border-green border text-green bg-transparent fs-18 py-1 py-lg-2 px-sm-2 px-md-4 px-xl-5">Login</button>
+                </li>-->
+                <!-- add company-->
+                <li class="sticky-top-fixed-height d-none d-md-flex text-center fs-14 justify-content-around flex-column flex-lg-row ptr">
+                    <div class="fs-18 py-1 py-lg-2">User Name</div>
+                    <button class="border-green border text-green bg-transparent fs-18 py-1 py-lg-2 px-sm-2 px-md-4 px-xl-5">Add Company</button>
                 </li>
                 <li class="border-left border-header-grey mx-2 py-4 d-none d-lg-block"></li>
                 <li class="d-none d-md-flex sticky-top-language align-self-stretch justify-content-center">
@@ -242,6 +253,7 @@
                             <div class="control subscriptions-input">
                                 <input id="to" required class="control-input">
                                 <label for="to" class="control-label">до</label>
+
                                 <span class="control-label-icon control-label-icon-clear"></span>
                             </div>
                             <!--<input class="text-right px-3 py-2 subscriptions-input" placeholder="від">&nbsp;-&nbsp;<input class="subscriptions-input text-right py-2 px-3" placeholder="до">-->
