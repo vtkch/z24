@@ -21,7 +21,7 @@ $radio-circle-size: 6px;
             background-color: var(--green);
         }
         &:after {
-            left: calc(calc(var(--radio-container-size) - var(--radio-circle-size)) / 2 + var(--radio-border-width));
+            left: calc(calc(var(--radio-container-size) - var(--radio-circle-size)) / 2);
             top: calc(50% - calc(var(--radio-circle-size)) / 2);
             transition: background-color var(--transition-time);
             height: var(--radio-circle-size);

@@ -29,6 +29,7 @@
         &-container {
             box-shadow: 0 7px 32px 0 rgba(0, 0, 0, .33);
             top: calc(100% + 1rem);
+            margin: 0 -3rem;
             display: none;
             &-image {
                 justify-self: center;
@@ -44,13 +45,13 @@
             &:before {
                 box-shadow: -1px -1px 1px #ece9e9;
                 transform: rotate(45deg);
+                align-self: center;
                 position: absolute;
                 background: #fff;
                 height: 1rem;
                 top: -.5rem;
                 width: 1rem;
                 content: '';
-                left: 2rem;
             }
         }
         &-toggle:checked {
