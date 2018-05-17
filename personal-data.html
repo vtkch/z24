@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="dist/main.css">
+</head>
+
+<body onload="location.hash = '#personal-data'">
+<header class="sticky-top border-bottom py-3 bg-white">
+    <div class="container d-flex">
+        <div class="row flex-nowrap">
+            <div class="col-6 col-md-4 col-lg-3 d-flex align-items-center pr-2">
+                <a href="/">
+                    <img class="w-100 pr-1" alt="Brand" src="img/logo_z24.svg">
+                </a>
+            </div>
+            <ul class="col-6 justify-content-md-around col-lg-9 col-md-8 d-grid sticky-top-nav fs-20 align-items-md-center">
+                <li class="d-none border-left border-header-grey mx-2 py-4 d-lg-block"></li>
+                <li class="d-none d-md-block"><a href="">Закупки</a></li>
+                <li class="d-none d-md-block text-center"><a href="">Каталог компаний</a></li>
+                <li class="border-left border-header-grey mx-2 py-4 d-none d-lg-block"></li>
+                <li class="d-flex align-items-center text-green"><span class="icon-phone ptr"></span>4050</li>
+                <li class="d-flex align-items-center text-green"><span class="icon-chat ptr"></span>Чат</li>
+                <li class="border-left border-header-grey mx-2 py-4 d-none d-lg-block"></li>
+                <li class="sticky-top-fixed-height d-none d-md-block text-center fs-14">ХМЕЛЬНИЦЬКИЙ НАВЧАЛЬНО-ВИХОВНИЙ
+                    КОМПЛЕКС №31 «ДОШКІЛЬНИЙ НАВЧАЛЬНИЙ
+                    ЗАКЛАД – ЗАГАЛЬНООСВІТНІЙ НАВЧАЛЬНИЙ ЗАКЛАД І СТУПЕНЯ»
+                    <!--<button class="border-green border ptr text-green bg-transparent fs-20 py-2 px-5 float-right">Login</button>-->
+                </li>
+                <li class="border-left border-header-grey mx-2 py-4 d-none d-lg-block"></li>
+                <li class="d-none d-md-flex sticky-top-language align-self-stretch justify-content-center">
+                    <input type="checkbox" hidden id="lang-list" class="sticky-top-language-toggle">
+                    <label class="bg-transparent btn fs-20 d-flex btn justify-content-center align-items-center p-0 font-weight-bold border-0" for="lang-list">
+                        RU <span class="sticky-top-caret text-green"></span>
+                        <ul class="sticky-top-language-container ptr position-absolute bg-white py-2 flex-column align-items-center">
+                            <li class="px-5">EN</li>
+                            <li class="px-5">UK</li>
+                        </ul>
+                    </label>
+
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+<main>
+    <section class="container">
+        <div class="row">
+            <aside class="col-md-4 col-lg-3 col-6 col-xs-12 aside-block bg-aside pt-4 d-md-block d-none">
+                <h4 class="aside-block-header py-3 pl-4 fs-20 font-weight-bold">Моя компания</h4>
+                <ul class="aside-block-list pb-4 d-flex flex-column">
+                    <li ><a>Информация о компании</a></li>
+                    <li><a href="">Мои сотрудники</a></li>
+                    <li class="active"><a href="#personal-data">Персональные настройки</a></li>
+                </ul>
+                <h4 class="aside-block-header py-3 pl-4 fs-20 font-weight-bold">Закупки</h4>
+                <ul class="aside-block-list pb-4">
+                    <li class="active"><a href="">Мои тендеры/заявки</a></li>
+                    <li><a href="">Создать новый тендер/заявку</a></li>
+                    <li><a href="">Мои документы<span class="badge badge-danger ml-2">925</span></a></li>
+                    <li><a href="">Отчет</a></li>
+                    <li><a href="">Календарь торгов<span class="badge badge-danger ml-2">925</span></a></li>
+                    <li><a href="">Уведомления</a></li>
+                    <li><a href="">Моя подписка</a></li>
+                </ul>
+                <a href="#add-company-page"
+                   class="aside-block-add-company border-green border text-green ptr bg-transparent p-3 text-center text-nowrap mb-5 d-block">+
+                    Добавить компанию</a>
+            </aside>
+            <div class="room col-md-8 col-lg-9 col-xs-12 pt-4">
+                <section id="validation-page">
+                    <div class="row">
+                        <div class="col-md-7 col-lg-6">
+                            <h2 class="font-weight-bold fs-24">Информация о компании</h2>
+                            <form novalidate>
+                                <fieldset>
+                                    <legend class="room-legend font-weight-bold">Юридическое название:</legend>
+                                    <label class="room-textarea-control position-relative mb-2 d-flex">
+                                        <span class="position-absolute font-weight-bold">UA:</span>
+                                        <textarea rows="3" placeholder="На Русском"></textarea>
+                                    </label>
+                                    <label class="room-textarea-control position-relative mb-2 d-flex">
+                                        <span class="position-absolute font-weight-bold">EN:</span>
+                                        <textarea rows="3" placeholder="In English"></textarea>
+                                    </label>
+                                </fieldset>
+                                <fieldset>
+                                    <legend class="room-legend font-weight-bold">Сокращённое название:</legend>
+                                    <label class="room-textarea-control position-relative mb-2 d-flex">
+                                        <span class="position-absolute font-weight-bold">UA:</span>
+                                        <textarea rows="3" placeholder="На Русском"></textarea>
+                                    </label>
+                                    <label class="room-textarea-control position-relative mb-2 d-flex">
+                                        <span class="position-absolute font-weight-bold">EN:</span>
+                                        <textarea rows="3" placeholder="In English"></textarea>
+                                    </label>
+                                </fieldset>
+                                <fieldset>
+                                    <legend class="room-legend font-weight-bold">Код ЕГРПОУ/ИНН:</legend>
+                                    <label class="room-input-control">
+                                        <input disabled>
+                                    </label>
+                                </fieldset>
+                                <fieldset>
+                                    <legend class="room-legend font-weight-bold">Общая информация о компании:</legend>
+                                    <p class="room-fieldset-p fs-14">текст о Вашей компании, который видят посетители
+                                        Вашей страницы. Будет отображаться в профиле
+                                        компании под ее названием</p>
+                                    <label class="room-textarea-control position-relative mb-2 d-flex">
+                                        <textarea rows="3" disabled class="pl-3" placeholder="На Русском"></textarea>
+
+                                    </label>
+                                </fieldset>
+                                <fieldset>
+                                    <legend class="room-legend font-weight-bold">Рынки (виды деятельности)</legend>
+                                    <p class="room-fieldset-p fs-14">укажите рынки, на которых Ваша компания
+                                        предоставляет товары или услуги.</p>
+                                    <label class="room-textarea-control position-relative mb-2 d-flex">
+                               <textarea rows="3" disabled class="pl-3">Бензин -> Неэтилированный бензин; Бензин ->
+       Этилированный бензин; Бензин -> Бензин с этанолом</textarea>
+                                    </label>
+                                </fieldset>
+                                <fieldset>
+                                    <legend class="room-legend font-weight-bold">Юридический адрес:</legend>
+                                    <label class="room-textarea-control position-relative mb-2 d-flex">
+                               <textarea rows="3" disabled class="pl-3">Украина,область Днепропетровская, город Днепр, улица Набережная
+       Победы, дом 32</textarea>
+                                    </label>
+                                </fieldset>
+                                <fieldset>
+                                    <legend class="room-legend font-weight-bold">Фактический адрес:</legend>
+                                    <label class="room-textarea-control position-relative mb-2 d-flex">
+                               <textarea rows="3" disabled class="pl-3">Украина,область Днепропетровская, город Днепр, улица Набережная
+       Победы, дом 32</textarea>
+                                    </label>
+                                </fieldset>
+                                <fieldset>
+                                    <legend class="room-legend font-weight-bold">Обновить информацию о компании данными
+                                        из ЕГР:
+                                    </legend>
+                                    <button class="room-submit px-4 py-2 ptr bg-yellow border-0">Обновить</button>
+                                </fieldset>
+                            </form>
+                        </div>
+                        <aside class="col-lg-4 col-md-4 col-xl-3 offset-md-1 offset-lg-2">
+                            <div class="d-flex flex-column">
+                                <!-- you should add is-company-main to assign button-->
+                                <button class="room-assign-btn room-is-company-main ptr fs-14 p-2">Назначить Главной</button>
+                                <input type="file" class="d-none" accept="image/*" id="logo">
+                                <label for="logo"
+                                       class="room-assign-label ptr fs-13 mb-2 d-flex flex-column align-items-center w-100 text-center">+
+                                    Добавить логотип</label>
+                                <p class="fs-13 text-center">Минимум 200х100 пикселей, JPEG, PNG, GIF</p>
+                                <h5 class="fs-14 font-weight-bold text-center">Ссылка на профиль</h5>
+                                <a class="text-center" href="">zakupivli24.pb.ua/123456</a>
+                            </div>
+                        </aside>
+                    </div>
+                    <hr class="mb-3 mt-4 border-lightgrey">
+                    <form novalidate class="col-lg-7 col-xl-7 col-md-8 contact-form">
+                        <fieldset>
+                            <legend class="h3">Контакты компании:</legend>
+                            <p class="room-fieldset-p fs-14">эта информация отображается на странице Вашей компании и
+                                будет видна
+                                всем посетителям</p>
+                            <div>
+                                <label for="phone" class="contact-form-label fs-14 d-block my-2">Телефон:</label>
+                                <input class="contact-form-input" id="phone" placeholder="+38(___) ___-__-__">
+                                <button class="contact-form-add-phone ptr bg-transparent mt-1 border-0 d-block fs-13 pl-0">
+                                    Добавить ещё номер
+                                </button>
+                            </div>
+
+                            <label class="contact-form-label fs-14 d-block my-2" for="email">E-mail</label>
+                            <input class="contact-form-input" type="email" id="email">
+
+                            <label for="website" class="contact-form-label fs-14 d-block my-2">Веб сайт</label>
+                            <input class="contact-form-input" id="website">
+                        </fieldset>
+                    </form>
+                </section>
+                <section id="add-company-page">
+                    <h2 class="font-weight-bold fs-24">Додавання компанії</h2>
+                    <form class="add-company-form col-lg-7 col-xl-7 col-md-8 col-xs-12 pt-4">
+
+                        <label class="d-flex justify-content-between align-items-center mb-2">Країна реєстрації
+                            <select class="add-company-form-select p-2 ptr col-lg-7">
+                                <option value="Украина">Україна (UA-EDR)</option>
+                            </select>
+                        </label>
+                        <label class="d-flex justify-content-between align-items-center">ЕГРПОУ компанії:
+                            <span class="col-lg-7 d-flex p-0">
+                               <input class="add-company-form-input border-right-0 p-2 col-lg-9">
+                               <button class="add-company-form-find text-green border-green border bg-transparent ptr col-lg-3">Знайти</button>
+                           </span>
+                        </label>
+                    </form>
+                </section>
+                <section id="subscription"></section>
+                <section id="personal-data">
+                    <h3 class="col-12 font-weight-bold fs-24 mb-4">Личный профиль</h3>
+                    <form class="d-grid registration-form mb-5">
+                        <div class="control">
+                            <input id="lastname" required class="control-input" autofocus>
+                            <label for="lastname" class="control-label">Фамилия</label>
+                            <span class="control-label-icon control-label-icon-clear"></span>
+                        </div>
+                        <div class="control">
+                            <input id="firstname" required class="control-input">
+                            <label for="firstname" class="control-label">Имя</label>
+                            <span class="control-label-icon control-label-icon-clear"></span>
+                        </div>
+                        <div class="control">
+                            <input id="surname" required class="control-input">
+                            <label for="surname" class="control-label">Отчество</label>
+                            <span class="control-label-icon control-label-icon-clear"></span>
+                        </div>
+                        <div class="control">
+                            <input id="register-email" required class="control-input">
+                            <label for="register-email" class="control-label">user@example.com</label>
+                            <span class="control-label-icon control-label-icon-clear"></span>
+                        </div>
+                        <select class="control registration-form-from-start registration-form-placeholder-color px-4">
+                            <option value="en">Английский</option>
+                            <option value="uk">Украинский</option>
+                            <option value="ru">Русский</option>
+                            <!--<input id="language" required class="control-input">
+                            <label for="language" class="control-label">Украинский</label>-->
+                        </select>
+                    </form>
+                    <h3 class="col-12 font-weight-bold fs-20 mb-4">Изменить логин</h3>
+                    <form class="d-grid registration-form mb-5">
+                        <div class="control">
+                            <input id="current-login" value="+38 (093) 111-11-11" disabled required class="control-input" autofocus>
+                            <label for="current-login" class="control-label">Текущий логин</label>
+                        </div>
+                        <div class="control">
+                            <input id="new-login" required class="control-input">
+                            <label for="new-login" class="control-label">Новый логин</label>
+                            <span class="control-label-icon control-label-icon-clear"></span>
+                        </div>
+                        <div class="control">
+                            <input id="otp" required class="control-input">
+                            <label for="otp" class="control-label">Введите полученный по смс пароль</label>
+                            <span class="control-label-icon control-label-icon-clear"></span>
+                        </div>
+                    </form>
+                    <h3 class="col-12 font-weight-bold fs-20 mb-4">Изменить пароль</h3>
+                    <form class="d-grid registration-form my-5 pb-5">
+                        <div class="control">
+                            <input id="password" type="password" required class="control-input" autofocus>
+                            <label for="password" class="control-label">Пароль</label>
+                            <span class="control-label-icon control-label-icon-eye"></span>
+                        </div>
+                        <div class="control">
+                            <input id="new-password" type="password" required class="control-input" autofocus>
+                            <label for="new-password" class="control-label">Пароль (не менее 8 символов)</label>
+                        </div>
+                        <div class="control">
+                            <input id="repeat-password" type="password" required class="control-input" autofocus>
+                            <label for="repeat-password" class="control-label">Повторите пароль</label>
+                        </div>
+                        <button class="border-0 registration-form-from-start btn bg-green text-white d-flex font-weight-bold py-3 justify-content-center btn">Зберегти</button>
+                    </form>
+                </section>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="main-footer py-5">
+    <section class="container">
+        <div class="row">
+            <div class="col-xl-3 col-lg-4 col-md-6 col-xs-12">
+                <div class="d-grid main-footer-gap">
+                    <figure class="d-flex">
+                        <img src="img/footer/logo-pmarket.png" alt="Facebook">
+                        <figcaption class="h2 mb-0">ПриватМаркет</figcaption>
+                    </figure>
+                    <p>© ПриватБанк</p>
+                    <ul class="d-grid main-footer-social-gaps">
+                        <li class="icon-facebook ptr"></li>
+                        <li class="icon-youtube ptr"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xl-2 col-lg-4 col-md-6 col-xs-12 d-grid">
+                <h5 class="h5 mb-0">Телефон горячей линии</h5>
+                <p class="h3 mb-0 d-flex"><span class="icon-footer-phone ptr"></span>4050</p>
+                <p class="fs-13">Бесплатно с мобильных</p>
+            </div>
+            <div class="col-xl-2 col-lg-4 col-md-6 col-xs-12 d-grid">
+                <h5 class="h5 mb-0">Договор публичной оферты</h5>
+                <a href="">Условия и правила пользования</a>
+            </div>
+            <div class="col-xl-2 col-lg-4 col-md-6 col-xs-12 d-grid">
+                <h5 class="h5 mb-0">ЧАВО</h5>
+                <a href="">Для бизнеса</a>
+                <a href="">Для государственных заказчиков</a>
+            </div>
+            <div class="col-xl-2 col-lg-4 col-md-6 col-xs-12 d-grid">
+                <h5 class="h5 mb-0">Вопросы? Предложения?</h5>
+                <footer class="d-grid">
+                    <span>Пишите нам:</span>
+                    <a href="">info@privatmarket.ua</a>
+                    <a href="">Помощь в чате</a>
+                    <a href="">Карта сайта</a>
+                </footer>
+            </div>
+        </div>
+    </section>
+</footer>
+</body>
+</html>

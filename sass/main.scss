@@ -6,6 +6,40 @@
     &-drunk-guys {
         object-fit: contain;
     }
+    &-helpers {
+        top: calc(80vh - 100px);
+        position: fixed;
+        right: 3rem;
+        &-circle {
+            box-shadow: 2.2px 6.7px 12.5px 0.5px rgba(67, 67, 67, 0.19);
+            background: var(--white);
+            @include size(110px);
+            
+            &-scroll-top {
+                &:hover {
+                    background: lightgrey;
+                    &:before {
+                        border-color: white;
+                    }
+                }
+                &:before {
+                    border: 5px solid lightgrey;
+                    transform: rotate(-45deg);
+                    border-bottom: none;
+                    position: relative;
+                    border-left: none;
+                    display: block;
+                    height: 2rem;
+                    content: '';
+                    width: 2rem;
+                    top: 8px;
+                }
+            }
+            &-help {
+            
+            }
+        }
+    }
     &-info-block {
         & > .col-12:not(:last-child) {
             border-right: 1px solid rgba(182,182,182, .26);
