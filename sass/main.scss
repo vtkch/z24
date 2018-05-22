@@ -40,6 +40,12 @@
             }
         }
     }
+    &-btn {
+        max-height: var(--inp-height);
+        @media (max-width: map-get($grid-breakpoints, 'md')) {
+            width: 100%;
+        }
+    }
     &-info-block {
         & > .col-12:not(:last-child) {
             border-right: 1px solid rgba(182,182,182, .26);
@@ -50,6 +56,12 @@
 
         figure {
             min-height: 265px;
+            /*@media (max-width: map-get($grid-breakpoints, 'md')) {
+                &:hover + figure {
+                    border-top: 1px solid var(--green);
+                    margin-top: 0 !important
+                }
+            }*/
         }
         @mixin arrow {
             border-left: 1px solid var(--green);
