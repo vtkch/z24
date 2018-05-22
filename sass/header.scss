@@ -98,8 +98,15 @@
             border: .5px solid lightgrey;
             position: relative;
             display: none;
+            right: .5rem;
             z-index: 10;
             top: 100%;
+            @media (max-width: map-get($grid-breakpoints, 'lg')) {
+                right: .5rem;
+                &:before {
+                    right: 1rem;
+                }
+            }
             &:before {
                 box-shadow: -1px -1px 1px #ece9e9;
                 transform: rotate(45deg);
@@ -107,8 +114,8 @@
                 position: absolute;
                 height: 1rem;
                 width: 1rem;
-                content: '';
                 top: -.5rem;
+                content: '';
             }
         }
     }
