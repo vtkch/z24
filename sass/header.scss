@@ -77,6 +77,10 @@
         &-toggle:checked {
             & + label {
                 .sticky-top-language-container {
+                    li:hover {
+                        background-color: var(--green);
+                        color: var(--white);
+                    }
                     display: flex;
                 }
                 &:before {

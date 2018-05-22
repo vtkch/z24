@@ -17,9 +17,10 @@
             
             &-scroll-top {
                 &:hover {
-                    background: lightgrey;
+                    background-color: #000;
+                    opacity: .32;
                     &:before {
-                        border-color: white;
+                        border-color: var(--white);
                     }
                 }
                 &:before {
@@ -36,7 +37,13 @@
                 }
             }
             &-help {
-            
+                & .icon-chat {
+                    transform: scale(1.25);
+                }
+                &-badge {
+                    top: calc(50% - 24px);
+                    left: calc(50% + 8px);
+                }
             }
         }
     }
@@ -56,16 +63,17 @@
 
         figure {
             min-height: 265px;
-           /* @media (max-width: map-get($grid-breakpoints, 'md')) {
+            @media (max-width: map-get($grid-breakpoints, 'md')) {
+                order: 1;
                 &:hover + figure {
                     border-top: 1px solid var(--green);
                     margin-top: 0 !important;
-                    order: 5;
+                    order: 2;
                     & ~ figure {
-                        order: 5;
+                        order: 4;
                     }
                 }
-            }*/
+            }
         }
         @mixin arrow {
             border-left: 1px solid var(--green);
@@ -95,13 +103,31 @@
                 }
             }
         }
-        
+
         &-security,
         &-support {
             &:hover:before {
                 @include arrow;
                 bottom: calc(100% + 32px);
                 transform: rotate(-135deg);
+            }
+        }
+        &-free-consulting,
+        &-register,
+        &-part-of,
+        &-security,
+        &-support {
+            &:hover:before {
+                @media (max-width: map-get($grid-breakpoints, 'md')) {
+                    bottom: calc(-16px + -48px);
+                    transform: rotate(45deg);
+                    @include arrow;
+                }
+            }
+            &:hover:after {
+                @media (max-width: map-get($grid-breakpoints, 'md')) {
+                    display: none;
+                }
             }
         }
     }
@@ -121,6 +147,9 @@
         @for $i from 1 through 5 {
             figure:nth-child(#{$i}):hover ~ & > p:nth-child(#{$i}) {
                 display: flex;
+                @media (max-width: map-get($grid-breakpoints, 'md')) {
+                    order: 4;
+                }
             }
         }
     }
