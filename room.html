@@ -11,23 +11,50 @@
 <header class="sticky-top border-bottom py-3 bg-white">
     <div class="container d-flex">
         <div class="row flex-nowrap">
-            <div class="col-6 col-md-4 col-lg-3 d-flex align-items-center pr-2">
+            <div class="col-6 col-md-4 col-lg-2 d-flex align-items-center">
                 <a href="/">
                     <img class="w-100 pr-1" alt="Brand" src="img/logo_z24.svg">
                 </a>
             </div>
-            <ul class="col-6 justify-content-md-around col-lg-9 col-md-8 d-grid sticky-top-nav fs-20 align-items-md-center">
+            <ul class="col-6 justify-content-md-around col-lg-10 col-md-8 row sticky-top-nav fs-20 align-items-md-center">
                 <li class="d-none border-left border-header-grey mx-2 py-4 d-lg-block"></li>
-                <li class="d-none d-md-block"><a href="">Закупки</a></li>
-                <li class="d-none d-md-block text-center"><a href="">Каталог компаний</a></li>
+                <li class="d-none d-md-block col-1"><a href="">Закупки</a></li>
+                <li class="d-none d-md-block col-1 text-center"><a href="">Каталог компаний</a></li>
                 <li class="border-left border-header-grey mx-2 py-4 d-none d-lg-block"></li>
                 <li class="d-flex align-items-center text-green"><span class="icon-phone ptr"></span>4050</li>
                 <li class="d-flex align-items-center text-green"><span class="icon-chat ptr"></span>Чат</li>
                 <li class="border-left border-header-grey mx-2 py-4 d-none d-lg-block"></li>
-                <li class="sticky-top-fixed-height d-none d-md-block text-center fs-14">ХМЕЛЬНИЦЬКИЙ НАВЧАЛЬНО-ВИХОВНИЙ
-                    КОМПЛЕКС №31 «ДОШКІЛЬНИЙ НАВЧАЛЬНИЙ
-                    ЗАКЛАД – ЗАГАЛЬНООСВІТНІЙ НАВЧАЛЬНИЙ ЗАКЛАД І СТУПЕНЯ»
-                    <!--<button class="border-green border ptr text-green bg-transparent fs-20 py-2 px-5 float-right">Login</button>-->
+                <li class="position-relative col-5 d-none d-md-block text-center fs-14">
+                    <input type="checkbox" id="account" hidden class="sticky-top-account-toggle">
+                    <label for="account" class="sticky-top-account ptr">
+                        <span class="account-name">
+                            ХМЕЛЬНИЦЬКИЙ НАВЧАЛЬНО-ВИХОВНИЙ
+                            КОМПЛЕКС №31 «ДОШКІЛЬНИЙ НАВЧАЛЬНИЙ
+                            ЗАКЛАД – ЗАГАЛЬНООСВІТНІЙ НАВЧАЛЬНИЙ ЗАКЛАД І СТУПЕНЯ»
+                        </span>
+                        <ul class="sticky-top-account-container ptr position-absolute bg-white py-2 flex-column  text-left">
+                            <li class="py-2 d-grid align-items-center mt-2">
+                                <div class="sticky-top-account-container-image"></div>
+                                <span>Мой кабинет</span>
+                            </li>
+                            <li class="py-2 d-grid align-items-center">
+                                <img class="sticky-top-account-container-image" src="img/main-page/prozorro_tender.png" alt="">
+                                <span>
+                                    ХМЕЛЬНИЦЬКИЙ НАВЧАЛЬНО-ВИХОВНИЙ
+                                    КОМПЛЕКС №31 «ДОШКІЛЬНИЙ НАВЧАЛЬНИЙ
+                                    ЗАКЛАД – ЗАГАЛЬНООСВІТНІЙ НАВЧАЛЬНИЙ ЗАКЛАД І СТУПЕНЯ
+                                </span>
+                            </li>
+                            <li class="py-2 d-grid align-items-center">
+                                <img src="" alt="">
+                                <span>Проведення профілактичних досліджень працівників Авдіївського
+                                ВУВКГ КП «Компанія «Вода Донбасу»</span>
+                            </li>
+                            <li class="py-2 d-grid align-items-center">
+                                <img src="" alt=""><span>Проведення профілактичних досліджень працівників Авдіївського
+                                ВУВКГ КП «Компанія «Вода Донбасу»</span></li>
+                        </ul>
+                    </label>
                 </li>
                 <li class="border-left border-header-grey mx-2 py-4 d-none d-lg-block"></li>
                 <li class="d-none d-md-flex sticky-top-language align-self-stretch justify-content-center">
@@ -48,7 +75,7 @@
 <main>
     <section class="container">
         <div class="row">
-            <aside class="col-md-4 col-lg-3 col-6 col-xs-12 aside-block bg-aside pt-4 d-md-block d-none">
+            <aside class="col-md-4 col-lg-2 col-6 col-xs-12 aside-block bg-aside pt-4 d-md-block d-none">
                 <h4 class="aside-block-header py-3 pl-4 fs-20 font-weight-bold">Моя компания</h4>
                 <ul class="aside-block-list pb-4 d-flex flex-column">
                     <li class="active"><a href="#validation-page">Информация о компании</a></li>
@@ -69,7 +96,7 @@
                    class="aside-block-add-company border-green border text-green ptr bg-transparent p-3 text-center text-nowrap mb-5 d-block">+
                     Добавить компанию</a>
             </aside>
-            <div class="room col-md-8 col-lg-9 col-xs-12 pt-4">
+            <div class="room col-md-8 col-lg-10 col-xs-12 pt-4">
                 <section id="validation-page">
                     <div class="row">
                         <div class="col-md-7 col-lg-6">

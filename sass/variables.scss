@@ -6,7 +6,12 @@ $grid-breakpoints: (
         lg: 960px,
         xl: 1280px
 );
-
+$container-max-widths: (
+        sm: 540px,
+        md: 720px,
+        lg: 960px,
+        xl: 1400px
+);
 $radio-border-h-color: #a0a0a0 !default;
 /// @group radio-variables
 /// @type color
@@ -32,12 +37,7 @@ $checkbox-border-color: #d7d7d7 !default;
 /// @name checkbox-size
 /// @access public
 $checkbox-size: 26px;
-$container-max-widths: (
-        sm: 540px,
-        md: 720px,
-        lg: 960px,
-        xl: 1280px
-);
+
 $radio-circle-size: 10px;
 $radio-circle-width: 1px;
 $headings-margin-bottom: 0;
