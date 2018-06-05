@@ -5,6 +5,16 @@
     &-caret {
         @include caret-down;
     }
+    &-hamburger {
+        &:before {
+            background-image: linear-gradient(to bottom, var(--green) 50%, var(--white) 50%);
+            background-size: 10px;
+            min-width: 28px;
+            display: block;
+            height: 26px;
+            content: '';
+        }
+    }
     &-nav {
         grid-gap: .25rem;
         @media (max-width: map-get($grid-breakpoints, 'md')) {
